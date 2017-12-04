@@ -35,9 +35,11 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 // #define EE_HANDS
 
 /* Tap Dance timing */
-#define TAPPING_TERM 100
+#define TAPPING_TERM 200
 
 /* Toggling layer requires # taps */
-#define TAPPING_TOGGLE 3
+#define TAPPING_TOGGLE 2
+
+
 
 #endif
