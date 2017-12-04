@@ -62,33 +62,6 @@ enum custom_keycodes {
 #define KC_HPR_GRV HPR_GRV
 
 
-// Tap Dance Declarations
-// ----------------------
-enum {
-				TD_S1,
-				TD_S2,
-				TD_S3,
-				TD_S4,
-				TD_S5,
-				TD_S6,
-				TD_S7,
-				TD_S8,
-				TD_S9,
-				TD_S0
-};
-
-#define KC_TDS1 TD(TD_S1)
-#define KC_TDS2 TD(TD_S2)
-#define KC_TDS3 TD(TD_S3)
-#define KC_TDS4 TD(TD_S4)
-#define KC_TDS5 TD(TD_S5)
-#define KC_TDS6 TD(TD_S6)
-#define KC_TDS7 TD(TD_S7)
-#define KC_TDS8 TD(TD_S8)
-#define KC_TDS9 TD(TD_S9)
-#define KC_TDS0 TD(TD_S0)
-
-
 const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 
 /* Qwerty
@@ -134,7 +107,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
  * `-----------------------------------------'    `-----------------------------------------'
  */
 				[_RAISE] = KC_KEYMAP(
-								HPR_GRV,TDS1,TDS2,TDS3,TDS4,TDS5,     TDS6,TDS7,TDS8,TDS9,TDS0,       ,
+								HPR_GRV, 1  , 2  , 3  , 4  , 5  ,      6  , 7  , 8  , 9  , 0  ,       ,
                , LT ,LEFT,RGHT, UP ,LPRN,     RPRN,MINS, EQL,LBRC,RBRC,CTL_PIP,
                , GT ,ASTR,SLSH,DOWN,LCBR,     RCBR,UNDS,PLUS,    ,    ,       ,
 								       ,    ,    ,    ,    ,    ,         ,    ,    ,    ,    ,
@@ -184,11 +157,11 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 
 				[_ADJUST] = KEYMAP(
 // ,-------+--------+--------+--------+--------+--------.   ,-------+--------+--------+--------+--------+--------.
-		   RESET , _______,  KC_UP , _______, _______, _______,    _______, _______, _______, _______, _______, KC_DEL , \
+		   RESET , XXXXXXX,  KC_UP , XXXXXXX, XXXXXXX, XXXXXXX,    XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, KC_DEL , \
 // |-------+--------+--------+--------+--------+--------|   |-------+--------+--------+--------+--------+--------|
-			 _______, KC_LEFT, KC_DOWN, KC_RGHT, _______, _______,    BL_TOGG, BL_STEP, _______, _______, _______, _______, \
+			 _______, KC_LEFT, KC_DOWN, KC_RGHT, XXXXXXX, XXXXXXX,    BL_TOGG, BL_STEP, XXXXXXX, XXXXXXX, XXXXXXX, _______, \
 // |-------+--------+--------+--------+--------+--------|   |-------+--------+--------+--------+--------+--------|
-		  _______, _______, _______, _______, _______, _______,    _______, _______, _______, _______, _______, _______, \
+		  _______, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX,    XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, _______, \
 // |-------+--------+--------+--------+--------+--------|   |-------+--------+--------+--------+--------+--------|
 		  _______, _______, _______, _______, _______, _______,    _______, _______, _______, _______, _______, _______  \
 // `-------+--------+--------+--------+--------+--------'   `-------+--------+--------+--------+--------+--------,
@@ -258,20 +231,3 @@ bool process_record_user(uint16_t keycode, keyrecord_t *record) {
   }
   return true;
 }
-
-// Double-tap N sends Shift-N for numbers
-// This supports XMonad's keybindings where:
-//   * Mod-# move focus to workspace #
-//   * Mod-Shift-# moves window to workspace #
-qk_tap_dance_action_t tap_dance_actions[] = {
-				[TD_S1] = ACTION_TAP_DANCE_DOUBLE(KC_1, S(KC_1)),
-				[TD_S2] = ACTION_TAP_DANCE_DOUBLE(KC_2, S(KC_2)),
-				[TD_S3] = ACTION_TAP_DANCE_DOUBLE(KC_3, S(KC_3)),
-				[TD_S4] = ACTION_TAP_DANCE_DOUBLE(KC_4, S(KC_4)),
-				[TD_S5] = ACTION_TAP_DANCE_DOUBLE(KC_5, S(KC_5)),
-				[TD_S6] = ACTION_TAP_DANCE_DOUBLE(KC_6, S(KC_6)),
-				[TD_S7] = ACTION_TAP_DANCE_DOUBLE(KC_7, S(KC_7)),
-				[TD_S8] = ACTION_TAP_DANCE_DOUBLE(KC_8, S(KC_8)),
-				[TD_S9] = ACTION_TAP_DANCE_DOUBLE(KC_9, S(KC_9)),
-				[TD_S0] = ACTION_TAP_DANCE_DOUBLE(KC_0, S(KC_0)),
-};
