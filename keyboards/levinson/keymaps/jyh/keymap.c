@@ -73,7 +73,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
  * |------+------+------+------+------+------|    |------+------+------+------+------+------|
  * |  -   |  Z   |  X   |  C   |  V   |  B   |    |  N   |  M   |  ,   |  .   |  /   | Enter|
  * |------+------+------+------+------+------|    |------+------+------+------+------+------|
- * | Numpd| Hyper| Meta | Alt  | Lower| Spc  |    | Spc  | Raise| Alt  | Meta | Meh  |  \   |
+ * | Numpd| Meh  | Meta | Alt  | Lower| Spc  |    | Spc  | Raise| Alt  | Meta | Hyper|  \   |
  * `-----------------------------------------'    `-----------------------------------------'
  *
  * with Hold (Emacs-oriented)
@@ -91,7 +91,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 								HPR_TAB, KC_Q   , KC_W   , KC_E   , KC_R , KC_T   ,    KC_Y   , KC_U , KC_I   , KC_O   , KC_P   , KC_BSPC,
 								CTL_ESC, KC_A   , KC_S   , KC_D   , KC_F , KC_G   ,    KC_H   , KC_J , KC_K   , KC_L   , KC_SCLN, CTL_QOT,
 								SFT_MIN, KC_Z   , KC_X   , KC_C   , KC_V , KC_B   ,    KC_N   , KC_M , KC_COMM, KC_DOT , KC_SLSH, SFT_ENT,
-								NUMPAD , KC_HYPR, KC_LGUI, KC_LALT, LOWER, CTL_SPC,    ALT_SPC, RAISE, KC_RALT, KC_RGUI, KC_MEH , FNC_PIP
+								NUMPAD , KC_MEH , KC_LGUI, KC_LALT, LOWER, CTL_SPC,    ALT_SPC, RAISE, KC_RALT, KC_RGUI, KC_HYPR, FNC_PIP
 								),
 
 
