@@ -28,7 +28,5 @@ and experience with 60% keyboards with no base layer arrow keys
   * Extra dedicated layers
     * Numpad (available with tap toggle)
     * Function key (F01-24)
-  * Double-tap numbers sends Shift-N (e.g. Double tap 1 sends
-    Shift-1), for XMonad window control
   * Redunant keys where it is convenient to have characters together
     on one layer

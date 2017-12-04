@@ -3,4 +3,3 @@ ifndef QUANTUM_DIR
 endif
 
 BACKLIGHT_ENABLE=yes
-TAP_DANCE_ENABLE=yes
