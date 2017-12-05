@@ -21,8 +21,8 @@ and experience with 60% keyboards with no base layer arrow keys
   * Centered symbol/bracket cluster on _Lower/Raise_
     * Inspired by hexwire layout
     * Programming-oriented
-  * Spacebar sends modifier keys on hold
-    * Control and Alt/Meta on left and right space, respectively
+  * Spacebar sends modifier keys on hold (_this is finicky in practice. may shut off completely_)
+    * Control ~~and Alt/Meta~~ on left ~~and right~~ space, respectively
     * Strict space available on _Function_ and _Numpad_ layers
     * For Emacs keychords
   * Extra dedicated layers
