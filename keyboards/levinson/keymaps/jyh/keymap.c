@@ -2,6 +2,7 @@
 #include "action_layer.h"
 #include "eeconfig.h"
 
+
 extern keymap_config_t keymap_config;
 
 // Each layer gets a name for readability, which is then used in the keymap matrix below.
@@ -71,7 +72,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
  * |------+------+------+------+------+------|    |------+------+------+------+------+------|
  * |  -   |  Z   |  X   |  C   |  V   |  B   |    |  N   |  M   |  ,   |  .   |  /   | Enter|
  * |------+------+------+------+------+------|    |------+------+------+------+------+------|
- * | Numpd| Meh  | Meta | Alt  | Lower| Spc  |    | Enter| Raise| Alt  | Meta | Hyper| Func |
+ * | Numpd| Meh  | Meta | Alt  | Lower| Space|    | Space| Raise| Alt  | Meta | Hyper| Func |
  * `-----------------------------------------'    `-----------------------------------------'
  *
  * with Hold (Emacs-oriented)
