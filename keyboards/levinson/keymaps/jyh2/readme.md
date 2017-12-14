@@ -12,21 +12,21 @@ by good ideas from the Atreus keyboard layout.
 
   * Extensive use of _Mod Tap_, e.g.
      * Tap sends Esc, Hold sends Left Control
-     * Tap sends Enter, Hold sends Right Shift
+     * Tap sends Tab, Hold activates Numpad layer
+     * Tap sends  - , Hold sends Shift
      * ... and many more
   * Places Tab and Enter on bottom corners, for hitting with palm
   * Meta is available on top corners, for controlling XMonad
-  * Control on center key
-  * All 60% keys available on base layer
+  * Control on center key, for Emacs (among other things)
+  * Backspace (Control Hold) and Space on center keys
+  * All 60% keys available on base layer, except for numbers
   * Hyper and Meh keys
   * Right modifier keys in place of arrow keys
     * Arrows are instead available in two alternate locations:
     * WASD arrows on _Adjust_
     * Arrow cluster on _Raise_ (inspired by hexwire)
-  * Numpad and Numrow on _Raise_ layer
+  * Numpad and Numrow on _Raise_ layer. Each is faster in some contexts
   * Function keys on _Lower_
-  * Extra dedicated layers
-    * Numpad (toggle)
   * Dynamic macros from QMK firmware on _Adjust_
   * Redunant keys where it is convenient to have characters together
     on one layer
