@@ -150,17 +150,17 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
  * ,-----------------------------------------.    ,-----------------------------------------.
  * | Reset|      |  Up  |      |      | Rec1 |    | Rec2 |      |      |      |      | Del  |
  * |------+------+------+------+------+------|    |------+------+------+------+------+------|
- * | Caps | Left | Down | Right|      | Play1|    | Play2| LED+-| LED  |      |      |      |
+ * | Caps | Left | Down | Right|      | Play1|    | Play2| RGB  | HUE+ | SAT+ | BRI+ |      |
  * |------+------+------+------+------+------|    |------+------+------+------+------+------|
- * |      |      |      |      |      | Stop1|    | Stop2|      |      |      |      |      |
+ * |      |      |      |      |      | Stop1|    | Stop2| MODE | HUE- | SAT- | BRI- |      |
  * |------+------+------+------+------+------|    |------+------+------+------+------+------|
  * |      |      |      |      |      |      |    |      |      |      |      |      |      |
  * `-----------------------------------------'    `-----------------------------------------'
  */
 	[_ADJUST] = KEYMAP(
 		RESET  , XXXXXXX,  KC_UP , XXXXXXX, XXXXXXX, DREC_1 ,    DREC_2 , XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, KC_DEL ,
-		KC_CAPS, KC_LEFT, KC_DOWN, KC_RGHT, XXXXXXX, DPLAY_1,    DPLAY_2, BL_STEP, BL_TOGG, XXXXXXX, XXXXXXX, _______,
-		_______, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, DSTOP  ,    DSTOP  , XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, _______,
+		KC_CAPS, KC_LEFT, KC_DOWN, KC_RGHT, XXXXXXX, DPLAY_1,    DPLAY_2, RGB_TOG, RGB_HUI, RGB_SAI, RGB_VAI, _______,
+		_______, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, DSTOP  ,    DSTOP  , RGB_MOD, RGB_HUD, RGB_SAD, RGB_VAD, _______,
 		_______, _______, _______, _______, _______, _______,    _______, _______, _______, _______, _______, _______
 		)
 };
