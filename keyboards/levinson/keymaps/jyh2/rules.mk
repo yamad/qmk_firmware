@@ -2,5 +2,5 @@ ifndef QUANTUM_DIR
 	include ../../../../Makefile
 endif
 
-BACKLIGHT_ENABLE=yes
 RGBLIGHT_ENABLE=yes
+BOOTMAGIC_ENABLE=no
