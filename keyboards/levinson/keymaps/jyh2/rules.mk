@@ -3,4 +3,4 @@ ifndef QUANTUM_DIR
 endif
 
 BACKLIGHT_ENABLE=yes
-USE_I2C=yes
+RGBLIGHT_ENABLE=yes
