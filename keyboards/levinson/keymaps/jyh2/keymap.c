@@ -55,7 +55,6 @@ enum custom_keycodes {
 #define CTL_BSP MT(MOD_LCTL, KC_BSPC)  // Bkspce  Left Control
 #define HPR_RBC MT(MOD_HYPR, KC_RBRC) //  ]       Hyper
 #define SFT_EQL MT(MOD_RSFT, KC_EQL)  //  =       Right Shift
-#define CTL_QOT MT(MOD_RCTL, KC_QUOT) //  '       Right Control
 #define GUI_BSL MT(MOD_RGUI, KC_BSLS) //  \       Meta
 
 #define NUM_TAB LT(_NUMS, KC_TAB)     //  Tab     Layer Numpad
@@ -78,7 +77,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
  * ,-----------------------------------------.    ,-----------------------------------------.
  * | Meta |      |      |      |      |      |    |      |      |      |      |      | Meta |
  * |------+------+------+------+------+------|    |------+------+------+------+------+------|
- * | Ctrl |      |      |      |      |      |    |      |      |      |      |      | Ctrl |
+ * | Ctrl |      |      |      |      |      |    |      |      |      |      |      |      |
  * |------+------+------+------+------+------|    |------+------+------+------+------+------|
  * | Shift|      |      |      |      |      |    |      |      |      |      |      | Shift|
  * |------+------+------+------+------+------|    |------+------+------+------+------+------|
@@ -87,7 +86,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
  */
 	[_QW] = KEYMAP(
 		GUI_GRV, KC_Q   , KC_W   , KC_E   , KC_R   , KC_T   , KC_Y   , KC_U   , KC_I   , KC_O   , KC_P   , GUI_BSL,
-		CTL_ESC, KC_A   , KC_S   , KC_D   , KC_F   , KC_G   , KC_H   , KC_J   , KC_K   , KC_L   , KC_SCLN, CTL_QOT,
+		CTL_ESC, KC_A   , KC_S   , KC_D   , KC_F   , KC_G   , KC_H   , KC_J   , KC_K   , KC_L   , KC_SCLN, KC_QUOT,
 		SFT_MIN, KC_Z   , KC_X   , KC_C   , KC_V   , KC_B   , KC_N   , KC_M   , KC_COMM, KC_DOT , KC_SLSH, SFT_EQL,
 		NUM_TAB, MEH_LBC, KC_LGUI, KC_LALT, LOWER  , CTL_BSP, KC_SPC , RAISE  , KC_RALT, KC_RGUI, HPR_RBC, KC_ENT
 		),
