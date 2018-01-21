@@ -35,4 +35,6 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 /* Toggling layer requires # taps */
 #define TAPPING_TOGGLE 3
 
+#define RGBLIGHT_ANIMATIONS
+
 #endif
