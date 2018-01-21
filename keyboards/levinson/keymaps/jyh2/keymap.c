@@ -28,6 +28,7 @@ enum custom_keycodes {
   LOWER,
   RAISE,
   ADJUST,
+  MKITPNK,
   DYNAMIC_MACRO_RANGE
 };
 
@@ -147,9 +148,9 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 
 /* Adjust
  * ,-----------------------------------------.    ,-----------------------------------------.
- * | Reset|      |  Up  |      |      | Rec1 |    | Rec2 |      |      |      |      | Del  |
+ * | Reset|      |  Up  |      |      | Rec1 |    | Rec2 | Plain| Snake|Gradnt|      | Del  |
  * |------+------+------+------+------+------|    |------+------+------+------+------+------|
- * | Caps | Left | Down | Right|      | Play1|    | Play2| RGB  | HUE+ | SAT+ | BRI+ |      |
+ * | Caps | Left | Down | Right|MkItPk| Play1|    | Play2| RGB  | HUE+ | SAT+ | BRI+ |      |
  * |------+------+------+------+------+------|    |------+------+------+------+------+------|
  * |      |      |      |      |      | Stop1|    | Stop2| MODE | HUE- | SAT- | BRI- |      |
  * |------+------+------+------+------+------|    |------+------+------+------+------+------|
@@ -157,8 +158,8 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
  * `-----------------------------------------'    `-----------------------------------------'
  */
 	[_ADJUST] = KEYMAP(
-		RESET  , XXXXXXX,  KC_UP , XXXXXXX, XXXXXXX, DREC_1 ,    DREC_2 , XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, KC_DEL ,
-		KC_CAPS, KC_LEFT, KC_DOWN, KC_RGHT, XXXXXXX, DPLAY_1,    DPLAY_2, RGB_TOG, RGB_HUI, RGB_SAI, RGB_VAI, _______,
+		RESET  , XXXXXXX,  KC_UP , XXXXXXX, XXXXXXX, DREC_1 ,    DREC_2 , RGB_M_P, RGB_M_SN,RGB_M_G, XXXXXXX, KC_DEL ,
+		KC_CAPS, KC_LEFT, KC_DOWN, KC_RGHT, MKITPNK, DPLAY_1,    DPLAY_2, RGB_TOG, RGB_HUI, RGB_SAI, RGB_VAI, _______,
 		_______, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, DSTOP  ,    DSTOP  , RGB_MOD, RGB_HUD, RGB_SAD, RGB_VAD, _______,
 		_______, _______, _______, _______, _______, _______,    _______, _______, _______, _______, _______, _______
 		)
@@ -167,6 +168,21 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 #ifdef AUDIO_ENABLE
 float tone_qwerty[][2]     = SONG(QWERTY_SOUND);
 #endif
+
+void make_it_pink_blue(void) {
+	uint16_t blue_hue = 210;
+	uint16_t pink_hue = 315;
+
+	/* key is pressed */
+	uint16_t hue = rgblight_get_hue();
+	uint8_t sat = rgblight_get_sat();
+	uint8_t val = rgblight_get_val();
+
+	if (hue != blue_hue)
+		rgblight_sethsv(blue_hue, sat, val);
+	else
+		rgblight_sethsv(pink_hue, sat, val);
+}
 
 void persistent_default_layer_set(uint16_t default_layer) {
 	eeconfig_update_default_layer(default_layer);
@@ -213,6 +229,11 @@ bool process_record_user(uint16_t keycode, keyrecord_t *record) {
 		} else {
 			layer_off(_ADJUST);
 		}
+		return false;
+		break;
+	case MKITPNK:
+		if (record->event.pressed)
+			make_it_pink_blue();
 		return false;
 		break;
 	}
