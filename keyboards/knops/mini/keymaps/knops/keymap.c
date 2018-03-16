@@ -117,6 +117,7 @@ const macro_t *action_get_macro(keyrecord_t *record, uint8_t id, uint8_t opt) {
 	//keyevent_t event = record->event;
 
 	/*KNOPS_MACRO*/
+	return NULL;
 }
 
 
@@ -134,4 +135,7 @@ bool process_record_user (uint16_t keycode, keyrecord_t *record) {
 
 	/*KNOPS_PROCESS_STATE*/
 
+	return NULL;
+
 }
+
