@@ -4,4 +4,3 @@ COMMAND_ENABLE    = yes  # Commands for debug and configuration
 RGBLIGHT_ENABLE   = yes
 CONSOLE_ENABLE    = no
 BOOTMAGIC_ENABLE  = yes
-
