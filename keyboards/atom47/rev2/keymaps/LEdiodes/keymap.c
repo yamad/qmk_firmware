@@ -1,4 +1,4 @@
-﻿#include QMK_KEYBOARD_H
+﻿#include "atom47.h"
 
 // These are all aliases for the  function layers.
 #define _L0 0
