@@ -54,7 +54,7 @@ enum custom_keycodes {
 #define KC_Less S(KC_NUBS)
 #define KC_CATDEL LCTL(LALT(KC_DEL)) // Ctrl alt del
 #define KC_TSKMGR LCTL(S(KC_ESC)) // Ctrl shift esc
-#define KC_NUMP TG(_NUMPAD)  // Toggle layer NUMPAD for use in KC_keymaps
+#define KC_NUMP TG(_NUMPAD)  // Toggle layer NUMPAD for use in LAYOUT_kc
 #define KC_Close RALT(KC_F4) // Alt F4
 #define KC_Great S(KC_NUBS)
 #define KC_MEH1 MEH(KC_1)
@@ -70,7 +70,7 @@ enum custom_keycodes {
 
 const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 
-  [_QWERTY] = KC_KEYMAP(
+  [_QWERTY] = LAYOUT_kc(
   //,----+----+----+----+----+----.              ,----+----+----+----+----+----.
      DEL ,APP, VOLD,MUTE,VOLU,LGUI,               RGUI,MPRV,MPLY,MNXT,DOWN,ESC ,
   //|----+----+----+----+----+----|              |----+----+----+----+----+----|
@@ -84,7 +84,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   //                  `----+----+----'        `----+----+----'
   ),
 
-  [_GAMING] = KC_KEYMAP(
+  [_GAMING] = LAYOUT_kc(
   //,----+----+----+----+----+----.              ,----+----+----+----+----+----.
      ESC , 1  , 2  , 3  , 4  , 5  ,                6  , 7  , 8  , 9  , 0  ,ESC ,
   //|----+----+----+----+----+----|              |----+----+----+----+----+----|
@@ -98,7 +98,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   //                  `----+----+----'        `----+----+----'
   ),
 
- [_DVORAK] = KC_KEYMAP(
+ [_DVORAK] = LAYOUT_kc(
   //,----+----+----+----+----+----.              ,----+----+----+----+----+----.
      DEL ,APP ,VOLD,MUTE,VOLU,LGUI,               RGUI,MPRV,MPLY,MNXT,DOWN,ESC ,
   //,----+----+----+----+----+----.              ,----+----+----+----+----+----.
@@ -112,7 +112,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   //                  `----+----+----'        `----+----+----'
   ),
 
- [_COLEMAK] = KC_KEYMAP(
+ [_COLEMAK] = LAYOUT_kc(
   //,----+----+----+----+----+----.              ,----+----+----+----+----+----.
      DEL ,APP, VOLD,MUTE,VOLU,LGUI,               RGUI,MPRV,MPLY,MNXT,DOWN,ESC ,
   //|----+----+----+----+----+----|              |----+----+----+----+----+----|
@@ -126,7 +126,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   //                  `----+----+----'        `----+----+----'
   ),
 
-[_WORKMAN] = KC_KEYMAP(
+[_WORKMAN] = LAYOUT_kc(
   //,----+----+----+----+----+----.              ,----+----+----+----+----+----.
      DEL ,APP, VOLD,MUTE,VOLU,LGUI,               RGUI,MPRV,MPLY,MNXT,DOWN,ESC ,
   //|----+----+----+----+----+----|              |----+----+----+----+----+----|
@@ -140,7 +140,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   //                  `----+----+----'        `----+----+----'
   ),
 
-  [_NUMPAD] = KC_KEYMAP(
+  [_NUMPAD] = LAYOUT_kc(
   //,----+----+----+----+----+----.              ,----+----+----+----+----+----.
      F1  , F2 , F3 , F4 , F5 , F6 ,                F7 , F8 , F9 ,F10 ,F11 ,F12 ,
   //|----+----+----+----+----+----|              |----+----+----+----+----+----|
@@ -155,7 +155,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   ),
 
 
-  [_LOWER] = KC_KEYMAP(
+  [_LOWER] = LAYOUT_kc(
   //,----+----+----+----+----+----.              ,----+----+----+----+----+----.
      F1  , F2 , F3 , F4 , F5 , F6 ,                F7 , F8 , F9 ,F10 ,F11 ,F12 ,
   //|----+----+----+----+----+----|              |----+----+----+----+----+----|
@@ -169,7 +169,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   //                  `----+----+----'        `----+----+----'
   ),
 
-  [_RAISE] = KC_KEYMAP(
+  [_RAISE] = LAYOUT_kc(
   //,----+----+----+----+----+----.              ,----+----+----+----+----+----.
      TILD,EXLM,GRV ,EQL, DLR ,PERC,               Sw3 ,Sw5 ,Sw6 ,Sw0 ,RPRN,    ,
   //|----+----+----+----+----+----|              |----+----+----+----+----+----|
