@@ -115,3 +115,11 @@ bool process_record_user(uint16_t keycode, keyrecord_t *record) {
 This will add a new `KC_MAKE`  keycode that can be used in any of your keymaps.  And this keycode will output `make <keyboard>:<keymap">`, making frequent compiling easier.  And this will work with any keyboard and any keymap as it will output the current boards info, so that you don't have to type this out every time.
 
 Additionally, this should flash the newly compiled firmware automatically, using the correct utility, based on the bootloader settings (or default to just generating the HEX file). However, it should be noted that this may not work on all systems. AVRDUDE doesn't work on WSL, namely (and will dump the HEX in the ".build" folder instead).
+
+## Override default userspace
+
+By default the userspace used will be the same as the keymap name. In some situations this isn't desirable. For instance, if you use the [layout](feature_layouts.md) feature you can't use the same name for different keymaps (e.g. ANSI and ISO). You can name your layouts `mylayout-ansi` and `mylayout-iso` and add the following line to your layout's `rules.mk`:
+
+```
+USER_NAME := mylayout
+```
