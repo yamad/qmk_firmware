@@ -13,20 +13,22 @@
 
 void i2c_init(void)
 {
+  TWSR = 0;     /* no prescaler */
 	TWBR = (uint8_t)TWBR_val;
+  //TWBR = 10;
 }
 
 uint8_t i2c_start(uint8_t address)
 {
 	// reset TWI control register
-	TWCR = 0;
+	//TWCR = 0;
 	// transmit START condition
 	TWCR = (1<<TWINT) | (1<<TWSTA) | (1<<TWEN);
 	// wait for end of transmission
 	while( !(TWCR & (1<<TWINT)) );
 
 	// check if the start condition was successfully transmitted
-	if((TWSR & 0xF8) != TW_START){ return 1; }
+	if(((TW_STATUS & 0xF8) != TW_START) && ((TW_STATUS & 0xF8) != TW_REP_START)){ return 1; }
 
 	// load slave address into data register
 	TWDR = address;
@@ -51,7 +53,7 @@ uint8_t i2c_write(uint8_t data)
 	// wait for end of transmission
 	while( !(TWCR & (1<<TWINT)) );
 
-	if( (TWSR & 0xF8) != TW_MT_DATA_ACK ){ return 1; }
+	if( (TW_STATUS & 0xF8) != TW_MT_DATA_ACK ){ return 1; }
 
 	return 0;
 }
@@ -146,4 +148,6 @@ void i2c_stop(void)
 {
 	// transmit STOP condition
 	TWCR = (1<<TWINT) | (1<<TWEN) | (1<<TWSTO);
+  // wait until stop condition is executed and bus released
+  while(TWCR & (1<<TWSTO));
 }
