@@ -15,9 +15,6 @@ const char secret[][64] = {
 };
 #endif
 
-
-
-
 void register_hyper (void) { //Helper function to invoke Hyper
   register_code (KC_LSFT);
   register_code (KC_LCTL);
@@ -244,17 +241,17 @@ void bt_finished (qk_tap_dance_state_t *state, void *user_data) {
   S1_state.state = cur_dance(state);
   switch (S1_state.state) {
     case SINGLE_TAP: register_code(KC_F3); break;
-    case SINGLE_HOLD: layer_on(4); break;
-    case DOUBLE_TAP: layer_invert(4); break;
+    case SINGLE_HOLD: layer_on(_MACROS); break;
+    case DOUBLE_TAP: layer_invert(_MACROS); break;
     case DOUBLE_HOLD: layer_on(5); break;
-    case DOUBLE_SINGLE_TAP: layer_invert(4); break;
+    case DOUBLE_SINGLE_TAP: layer_invert(_MACROS); break;
   }
 }
 
 void bt_reset (qk_tap_dance_state_t *state, void *user_data) {
   switch (S1_state.state) {
     case SINGLE_TAP: unregister_code(KC_F3); break;
-    case SINGLE_HOLD: layer_off(4); break;
+    case SINGLE_HOLD: layer_off(_MACROS); break;
     case DOUBLE_TAP: break; //already inverted. Don't do anything.
     case DOUBLE_HOLD: layer_off(5); break;
     case DOUBLE_SINGLE_TAP: break;
@@ -262,14 +259,151 @@ void bt_reset (qk_tap_dance_state_t *state, void *user_data) {
   S1_state.state = 0;
 }
 
+// Tap Dance Definitions
+qk_tap_dance_action_t tap_dance_actions[] = {
+  // simple tap dance
+  [F12ETAPS] = ACTION_TAP_DANCE_DOUBLE(KC_F12,LSFT(LCTL(KC_F10))),
+  [REFRESH]  = ACTION_TAP_DANCE_DOUBLE(KC_R,LCTL(KC_R)),
+  [ENDESC]   = ACTION_TAP_DANCE_DOUBLE(KC_END, KC_ESC),
+  [Q_ESCAPE] = ACTION_TAP_DANCE_DOUBLE(KC_Q, KC_ESC),
+  [ENDHOME]  = ACTION_TAP_DANCE_DOUBLE(KC_END, KC_HOME),
+  [CALCCOMP] = ACTION_TAP_DANCE_DOUBLE(KC_CALCULATOR, KC_MY_COMPUTER),
+  [ALTF4]    = ACTION_TAP_DANCE_DOUBLE(KC_F4,LALT(KC_F4)),
+  [F6F7]     = ACTION_TAP_DANCE_DOUBLE(LSFT(KC_F6), LALT(KC_F7)),
+  [F1F13]    = ACTION_TAP_DANCE_DOUBLE(KC_F1, KC_F13),
+  [F2F14]    = ACTION_TAP_DANCE_DOUBLE(KC_F2, KC_F14),
+  [F5F15]    = ACTION_TAP_DANCE_DOUBLE(KC_F5, KC_F15),
+  [TABCOMBO] = ACTION_TAP_DANCE_FN_ADVANCED(NULL, tab_finished, tab_reset),
+  [F3D]      = ACTION_TAP_DANCE_FN_ADVANCED(NULL, bt_finished, bt_reset),
+  [COMMA]    = ACTION_TAP_DANCE_FN_ADVANCED(NULL, comma_finished, comma_reset),
+  [HTAB]     = ACTION_TAP_DANCE_FN_ADVANCED(NULL,h_finished, h_reset)
+};
+
+// bool process_record_user(uint16_t keycode, keyrecord_t *record) {
+//   if (!record->event.pressed) {
+//     switch (keycode) {
+
+//       case KC_SECRET_1 ... KC_SECRET_5:
+//           send_string(secret[keycode - KC_SECRET_1]);
+//           // clear_oneshot_layer_state(ONESHOT_OTHER_KEY_PRESSED);
+//           return true; break;
+
+//       case UP_ENTER_RESET:
+//           register_code(KC_UP);
+//           unregister_code(KC_UP);
+//           register_code(KC_ENTER);
+//           unregister_code(KC_ENTER);
+//           reset_keyboard();
+//           return false; break;
+
+//       case TIL_SLASH:
+//           SEND_STRING ("~/.");
+//           return false; break;
+
+//       case DBMS_OUT:
+//           SEND_STRING ("dbms_output.put_line('');");
+//           SEND_STRING (SS_TAP(X_LEFT) SS_TAP(X_LEFT) SS_TAP(X_LEFT));
+//           return false; break;
+
+//       case ID_MAN_IP:
+//           SEND_STRING ("http://dev-1967110238.us-east-1.elb.amazonaws.com");
+//           return false; break;
+
+//       case MODRESET:
+//           clear_mods();
+//           return false; break;
+
+//       case DEREF:
+//           SEND_STRING ("->");
+//           return false; break;
+
+//       case EQRIGHT:
+//           SEND_STRING ("=>");
+//           return false; break;
+
+//       case TICK3:
+//           SEND_STRING ("```");
+//           return false; break;
+
+//       case TILD3:
+//           SEND_STRING ("~~~");
+//           return false; break;
+//     }
+//   }
+//   return true;
+// };
+
+
+
+
 bool process_record_user(uint16_t keycode, keyrecord_t *record) {
-  switch (keycode) {
-    case KC_SECRET_1 ... KC_SECRET_5:
-    if (!record->event.pressed) {
-      send_string(secret[keycode - KC_SECRET_1]);
+  if (!record->event.pressed) {
+    switch (keycode) {
+      case KC_SECRET_1 ... KC_SECRET_5:
+          send_string(secret[keycode - KC_SECRET_1]);
+          // clear_oneshot_layer_state(ONESHOT_OTHER_KEY_PRESSED);
+          return true; break;
+      case UP_ENTER_RESET:
+          SEND_STRING("make ergodox_infinity:gordon:dfu-util");
+          register_code(KC_ENTER);
+          unregister_code(KC_ENTER);
+          reset_keyboard();
+          return false; break;
+
+      case TIL_SLASH:
+          SEND_STRING ("~/.");
+          return false; break;
+
+      case DBMS_OUT:
+          SEND_STRING ("dbms_output.put_line('');");
+          SEND_STRING (SS_TAP(X_LEFT) SS_TAP(X_LEFT) SS_TAP(X_LEFT));
+          return false; break;
+      case DIE_1000X_RIGHT:
+          SEND_STRING (SS_TAP(X_G) SS_TAP(X_G) SS_TAP(X_RIGHT) SS_TAP(X_B) SS_TAP(X_J));
+          return false; break;
+      case DIE_1000X_LEFT:
+          SEND_STRING (SS_TAP(X_GRAVE) SS_TAP(X_G) SS_TAP(X_LEFT) SS_TAP(X_B) SS_TAP(X_J));
+          return false; break;
+      case ID_MAN_IP:
+          SEND_STRING ("http://dev-1967110238.us-east-1.elb.amazonaws.com");
+          return false; break;
+
+      case MODRESET:
+          clear_mods();
+          return false; break;
+
+      case DEREF:
+          SEND_STRING ("->");
+          return false; break;
+
+      case EQRIGHT:
+          SEND_STRING ("=>");
+          return false; break;
+
+      case TICK3:
+          SEND_STRING ("```");
+
+          return false; break;
+
+      case SPRK_TCK:
+          SEND_STRING ("```");
+          SEND_STRING (SS_DOWN(X_LSHIFT) SS_TAP(X_ENTER) SS_UP(X_LSHIFT));
+          SEND_STRING (SS_DOWN(X_LSHIFT) SS_TAP(X_ENTER) SS_UP(X_LSHIFT));
+          SEND_STRING ("```");
+          SEND_STRING (SS_TAP(X_UP));
+          return false; break;
+
+      case TILD3:
+          SEND_STRING ("~~~");
+          return false; break;
     }
-    return false;
-    break;
+  }
+  else { //On key being pressed
+    switch (keycode) {
+      case KC_SECRET_1 ... KC_SECRET_5:
+          clear_oneshot_layer_state(ONESHOT_OTHER_KEY_PRESSED);
+          return false; break;
+    }
   }
   return true;
-}
+};
