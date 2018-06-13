@@ -1,6 +1,5 @@
 #include QMK_KEYBOARD_H
 
-#include "ergodox_ez.h"
 #include "debug.h"
 #include "action_layer.h"
 
