@@ -1,7 +1,7 @@
 B.fake
 ========
 
-A 60% keyboard with RGB
+A 60% keyboard with RGB. The B.fake pcb is a copy of the B.face PCB sold by [winkeyless](https://winkeyless.kr/). However, the switch matrix is actually the same as the [FaceW](https://github.com/qmk/qmk_firmware/tree/master/keyboards/facew), a ps2avr PCB sold on [mechanicalkeyboards.com](https://mechanicalkeyboards.com/).
 
 Keyboard Maintainer: QMK Community
 Hardware Supported: B.fake PCB
