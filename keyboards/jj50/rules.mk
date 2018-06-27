@@ -63,3 +63,5 @@ endif
 
 # programming options
 PROGRAM_CMD = ./keyboards/ps2avrGB/program $(TARGET).hex
+
+LAYOUTS = ortho_5x12
