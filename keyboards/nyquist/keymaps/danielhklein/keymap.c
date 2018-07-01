@@ -1,6 +1,4 @@
-#include "nyquist.h"
-#include "action_layer.h"
-#include "eeconfig.h"
+#include QMK_KEYBOARD_H
 
 /*
  Keymap is loosely based on DivergeJM's Nyquist keymap
