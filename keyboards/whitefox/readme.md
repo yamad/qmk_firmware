@@ -1,5 +1,4 @@
-WhiteFox
-========
+# WhiteFox
 
 A compact 65% keyboard.
 
