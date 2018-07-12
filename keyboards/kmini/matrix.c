@@ -48,6 +48,22 @@ static bool read_rows_on_col(matrix_row_t current_matrix[], uint8_t current_col)
 static void unselect_cols(void);
 static void select_col(uint8_t col);
 
+__attribute__ ((weak))
+void matrix_init_user(void) {}
+
+__attribute__ ((weak))
+void matrix_scan_user(void) {}
+
+__attribute__ ((weak))
+void matrix_init_kb(void) {
+  matrix_init_user();
+}
+
+__attribute__ ((weak))
+void matrix_scan_kb(void) {
+  matrix_scan_user();
+}
+
 inline
 uint8_t matrix_rows(void) {
     return MATRIX_ROWS;
