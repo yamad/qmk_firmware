@@ -1,8 +1,8 @@
-# 1up60hse
+# 1up60hse (hot swap edition)
 
-![1up60hse](imgur.com image replace me!)
+![1up60hse](https://i2.wp.com/www.1upkeyboards.com/wp-content/uploads/2018/08/PCB-1up-60-hotswap-group-RGB.jpg?fit=1280%2C1280&ssl=1)
 
-A 60% PCB with USB C, RGB underglow, backlighting, and hotswappable switches.
+A 60% PCB with USB C, RGB underglow, backlighting, hotswappable switches, and a standard ANSI layout.
 
 Keyboard Maintainer: [MechMerlin](https://github.com/mechmerlin)
 Hardware Supported: 1up60hse 60% PCB.
