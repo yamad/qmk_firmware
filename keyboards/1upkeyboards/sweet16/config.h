@@ -9,7 +9,7 @@
 #define DEVICE_VER      0x0001
 #define MANUFACTURER    1up Keyboards
 #define PRODUCT         Sweet16
-#define DESCRIPTION     4x4 grid 
+#define DESCRIPTION     4x4 grid
 
 /* key matrix size */
 #define MATRIX_ROWS 4
