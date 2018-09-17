@@ -19,8 +19,6 @@
 
 #include "config_common.h"
 
-#define PREVENT_STUCK_MODIFIERS
-
 #ifdef AUDIO_ENABLE
     #define STARTUP_SONG SONG(PLANCK_SOUND)
 #endif
