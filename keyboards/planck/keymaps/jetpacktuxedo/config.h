@@ -2,6 +2,7 @@
 
 #ifdef AUDIO_ENABLE
     #define STARTUP_SONG SONG(PLANCK_SOUND)
+    #define AUDIO_CLICKY
 #endif
 
 /*
