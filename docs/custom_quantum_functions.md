@@ -27,7 +27,7 @@ The first step to creating your own custom keycode(s) is to enumerate them. This
 
 Here is an example of enumerating 2 keycodes. After adding this block to your `keymap.c` you will be able to use `FOO` and `BAR` inside your keymap.
 
-```
+```c
 enum my_keycodes {
   FOO = SAFE_RANGE,
   BAR
@@ -44,7 +44,7 @@ These function are called every time a key is pressed or released.
 
 This example does two things. It defines the behavior for a custom keycode called `FOO`, and it supplements our Enter key by playing a tone whenever it is pressed.
 
-```
+```c
 bool process_record_user(uint16_t keycode, keyrecord_t *record) {
   switch (keycode) {
     case FOO:
@@ -75,16 +75,16 @@ The `keycode` argument is whatever is defined in your keymap, eg `MO(1)`, `KC_L`
 
 The `record` argument contains information about the actual press:
 
-```
+```c
 keyrecord_t record {
-+-keyevent_t event {
-| +-keypos_t key {
-| | +-uint8_t col
-| | +-uint8_t row
-| | }
-| +-bool     pressed
-| +-uint16_t time
-| }
+  keyevent_t event {
+    keypos_t key {
+      uint8_t col
+      uint8_t row
+    }
+    bool     pressed
+    uint16_t time
+  }
 }
 ```
 
@@ -100,7 +100,7 @@ This allows you to control the 5 LED's defined as part of the USB Keyboard spec.
 
 ### Example `led_set_user()` Implementation
 
-```
+```c
 void led_set_user(uint8_t usb_led) {
     if (usb_led & (1<<USB_LED_NUM_LOCK)) {
         PORTB |= (1<<0);
@@ -145,7 +145,7 @@ Before a keyboard can be used the hardware must be initialized. QMK handles init
 
 This example, at the keyboard level, sets up B1, B2, and B3 as LED pins.
 
-```
+```c
 void matrix_init_user(void) {
   // Call the keymap level matrix init.
 
@@ -190,7 +190,7 @@ This is controlled by two functions: `suspend_power_down_*` and `suspend_wakeup_
 
 This example, at the keyboard level, sets up B1, B2, and B3 as LED pins.
 
-```
+```c
 void suspend_power_down_user(void)
 {
     rgb_matrix_set_suspend_state(true);
@@ -216,7 +216,7 @@ This runs code every time that the layers get changed.  This can be useful for l
 
 This example shows how to set the [RGB Underglow](feature_rgblight.md) lights based on the layer, using the Planck as an example
 
-```
+```c
 uint32_t layer_state_set_user(uint32_t state) {
     switch (biton32(state)) {
     case _RAISE:
