@@ -55,12 +55,18 @@
 #ifdef TAPPING_TERM
 #undef TAPPING_TERM
 #endif // TAPPING_TERM
-#define TAPPING_TERM 175
+#ifdef KEYBOARD_ergodox_ez
+  #define TAPPING_TERM 185
+#else
+  #define TAPPING_TERM 175
+#endif
 
 
 // Disable action_get_macro and fn_actions, since we don't use these
 // and it saves on space in the firmware.
 #define NO_ACTION_MACRO
 #define NO_ACTION_FUNCTION
+
+#define DISABLE_LEADER
 
 #define MACRO_TIMER 5
