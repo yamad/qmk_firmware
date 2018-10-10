@@ -6,7 +6,7 @@ Not sure if your keyboard can run QMK? If it's a mechanical keyboard you built y
 
 ## Overview
 
-There are 4 main sections to this guide:
+There are 5 main sections to this guide:
 
 * [Getting Started](newbs_getting_started.md)
 * [Building Your First Firmware](newbs_building_firmware.md)
