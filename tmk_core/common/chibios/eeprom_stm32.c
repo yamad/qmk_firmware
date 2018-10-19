@@ -574,7 +574,7 @@ uint16_t EEPROM_update(uint16_t Address, uint16_t Data)
 {
     uint16_t temp;
     EEPROM_read(Address, &temp);
-    if (Address == Data)
+    if (temp == Data)
         return EEPROM_SAME_VALUE;
     else
         return EEPROM_write(Address, Data);

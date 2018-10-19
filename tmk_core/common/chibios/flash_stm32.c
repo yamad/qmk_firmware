@@ -16,13 +16,21 @@
  * Modifications for QMK and STM32F303 by Yiancar
  */
 
-#define STM32F303xC
+#if defined(EEPROM_EMU_STM32F303xC)
+    #define STM32F303xC
+    #include "stm32f3xx.h"
+#elif defined(EEPROM_EMU_STM32F103xB)
+    #define STM32F103xB
+    #include "stm32f1xx.h"
+#else
+    #error "not implemented."
+#endif
 
-#include "stm32f3xx.h"
 #include "flash_stm32.h"
 
-#define FLASH_KEY1          ((uint32_t)0x45670123)
-#define FLASH_KEY2          ((uint32_t)0xCDEF89AB)
+#if defined(EEPROM_EMU_STM32F103xB)
+    #define FLASH_SR_WRPERR FLASH_SR_WRPRTERR
+#endif
 
 /* Delay definition */
 #define EraseTimeout        ((uint32_t)0x00000FFF)
