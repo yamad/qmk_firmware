@@ -44,11 +44,7 @@ enum custom_keycodes {
 #define CTL_BSP MT(MOD_LCTL, KC_BSPC)  // Bkspce  Left Control
 #define HPR_RBC MT(MOD_HYPR, KC_RBRC) //  ]       Hyper
 #define SFT_EQL MT(MOD_RSFT, KC_EQL)  //  =       Right Shift
-#define SFT_UP  MT(MOD_RSFT, KC_UP)   //  Up      Right Shift
 #define CTL_BSL MT(MOD_RCTL, KC_BSLS) //  /       Right Control
-
-#define FN3_N   LT(_FN3    , KC_N)    //  N       Function Layer 3
-#define FN4_F   LT(_FN4    , KC_F)    //  F       Function Layer 4
 
 
 const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
