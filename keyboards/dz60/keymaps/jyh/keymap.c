@@ -46,7 +46,7 @@ enum custom_keycodes {
 #define SFT_EQL MT(MOD_RSFT, KC_EQL)  //  =       Right Shift
 #define CTL_BSL MT(MOD_RCTL, KC_BSLS) //  /       Right Control
 
-#define FN3_J   LT(_FN3    , KC_J)    //  J       Function Layer 3
+#define FN3_N   LT(_FN3    , KC_N)    //  N       Function Layer 3
 #define FN4_F   LT(_FN4    , KC_F)    //  F       Function Layer 4
 
 
@@ -81,8 +81,8 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 	[_QW] = LAYOUT_directional(
 	    GUI_GRV ,  KC_1  ,  KC_2  ,  KC_3  ,  KC_4  ,  KC_5  ,  KC_6  ,  KC_7  ,  KC_8  ,  KC_9  ,  KC_0  , KC_MINS, KC_EQL ,  KC_MEH , KC_BSPC,
 	      KC_TAB   ,  KC_Q  ,  KC_W  ,  KC_E  ,  KC_R  ,  KC_T  ,  KC_Y  ,  KC_U  ,  KC_I   ,  KC_O  ,  KC_P  , KC_LBRC, KC_RBRC,   CTL_BSL    ,
-		    CTL_ESC   ,  KC_A  ,  KC_S  ,  KC_D  , FN4_F  ,  KC_G  ,  KC_H  , FN3_J  ,  KC_K  ,  KC_L  , KC_SCLN, KC_QUOT,       KC_ENT        ,
-	          SFT_MIN,      KC_Z  ,  KC_X  ,  KC_C  ,  KC_V  ,  KC_B  ,  KC_N  ,  KC_M  , KC_COMM, KC_DOT , KC_SLSH, KC_RSFT,  KC_UP  , FN1    ,
+		    CTL_ESC   ,  KC_A  ,  KC_S  ,  KC_D  , FN4_F  ,  KC_G  ,  KC_H  ,  KC_J  ,  KC_K  ,  KC_L  , KC_SCLN, KC_QUOT,       KC_ENT        ,
+	          SFT_MIN,      KC_Z  ,  KC_X  ,  KC_C  ,  KC_V  ,  KC_B  , FN3_N  ,  KC_M  , KC_COMM, KC_DOT , KC_SLSH, KC_RSFT,  KC_UP  , FN1    ,
 	     KC_LCTL   ,   KC_LGUI   ,  KC_LALT   ,     CTL_BSP     ,     FN1    ,       KC_SPC       ,  KC_RALT,  FN2  , KC_LEFT, KC_DOWN, KC_RGHT),
 
   /* Primary Layer
@@ -132,7 +132,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 	//  Tab         Q        W        E        R        T        Y        U        I        O        P        [        ]          |
       _______  ,  KC_1  ,  KC_2  ,  KC_3  ,  KC_4  ,  KC_5  ,  KC_6  ,  KC_7  ,  KC_8  ,  KC_9  ,  KC_0  , KC_MINS,  KC_EQL,   _______   ,
 	//    Caps         A        S        D        F        G        H        J        K        L        ;        '            Enter
-  	    _______   , _______, _______, _______, _______, _______, _______, _______, _______, _______, _______, _______,       _______     ,
+	    _______   , _______, _______, _______, _______, _______, KC_LEFT, KC_DOWN,  KC_UP , KC_RGHT, _______, _______,       _______     ,
 	//      SHIFT       Z         X        C        V        B       N         M        ,        .        /      Shift      Up      Fn1
  	       _______  , _______, _______, _______, _______, _______, _______, _______, _______, _______, _______, _______, _______, _______,
 	//  Ctrl        Gui          Alt            Bksp            Fn1             Space           Alt      Fn2      Left     Down    Right
