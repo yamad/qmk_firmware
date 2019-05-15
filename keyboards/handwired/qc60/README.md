@@ -5,8 +5,8 @@ QC60
 
 A split 60% staggered keyboard made by Peioris.
 
-Keyboard Maintainer: [Peioris](https://github.com/coarse)
-Hardware Supported: [QC60 PCB](https://imgur.com/6tIxJ1N), Pro Micro
+Keyboard Maintainer: [Peioris](https://github.com/coarse)  
+Hardware Supported: [QC60 PCB](https://imgur.com/6tIxJ1N), Pro Micro  
 Hardware Availability: N/A at the moment
 
 Handwiring Resources: [Pro Micro Wiring](https://imgur.com/UycEYlG), [Keymapping](http://www.keyboard-layout-editor.com/#/gists/a54720ecfd934155b179657938e8e87b)

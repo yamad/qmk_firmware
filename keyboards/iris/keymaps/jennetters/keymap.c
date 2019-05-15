@@ -45,7 +45,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   //  |----+----+----+----+----+----+----.    ,----|----+----+----+----+----+----|
   //  | SFT| Z  | X  | C  | V  | B  | SPC|    | SPC| N  | M  | ,  | .  | /  | ENT|
   //  `----+----+----+--+-+----+----+----/    \----+----+----+----+----+----+----'
-  //                   \  GUI| ALT| CTL /      \RASE\ CTL | SFT /
+  //                   \  GUI| ALT| CTL /      \RASE\ CTL | SFT / 
   //                    `----+----+----'        `----+----+----'
 
   TD(ESC_GR), KC_1, KC_2, KC_3, KC_4, KC_5, KC_6, KC_7, KC_8, KC_9, KC_0, KC_MINS, \
@@ -56,7 +56,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   ),
 
   [_LOWER] = LAYOUT_kc(
-
+ 
   //  ,----+----+----+----+----+----.              ,----+----+----+----+----+----.
   //  |  ~ | !  | @  | #  | $  | %  |              | ^  | &  | *  | (  | )  | DEL|
   //  |----+----+----+----+----+----|              |----+----+----+----+----+----|
@@ -66,14 +66,14 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   //  |----+----+----+----+----+----+----.    ,----|----+----+----+----+----+----|
   //  | \  |    |    |    |    | [  | (  |    | )  | ]  |    |    |    | -  |    |
   //  `----+----+----+--+-+----+----+----/    \----+----+----+----+----+----+----'
-  //                   \     |    | DEL /      \ DEL\     |     /
+  //                   \     |    | DEL /      \ DEL\     |     / 
   //                    `----+----+----'        `----+----+----'
 
   TILD, EXLM, AT, HASH, DLR, PERC, CIRC, AMPR, ASTR, LPRN, RPRN, DEL, \
    , 1, 2, 3, 4, 5, 6, 7, 8, 9, 0, , \
    , , , , , , , , , , ,PIPE, \
   BL_S, , , , , LCBR, LPRN, RPRN, RCBR, , , , MINS, , \
-   , , DEL, DEL, ,
+   , , DEL, DEL, ,  
   ),
 
   [_RAISE] = LAYOUT_kc(
@@ -86,14 +86,14 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   //  |----+----+----+----+----+----+----.    ,----|----+----+----+----+----+----|
   //  |    |    |    |    |    |    |    |    |    |    |    |    |    | \  |    |
   //  `----+----+----+--+-+----+----+----/    \----+----+----+----+----+----+----'
-  //                   \     |    |     /      \    \     |     /
+  //                   \     |    |     /      \    \     |     / 
   //                    `----+----+----'        `----+----+----'
 
    , F1, F2, , , , , , , LBRC, RBRC, EQL, \
    , , UP, , , , YUNO, NOVY, , LCBR, RCBR, DEL, \
    , LEFT, DOWN, RIGHT, , , SHRG, , , , PIPE, , \
    , , , , , , , , , , , , BSLS, , \
-   , , , , ,
+   , , , , , 
   ),
 
   [_ADJUST] = LAYOUT(
@@ -200,8 +200,8 @@ bool process_record_user(uint16_t keycode, keyrecord_t *record) {
       if (record->event.pressed) {
         SEND_STRING("ლ(ಠ_ಠლ)"); // YUNO?!
                 return false;
-      }
-    */
+      } 
+    */ 
   }
   return true;
 }

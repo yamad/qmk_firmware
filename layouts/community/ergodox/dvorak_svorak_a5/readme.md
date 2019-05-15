@@ -1,4 +1,4 @@
-# ErgoDox EZ Svorak A5
+# ErgoDox EZ Svorak A5 
 
 This layout is supposed to be an implementation of the [Svorak A5
 layout](http://aoeu.info/s/dvorak/svorak). Unfortunately, the Ergodox EZ lacks
@@ -39,3 +39,4 @@ board.
 # Author
 Erik Thorsell
 erikthorsell @ github and twitter
+

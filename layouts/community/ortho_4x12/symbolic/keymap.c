@@ -126,7 +126,7 @@ void DualKeyPressed ( bool brother_state, uint8_t target ){
   return;
 }
 
-void DualKeyReleased ( bool brother_state, uint8_t target1 ){
+void DualKeyReleased ( bool brother_state, uint8_t target1 ){ 
 
   if( brother_state ) return ;
 
@@ -134,11 +134,11 @@ void DualKeyReleased ( bool brother_state, uint8_t target1 ){
   return ;
 }
 
-bool LayerSwitch ( keyrecord_t *record, bool *key_state, bool brother, uint8_t layer ){
+bool LayerSwitch ( keyrecord_t *record, bool *key_state, bool brother, uint8_t layer ){ 
   if ( record -> event.pressed ) {
     *key_state = true;
     DualKeyPressed( brother, layer );
-  }
+  } 
   else {
     *key_state = false;
     DualKeyReleased( brother, layer );

@@ -4,8 +4,8 @@
 
 A wireless version of the Let's Split: a split 40% ortholinear keyboard.
 
-Keyboard Maintainer: [William Wilson](https://github.com/GlenPickle)
-Hardware Supported: Chimera LS PCB, WaveShare core nRF51822
+Keyboard Maintainer: [William Wilson](https://github.com/GlenPickle)  
+Hardware Supported: Chimera LS PCB, WaveShare core nRF51822  
 Hardware Availability: [Gerbers](https://github.com/GlenPickle/Chimera/tree/master/ls/gerbers)
 
 Make example for this keyboard (after setting up your build environment):

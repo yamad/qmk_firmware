@@ -1,8 +1,8 @@
 Techkeys SixKeyBoard
 ===
 
-Keyboard Maintainer: QMK Community
-Hardware Supported: Techkeys SixKeyBoard PCB
+Keyboard Maintainer: QMK Community  
+Hardware Supported: Techkeys SixKeyBoard PCB  
 Hardware Availability: [Techkeys](http://techkeys.us/collections/accessories/products/sixkeyboard)
 
 Make example for this keyboard (after setting up your build environment):

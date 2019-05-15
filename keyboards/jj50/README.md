@@ -8,9 +8,9 @@ Most of the code was taken and amended from YMD96, which in itself was taken fro
 
 Note that this is a complete replacement for the firmware, so you won't be
 using Bootmapper Client to change any keyboard settings, since not all the
-USB report options are supported.
+USB report options are supported.  
 
-Hardware Supported: JJ50 with the ATmega32a chip.
+Hardware Supported: JJ50 with the ATmega32a chip.  
 Hardware Availability: [KPrepublic on AliExpress](https://www.aliexpress.com/item/jj50-v1-0-Custom-Mechanical-Keyboard-50-PCB-programmed-50-preonic-layouts-bface-firmware-with-rgb/32848915277.html)
 
 This version by [Wayne K. Jones](github.com/WarmCatUK).
@@ -58,11 +58,11 @@ Since the JJ50 uses an ATmega32a chip instead of the 32u4, you need to download 
 On Windows, I use [MINGw](http://www.mingw.org/) to compile the keymaps. On Linux or OSX you can simply use the terminal.
 
 Once you have those two pieces of software:
-Build the keyboard with
+Build the keyboard with  
 ```
 $ make jj50:default
-```
-If you make your own layout, change the `default` word to whatever your layout is.
+```  
+If you make your own layout, change the `default` word to whatever your layout is.  
 
 And flash the compiled hex file with `HIDBootFlash`. Simply put the board in flashing mode by plugging it in while holding the key below the top right key, and click `find device`. Then you can specify the .hex file and flash it to the device.
 
@@ -78,4 +78,6 @@ $ rm jj50_default.hex
 $ make -B jj50:default
 $ make -B jj50:default:program
 ```
+
+
 

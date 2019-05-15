@@ -44,20 +44,20 @@ def c_layout(i, definition, template):
     c_name = layer_names[i]
     pretty_name = c_name.strip('_').capitalize()
     layout = d['layout']
-
+    
     surround = lambda s: ''.join(interleave_longest(['│']*(len(s)+1), s))
     layer = list(map(uni, definition))
     layer[41] = layer[41].center(11)
     layer = chunked(layer, 12)
     rows = intersperse(mid, map(surround, layer))
     pretty = '\n'.join(itertools.chain([top], rows, [bottom]))
-
+    
     surround = lambda s: ', '.join(s)
     layer = list(map(lambda k: layer_name.get(k, k), definition))
     layer = chunked(layer, 12)
     rows = map(surround, layer)
     c_layer = ',\n    '.join(itertools.chain([], rows, []))
-
+    
     return template.format(pretty_name, pretty, c_name, layout, c_layer)
 
 start = '// START_REPLACEMENT\n'

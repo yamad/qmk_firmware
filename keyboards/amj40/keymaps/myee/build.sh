@@ -1,5 +1,5 @@
 #!/bin/bash
-# adjust for cpu
+# adjust for cpu 
 # -j 16 gave best result on a hyperthreaded quad core core i7
 
 LIMIT=10
@@ -22,7 +22,7 @@ function wait_bootloader {
 		ENDTIME=$(date +"%s")
 		DURATION=$(($ENDTIME-$STARTTIME))
 		if [ $REMIND -eq 0 -a $DURATION -gt $LIMIT ]
-		then
+		then 
 			echo "Did you forget to press the reset button?"
 			REMIND=1
 		fi

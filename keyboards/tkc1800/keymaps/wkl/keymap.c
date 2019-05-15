@@ -132,7 +132,7 @@ void iota_gfx_task_user(void) {
 
   matrix_clear(&matrix);
   matrix_write_P(&matrix, PSTR("TKC1800"));
-
+  
   uint8_t layer = biton32(layer_state);
 
   char buf[40];

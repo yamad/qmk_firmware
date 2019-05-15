@@ -25,9 +25,9 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 
 /* Qwerty
  * ,-------------.
- * |   1  |  2   |
+ * |   1  |  2   |  
  * |------+------|
- * |   3  |  4   |
+ * |   3  |  4   | 
  * |------+------|
  * |   5  |  6   |
  * |------+------|
@@ -43,9 +43,9 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 
 /* Function
  * ,-------------.
- * |   Q  |CALDEL|
+ * |   Q  |CALDEL|  
  * |------+------|
- * |   A  |TSKMGR|
+ * |   A  |TSKMGR| 
  * |------+------|
  * |   Z  |  X   |
  * |------+------|
@@ -62,5 +62,5 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 };
 
 void matrix_init_user(void) {
-
+    
 }

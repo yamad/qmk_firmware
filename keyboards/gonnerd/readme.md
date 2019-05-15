@@ -3,8 +3,8 @@ GON NerD
 
 A Korean Custom TKL.
 
-Keyboard Maintainer: QMK Community
-Hardware Supported: GON NerD TKL PCB
+Keyboard Maintainer: QMK Community  
+Hardware Supported: GON NerD TKL PCB  
 Hardware Availability: [gonskeyboardworks.com](http://www.gonskeyboardworks.com/pcbs-and-controllers/60-nerd-tkl-ver20-pcb.html)
 
 Make example for this keyboard (after setting up your build environment):

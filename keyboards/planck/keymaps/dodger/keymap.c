@@ -256,20 +256,20 @@ bool process_record_user(uint16_t keycode, keyrecord_t *record) {
       return false;
       break;
     case LENNY:
-	if (record->event.pressed) {
-		SEND_STRING("()");
-	}
-	return false; break;
+    	if (record->event.pressed) {
+    		SEND_STRING("()");
+    	}
+    	return false; break;
     case COMMENTHEAD:
-	if (record->event.pressed) {
-		SEND_STRING("// ---------------------------------------------------------------");
-	}
-	return false; break;
+    	if (record->event.pressed) {
+    		SEND_STRING("// ---------------------------------------------------------------");
+    	}
+    	return false; break;
     case RICKANDMORT:
-	if (record->event.pressed) {
-		SEND_STRING("// ***************************************************************");
-	}
-	return false; break;
+    	if (record->event.pressed) {
+    		SEND_STRING("// ***************************************************************");
+    	}
+    	return false; break;
     case MARIO:
         if(record->event.pressed) {
           #ifdef AUDIO_ENABLE

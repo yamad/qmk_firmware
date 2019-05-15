@@ -85,9 +85,9 @@
 // Fillers to make layering more clear
 #define _______ KC_TRNS
 #define XXXXXXX KC_NO
-#define KC_ KC_TRNS
+#define KC_ KC_TRNS 
 
-/* TODO:
+/* TODO: 
  *
  * DONE: RESET and CAD into macro layer.
  * DONE: WINUP AND WINDOWN in NAV layer
@@ -113,7 +113,7 @@
  * Russain layer
  * Hebrew layer
  * Get rid of stupid git pull and push macros.
- *
+ * 
 */
 
 //Tap dance enums
@@ -127,14 +127,14 @@ enum {
   CALC_PRINTSCREEN
 };
 
-static xtap ttt_state = {
+static xtap ttt_state = { 
   .is_press_action = true,
   .state = 0
 };
 
 
 //Already exists in gordon.c, shouldn't need this anymore
-/*// To activate SINGLE_HOLD, you will need to hold for 200ms first.
+/*// To activate SINGLE_HOLD, you will need to hold for 200ms first. 
 // This tap dance favors keys that are used frequently in typing like 'f'
 int cur_dance (qk_tap_dance_state_t *state) {
   if (state->count == 1) {
@@ -151,8 +151,8 @@ int cur_dance (qk_tap_dance_state_t *state) {
   else if (state->count == 2) {
     if (state->interrupted) return DOUBLE_SINGLE_TAP;
     else if (state->pressed) return DOUBLE_HOLD;
-    else return DOUBLE_TAP;
-  }
+    else return DOUBLE_TAP; 
+  } 
   else if ((state->count == 3) && ((state->interrupted) || (!state->pressed))) return TRIPLE_TAP;
   else if (state->count == 3) return TRIPLE_HOLD;
   else return 8; //magic number. At some point this method will expand to work for more presses
@@ -194,7 +194,7 @@ void TTT_reset (qk_tap_dance_state_t *state, void *user_data) {
 
 qk_tap_dance_action_t tap_dance_actions[] = {
   // simple tap dance
-  [F12ETAPS] = ACTION_TAP_DANCE_DOUBLE(KC_F12,LSFT(LCTL(KC_F10))),
+  [F12ETAPS] = ACTION_TAP_DANCE_DOUBLE(KC_F12,LSFT(LCTL(KC_F10))),  
   [CALCCOMP] = ACTION_TAP_DANCE_DOUBLE(KC_CALCULATOR, KC_MY_COMPUTER),
   [CALC_PRINTSCREEN] = ACTION_TAP_DANCE_DOUBLE(KC_CALCULATOR, KC_PSCR),
   [ALTF4] = ACTION_TAP_DANCE_DOUBLE(KC_F4,LALT(KC_F4)),
@@ -218,7 +218,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   // \------------------+----+----+---/       \---+----+----+-------------------/
   ),
 
-  [_NUMPAD] = KC_KEYMAP(
+  [_NUMPAD] = KC_KEYMAP(  
   //,----+----+----+----+----+----+----.     ,----+----+----+----+----+----+----.
          ,    ,    ,    ,ASTR,    ,    ,          ,    , 7  , 8  , 9  ,ASTR,/**/,
   //|----+----+----+----+----+----+----|     |----+----+----+----+----+----+----|
@@ -226,11 +226,11 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   //|----+----+----+----+----+----+----|     |----+----+----+----+----+----+----|
          ,    ,    ,    ,SLSH,    ,    ,          ,    , 1  , 2  , 3  ,SLSH,    ,
   //|----+----+----+----+----+----+----|     |----+----+----+----+----+----+----|
-                             ,    ,                     , 0
+                             ,    ,                     , 0  
   // \------------------+----+----+---/       \---+----+----+-------------------/
   ),
 
-  [_SYMBOLS] = KC_KEYMAP(
+  [_SYMBOLS] = KC_KEYMAP(  
   //,----+----+-----+----+----+----+----.     ,----+----+----+----+----+----+----.
          ,EXLM, AT  ,LCBR,RCBR,HASH,    ,          ,CIRC,AMPR,ASTR,LPRN,RPRN,/**/,
   //|----+----+-----+----+----+----+----|     |----+----+----+----+----+----+----|
@@ -242,7 +242,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   // \-------------------+----+----+---/       \---+----+----+-------------------/
   ),
 
-  [_FUNCTION] = KC_KEYMAP(
+  [_FUNCTION] = KC_KEYMAP(  
   //,----+----+----+----+----+----+----.     ,----+----+----+----+----+----+----.
     F6F7 ,F1  ,F2  ,F3  ,ALF4,F5  ,F6  ,      F7  ,F8  ,F9  ,F10 ,F11 ,F12 ,/**/,
   //|----+----+----+----+----+----+----|     |----+----+----+----+----+----+----|
@@ -250,11 +250,11 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   //|----+----+----+----+----+----+----|     |----+----+----+----+----+----+----|
          ,    ,    ,    ,    ,    ,    ,          ,    ,    ,    ,    ,    ,    ,
   //|----+----+----+----+----+----+----|     |----+----+----+----+----+----+----|
-                             ,    ,                    ,
+                             ,    ,                    ,    
   // \------------------+----+----+---/       \---+----+----+-------------------/
   ),
 
-  [_NAV] = KC_KEYMAP(
+  [_NAV] = KC_KEYMAP(  
   //,----+----+----+----+----+----+----.     ,----+----+----+----+----+----+----.
       ,   ,SNAPLEFT,/**/,SNAPRIGHT,,  ,           ,    ,    , UP ,    ,    ,    ,
   //|----+----+----+----+----+----+----|     |----+----+----+----+----+----+----|
@@ -262,11 +262,11 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   //|----+----+----+----+----+----+----|     |----+----+----+----+----+----+----|
     ,    ,WORKLEFT,    ,WORKRIGHT,,    ,          ,    ,PGUP,PGDN,    ,    ,    ,
   //|----+----+----+----+----+----+----|     |----+----+----+----+----+----+----|
-                            CDEL ,DEL,                 ,
+                            CDEL ,DEL,                 ,    
   // \------------------+----+----+---/       \---+----+----+-------------------/
   ),
 
-  [_TEXTNAV] = KC_KEYMAP(
+  [_TEXTNAV] = KC_KEYMAP(  
   //,----+----+----+----+----+----+----.     ,----+----+----+----+----+----+----.
          ,   ,    ,    ,    ,    ,  ,             ,    ,    ,/**/,    ,    ,    ,
   //|----+----+----+----+----+----+----|     |----+----+----+----+----+----+----|
@@ -274,11 +274,11 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   //|----+----+----+----+----+----+----|     |----+----+----+----+----+----+----|
          ,    ,    ,    ,    ,    ,    ,          ,    ,    ,    ,    ,    ,    ,
   //|----+----+----+----+----+----+----|     |----+----+----+----+----+----+----|
-                                 ,    ,                 ,
+                                 ,    ,                 ,    
   // \------------------+----+----+---/       \---+----+----+-------------------/
   ),
 
-   [_MOUSE] = KC_KEYMAP(
+   [_MOUSE] = KC_KEYMAP(  
   //,----+----+----+----+----+----+----.     ,----+----+----+----+----+----+----.
          ,    ,    ,MS_UP,   ,   ,    ,      ,    ,    , UP ,    ,    ,    ,/**/
   //|----+----+----+----+----+----+----|     |----+----+----+----+----+----+----|
@@ -286,12 +286,12 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   //|----+----+----+----+----+----+----|     |----+----+----+----+----+----+----|
          ,    ,    ,    ,    ,    ,    ,          ,    ,    ,    ,    ,    ,    ,
   //|----+----+----+----+----+----+----|     |----+----+----+----+----+----+----|
-                      ,MS_BTN1 ,MS_BTN2              ,
+                      ,MS_BTN1 ,MS_BTN2              ,    
   // \------------------+----+----+---/       \---+----+----+-------------------/
-  ),
+  ), 
 
 
-  [_MACROS] = KC_KEYMAP(
+  [_MACROS] = KC_KEYMAP(  
   //,----+----+----+----+----+----+----.     ,----+----+----+----+----+----+----.
     /**/,RESET,SECRET_2,SECRET_3,   ,   ,   ,SYSTEM_SLEEP,    ,    ,INCL,    ,    ,    ,
   //|----+----+----+----+----+----+----|     |----+----+----+----+----+----+----|
@@ -299,7 +299,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   //|----+----+----+----+----+----+----|     |----+----+----+----+----+----+----|
      SCAP,    ,    ,    ,    ,    ,    ,          ,    ,    ,    ,    ,    ,SCAP,
   //|----+----+----+----+----+----+----|     |----+----+----+----+----+----+----|
-                             ,    ,                    ,
+                             ,    ,                    ,    
   // \------------------+----+----+---/       \---+----+----+-------------------/
   )
 
@@ -349,11 +349,11 @@ const macro_t *action_get_macro(keyrecord_t *record, uint8_t id, uint8_t opt)
   }
   return MACRO_NONE;
 };
-
+ 
 
 void matrix_scan_user(void) {
     uint8_t layer = biton32(layer_state);
-
+    
     switch (layer) {
       case _QWERTY:
         set_led_green;
@@ -381,7 +381,7 @@ void matrix_scan_user(void) {
         _delay_ms(45);
         set_led_blue;
         _delay_ms(45);
-        break;
+        break;  
       default:
         set_led_green;
         break;

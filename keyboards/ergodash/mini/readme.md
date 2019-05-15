@@ -2,8 +2,8 @@
 
 ![ErgoDash mini](https://github.com/omkbd/picture/blob/master/Ergodashmini.jpg)
 
-Keyboard Maintainer: [omkbd](https://github.com/omkbd) [@omkbd](https://twitter.com/omkbd)
-Hardware Supported: ErgoDash mini PCB, Pro Micro ATmega32u4
+Keyboard Maintainer: [omkbd](https://github.com/omkbd) [@omkbd](https://twitter.com/omkbd)  
+Hardware Supported: ErgoDash mini PCB, Pro Micro ATmega32u4  
 Hardware Availability: Order your own [yourself](https://github.com/omkbd/ErgoDash)
 
 

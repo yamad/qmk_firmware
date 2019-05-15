@@ -4,7 +4,7 @@ These layouts are derived from what I was using on my Kinesis Contoured keyboard
 
 There are minor changes in the base keywell layout of non-alpha keys (e.g., CapsLock is ESC/Ctl, arrow clusters on one side), while the thumb clusters deviate more from the default layout.
 
-Changes to the thumb clusters include:
+Changes to the thumb clusters include: 
 * The navigations keys moved to function layers.
 * The function of 2u keys have been reversed - I've always used space with my left thumb, and I find it more helpful to have access to Space and Enter while using my mouse/trackball.
 * Backspace have been duplicated on both clusters.
@@ -47,9 +47,9 @@ Persistent default layer has been enabled for Colemak and QWERTY.  The gaming/va
 	                    | Space | Enter |App/Alt|                   |  RGUI | Delete|  Bspc |
 	                    |   /   |   /   |-------|                   |-------|   /   |   /   |
 	                    |  Fn   | Number|  Bspc |                   | Enter |Number2|  Fn2  |
-	                    `-----------------------'                   `-----------------------'
-
-
+	                    `-----------------------'                   `-----------------------' 
+	
+	
 ### QWERTY
 	(Keys separated by /: tap for first, hold for second; uses Space Cadet Shifts)
 	,-----------------------------------------------------------------------------------------------------------.
@@ -65,15 +65,15 @@ Persistent default layer has been enabled for Colemak and QWERTY.  The gaming/va
 	|SC Shift|   Z  |   X  |   C  |   V  |   B  |                   |   N  |   M  |   ,  |   .  |   /  |SC Shift|
 	`--------+------+------+------+------+------'                   `------+------+------+------+------+--------'
 	         |  Ins |   `  |   [  |   ]  |                                 | Left | Down |  Up  | Right|
-		 `---------------------------'                                 `---------------------------'
+	       	 `---------------------------'                                 `---------------------------'
 	                            ,---------------.                   ,---------------.
 	                            |Esc/Ctl| Hyper |                   |  RAlt |  RCtl |
 	                    ,-------|-------|-------|                   |-------+-------+-------.
 	                    | Space | Enter |App/Alt|                   |  RGUI | Delete|  Bspc |
 	                    |   /   |   /   |-------|                   |-------|   /   |   /   |
 	                    |  Fn   | Number|  Bspc |                   | Enter |Number2|  Fn2  |
-	                    `-----------------------'                   `-----------------------'
-
+	                    `-----------------------'                   `-----------------------' 
+	
 
 ### Numbers & Symbols layer
 	(Multiple characters: single-tap for first, double-tap for second)
@@ -97,8 +97,8 @@ Persistent default layer has been enabled for Colemak and QWERTY.  The gaming/va
 	                    |       |       |       |                   |       |       |       |
 	                    |       |       |-------|                   |-------|       |       |
 	                    |       |       |       |                   |       |       |       |
-	                    `-----------------------'                   `-----------------------'
-
+	                    `-----------------------'                   `-----------------------' 
+	
 
 ### Function layer
 	,-----------------------------------------------------------------------------------------------------------.
@@ -121,8 +121,8 @@ Persistent default layer has been enabled for Colemak and QWERTY.  The gaming/va
 	                    |       |       |       |                   |       |       |       |
 	                    |       |       |-------|                   |-------|       |       |
 	                    |       |       |       |                   |       |       |       |
-	                    `-----------------------'                   `-----------------------'
-
+	                    `-----------------------'                   `-----------------------' 
+	
 
 ### Numpad layer
 	(Left side duplicates layout from the Numbers layer, just with numpad output; right side layout close to PC numpad layout)
@@ -146,8 +146,8 @@ Persistent default layer has been enabled for Colemak and QWERTY.  The gaming/va
 	                    |       |       |       |                   |       |       |       |
 	                    |       |       |-------|                   |-------|       |       |
 	                    |       |       |       |                   |       |       |       |
-	                    `-----------------------'                   `-----------------------'
-
+	                    `-----------------------'                   `-----------------------' 
+	
 
 ### Colemak gaming/vanilla
 	(Limited access to Function or Numbers layers; mainly used for gaming; double-tap and hold TD(ADJ) above LAlt to access Adjust layer)
@@ -171,8 +171,8 @@ Persistent default layer has been enabled for Colemak and QWERTY.  The gaming/va
 	                    |       |       |  LAlt |                   |  RGUI |       |       |
 	                    | Space | Enter |-------|                   |-------| Delete|  Bspc |
 	                    |       |       |Bspc/FN|                   | Ent/NS|       |       |
-	                    `-----------------------'                   `-----------------------'
-
+	                    `-----------------------'                   `-----------------------' 
+	
 
 ### QWERTY gaming/vanilla
 	(Limited access to Function or Numbers layers; mainly used for gaming; double-tap and hold TD(ADJ) above LAlt to access Adjust layer)
@@ -196,8 +196,8 @@ Persistent default layer has been enabled for Colemak and QWERTY.  The gaming/va
 	                    |       |       |  LAlt |                   |  RGUI |       |       |
 	                    | Space | Enter |-------|                   |-------| Delete|  Bspc |
 	                    |       |       |Bspc/FN|                   | Ent/NS|       |       |
-	                    `-----------------------'                   `-----------------------'
-
+	                    `-----------------------'                   `-----------------------' 
+	
 ### Adjust layer
 	(Press Enter/Number + Delete/Number2 under non-gaming/vanilla layers or press & hold Adjust key on function row; Numpad is a toggle)
 	,-----------------------------------------------------------------------------------------------------------.
@@ -220,4 +220,5 @@ Persistent default layer has been enabled for Colemak and QWERTY.  The gaming/va
 	                    |       |       |       |                   |       |       |       |
 	                    |       |       |-------|                   |-------|       |       |
 	                    |       |       |       |                   |       |       |       |
-	                    `-----------------------'                   `-----------------------'
+	                    `-----------------------'                   `-----------------------' 
+ 	

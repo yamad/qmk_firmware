@@ -179,10 +179,10 @@ void matrix_scan_user(void) {
     uint8_t layer = biton32(layer_state);
 
     switch (layer) {
-	case _QWERTY:
-	case _WORKMAN:
-		set_led_off;
-		break;
+    	case _QWERTY:
+    	case _WORKMAN:
+    		set_led_off;
+    		break;
         case _NUMBERS:
             set_led_blue;
             break;
@@ -206,3 +206,5 @@ void matrix_scan_user(void) {
 void matrix_init_user(void) {
 	set_unicode_input_mode(UC_LNX); // or UC_WINC
 };
+
+

@@ -129,7 +129,7 @@ const macro_t *action_get_macro(keyrecord_t *record, uint8_t id, uint8_t opt)
                   return MACRO(T(ESC), END);
                 }
           	}
-		break;
+          	break;
 
         break;
     }
@@ -184,7 +184,7 @@ bool process_record_user(uint16_t keycode, keyrecord_t *record) {
 
   //FUNCSHIFT has been shifted by the SHIFT handling, some keys need to be excluded
   if (layer == _FUNCSHIFT) {
-	//F1-F12 should be sent as unshifted keycodes,
+  	//F1-F12 should be sent as unshifted keycodes,
   	//and ] needs to be unshifted or it is sent as }
   	if ( (keycode >= KC_F1 && keycode <= KC_F12)
   	   || keycode == KC_RBRC ) {

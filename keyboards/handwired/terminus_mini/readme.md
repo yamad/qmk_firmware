@@ -2,9 +2,9 @@
 
 Custom handwired keyboard.
 
-Keyboard Maintainer: [James Morgan](https://github.com/mogranjm)
-Hardware Supported: Custom handwired keyboard
-Hardware Availability:
+Keyboard Maintainer: [James Morgan](https://github.com/mogranjm)  
+Hardware Supported: Custom handwired keyboard    
+Hardware Availability: 
 
 Make example for this keyboard (after setting up your build environment):
 

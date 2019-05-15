@@ -55,3 +55,4 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
     { KC_##K06, KC_##K16, KC_##K26, KC_##K36, KC_##K46, KC_##K56, KC_##K66, KC_##K76, KC_##K86, KC_##K96, KC_##KA6, KC_##KB6, KC_##KC6, KC_##KD6, KC_##KE6 }, \
     { KC_##K07, KC_##K17, KC_##K27, KC_##K37, KC_##K47, KC_##K57, KC_##K67, KC_##K77, KC_NO,    KC_NO,    KC_##KA7, KC_##KB7, KC_##KC7, KC_##KD7, KC_##KE7 }  \
 }
+

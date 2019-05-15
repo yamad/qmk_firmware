@@ -8,7 +8,7 @@ There are three available modes for hooking up PS/2 devices: USART (best), inter
 
 ### The Cirtuitry between Trackpoint and Controller
 
-To get the things working, a 4.7K drag is needed between the two lines DATA and CLK and the line 5+.
+To get the things working, a 4.7K drag is needed between the two lines DATA and CLK and the line 5+. 
 
 ```
 
@@ -19,7 +19,7 @@ To get the things working, a 4.7K drag is needed between the two lines DATA and 
 MODULE    5+  --------+--+--------- PWR   CONTROLLER
                       |
                      4.7K
-                      |
+                      |    
           CLK   ------+------------ PIN
 ```
 

@@ -11,3 +11,4 @@ to the main layer)
 * Quote is now on L1
 * Small tweaks to make modifiers work a little more consistently
 * Greatly increase the tapping term to make the tap-dance mods easier to use
+

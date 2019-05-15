@@ -2,8 +2,8 @@
 
 Firmware for the GSKT-00 PCB
 
-Keyboard Maintainer: [/u/iNachie](https://github.com/nachie)
-Hardware Supported: GSKT-00 PCB
+Keyboard Maintainer: [/u/iNachie](https://github.com/nachie)  
+Hardware Supported: GSKT-00 PCB  
 Hardware Availability: [/u/iNachie](https://www.reddit.com/user/inachie/)
 
 Make example for this keyboard (after setting up your build environment):

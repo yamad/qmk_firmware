@@ -8,8 +8,8 @@
 
 The KBD19x is a compact-1800 keyboard kit produced by KBDfans, offering a number of layout options.
 
-Keyboard Maintainer: [jshuf](https://github.com/jshuf)
-Hardware Supported: KBD19x PCB
+Keyboard Maintainer: [jshuf](https://github.com/jshuf)  
+Hardware Supported: KBD19x PCB  
 Hardware Availability: [KBDfans](https://kbdfans.cn)
 
 Make example for this keyboard (after setting up your build environment):

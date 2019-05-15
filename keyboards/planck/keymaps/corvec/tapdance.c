@@ -153,3 +153,4 @@ qk_tap_dance_action_t tap_dance_actions[] = {
   [TD_LBRC_RALT_LCBR] = ACTION_TAP_DANCE_FN_ADVANCED(NULL, ralt_finished, ralt_reset),
   [TD_RBRC_RGUI_RCBR] = ACTION_TAP_DANCE_FN_ADVANCED(NULL, rgui_finished, rgui_reset)
 };
+

@@ -26,7 +26,7 @@ void matrix_init_kb(void) {
 void shutdown_kb(void) {
     #ifdef AUDIO_ENABLE
         PLAY_SONG(tone_goodbye);
-	_delay_ms(150);
-	stop_all_notes();
+      	_delay_ms(150);
+      	stop_all_notes();
     #endif
 }

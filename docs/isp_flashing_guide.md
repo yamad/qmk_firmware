@@ -19,7 +19,7 @@ If you're having trouble flashing/erasing your board, and running into cryptic e
     Memory write error, use debug for more info.
     commands.c:360: Error writing memory data. (err -4)
 
-You're likely going to need to ISP flash your board/device to get it working again. Luckily, this process is pretty straight-forward, provided you have any extra programmable keyboard, Pro Micro, or Teensy 2.0/Teensy 2.0++. There are also dedicated ISP flashers available for this, but most cost >$15, and it's assumed that if you are googling this error, this is the first you've heard about ISP flashing, and don't have one readily available (whereas you might have some other AVR board). __We'll be using a Teensy 2.0 or Pro Micro with Windows 10 in this guide__ - if you are comfortable doing this on another system, please consider editing this guide and contributing those instructions!
+You're likely going to need to ISP flash your board/device to get it working again. Luckily, this process is pretty straight-forward, provided you have any extra programmable keyboard, Pro Micro, or Teensy 2.0/Teensy 2.0++. There are also dedicated ISP flashers available for this, but most cost >$15, and it's assumed that if you are googling this error, this is the first you've heard about ISP flashing, and don't have one readily available (whereas you might have some other AVR board). __We'll be using a Teensy 2.0 or Pro Micro with Windows 10 in this guide__ - if you are comfortable doing this on another system, please consider editing this guide and contributing those instructions!   
 
 ## Software Needed
 
@@ -38,7 +38,7 @@ This is pretty straight-forward - we'll be connecting like-things to like-things
     Teensy B3  <-> Keyboard B3 (MISO)
     Teensy VCC <-> Keyboard VCC
     Teensy GND <-> Keyboard GND
-
+    
 ### Pro Micro
 
     Pro Micro 10 (B6)  <-> Keyboard RESET
@@ -68,7 +68,7 @@ If you're not sure what your board uses, look in the `rules.mk` file for the key
 
 ### Advanced/Production Techniques
 
-If you'd like to flash both the bootloader **and** the regular firmware at the same time, you need to combine the files.
+If you'd like to flash both the bootloader **and** the regular firmware at the same time, you need to combine the files. 
 
 1. Open the original firmware .hex file in a text editor
 2. Remove the last line (which should be `:00000001FF` - this is an EOF message)

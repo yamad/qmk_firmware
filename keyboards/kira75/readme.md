@@ -4,9 +4,9 @@
 
 75% keyboard designed by thesiscamper
 
-Keyboard Maintainer: [MechMerlin](https://github.com/mechmerlin)
-Hardware Supported: Kira 75
-Hardware Availability: Group Buy
+Keyboard Maintainer: [MechMerlin](https://github.com/mechmerlin)     
+Hardware Supported: Kira 75     
+Hardware Availability: Group Buy      
 
 Make example for this keyboard (after setting up your build environment):
 

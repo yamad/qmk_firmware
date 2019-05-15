@@ -844,3 +844,4 @@ void led_set_user( uint8_t usb_led )
   }
   old_usb_led = usb_led;
 }  // End of led_set_user
+

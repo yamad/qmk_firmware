@@ -5,9 +5,9 @@ Zeal65
 
 This is a 65% PCB with per-key RGB LEDs and supports fixed, 1800-like bottom row and split backspace. It was designed for the Zephyr custom keyboard.
 
-Keyboard Maintainer: [Wilba](http://wilba.tech/) and on [github](https://github.com/Wilba6582)
-Hardware Supported: Zeal65 PCB Rev 1
-Hardware Availability: https://zealpc.net/collections/group-buy-pre-orders/products/zephyr
+Keyboard Maintainer: [Wilba](http://wilba.tech/) and on [github](https://github.com/Wilba6582)  
+Hardware Supported: Zeal65 PCB Rev 1  
+Hardware Availability: https://zealpc.net/collections/group-buy-pre-orders/products/zephyr  
 
 Make example for this keyboard (after setting up your build environment):
 

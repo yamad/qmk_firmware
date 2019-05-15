@@ -13,7 +13,7 @@
  * You should have received a copy of the GNU General Public License
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
-
+ 
 #ifndef USERSPACE
 #define USERSPACE
 
@@ -76,8 +76,8 @@ enum userspace_custom_keycodes {
 
 #define NUMPAD_R1                                                        _______, KC_P7,   KC_P8,   KC_P9,   KC_PMNS, _______
 #define NUMPAD_R2                                                        _______, KC_P4,   KC_P5,   KC_P6,   KC_PPLS, _______
-#define NUMPAD_R3                                                        _______, KC_P1,   KC_P2,   KC_P3,   KC_PAST, KC_ENT
-#define NUMPAD_R4                                                        _______, KC_P0,   XXXXXXX, KC_PDOT, KC_PSLS, KC_ENT
+#define NUMPAD_R3                                                        _______, KC_P1,   KC_P2,   KC_P3,   KC_PAST, KC_ENT 
+#define NUMPAD_R4                                                        _______, KC_P0,   XXXXXXX, KC_PDOT, KC_PSLS, KC_ENT 
 
 /* Mouse Layer */
 #define MOUSE_L1   _______, _______, _______, _______, _______, _______

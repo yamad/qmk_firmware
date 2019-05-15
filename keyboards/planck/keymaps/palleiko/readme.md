@@ -4,7 +4,7 @@
 This layout is mostly stock with a increased functionality for my usage.
 
 Changes over stock keymap:
-1. Altered R1
+1. Altered R1 
 1. Home row navigation layer
 1. Hexadecimal numpad layer
 1. Window manager layer for my i3 setup
@@ -18,7 +18,7 @@ Hold Enter for Right Shift
 ,-----------------------------------------------------------------------------------.
 | Tab  |   Q  |   W  |   E  |   R  |   T  |   Y  |   U  |   I  |   O  |   P  | Bksp |
 |------+------+------+------+------+-------------+------+------+------+------+------|
-| Esc  |   A  |   S  |   D  |   F  |   G  |   H  |   J  |   K  |   L  |   ;  |  "   |
+| Esc  |   A  |   S  |   D  |   F  |   G  |   H  |   J  |   K  |   L  |   ;  |  "   | 
 |------+------+------+------+------+------|------+------+------+------+------+------|
 | Shift|   Z  |   X  |   C  |   V  |   B  |   N  |   M  |   ,  |   .  |   /  |Enter |
 |------+------+------+------+------+------+------+------+------+------+------+------|

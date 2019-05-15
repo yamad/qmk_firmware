@@ -41,3 +41,4 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
     { R27, R26, R25, R24, R23, R22, R21 }, \
     { KC_NO, KC_NO, R32, R31, R30, R29, R28 } \
   }
+

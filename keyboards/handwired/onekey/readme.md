@@ -2,11 +2,11 @@
 
 Custom handwired one key keyboard.
 
-Keyboard Maintainer:
-Hardware Supported: Custom handwired one key
-Hardware Availability:
+Keyboard Maintainer:  
+Hardware Supported: Custom handwired one key  
+Hardware Availability: 
 
-Switch must be connected to pins B0 and D0.
+Switch must be connected to pins B0 and D0. 
 
 Make example for this keyboard (after setting up your build environment):
 

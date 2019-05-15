@@ -1,4 +1,4 @@
-# Dale's Preonic layout
+# Dale's Preonic layout 
 
 Really just my Planck layout for the Preonic.
 

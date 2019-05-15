@@ -38,10 +38,10 @@ while getopts bdnvh opt; do
             layout="-layout en"
             variant="-variant dvorak"
             ;;
-        (n)
+        (n) 
             let "execute = 0"
 	    ;;
-        (v)
+        (v) 
             let "verbose = 1"
 	    ;;
         (h)

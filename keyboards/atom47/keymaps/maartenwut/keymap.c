@@ -45,7 +45,7 @@ void led_set_user(uint8_t usb_led) {
 		PORTE &= ~(1 << 6);
     } else {
         // Turn capslock off
-	PORTE |= (1 << 6);
+    	PORTE |= (1 << 6);
     }
 }
 

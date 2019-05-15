@@ -4,8 +4,8 @@
 
 The QMK firmware for the Tanuki 40% keyboard. The other files needed for construction can be found in the [Tanuki repo](https://github.com/SethSenpai/Tanuki).
 
-Keyboard Maintainer: [SethSenpai](https://github.com/SethSenpai)
-Hardware Supported: Tanuki pcb, pro micro
+Keyboard Maintainer: [SethSenpai](https://github.com/SethSenpai)  
+Hardware Supported: Tanuki pcb, pro micro  
 Hardware Availability: [Tanuki repo](https://github.com/SethSenpai/Tanuki)
 
 Make example for this keyboard (after setting up your build environment):

@@ -1,4 +1,4 @@
-
+ 
 #include QMK_KEYBOARD_H
 
 enum layers {
@@ -92,9 +92,9 @@ const uint16_t PROGMEM keymaps[][ MATRIX_ROWS ][ MATRIX_COLS ] = {
   '------------------------------------------------------------------------------------'
   */
   [R2] = LAYOUT(
-    KC_F12,  KC_F11,  KC_F10,  KC_F9,  KX_COPY,                   KC_HOME, KC_UP,   KC_END,  KC_PGUP, KC_INS,
+    KC_F12,  KC_F11,  KC_F10,  KC_F9,  KX_COPY,                   KC_HOME, KC_UP,   KC_END,  KC_PGUP, KC_INS, 
     KC_F8,   KC_F7,   KC_F6,   KC_F5,  KX_PAST,                   KC_LEFT, KC_DOWN, KC_RGHT, KC_PGDN, KC_ENT,
-    KC_F4,   KC_F3,   KC_F2,   KC_F1,  KX_CUT,                    KCX_LST, xxxxxxx, KC_TAB,  xxxxxxx, xxxxxxx,
+    KC_F4,   KC_F3,   KC_F2,   KC_F1,  KX_CUT,                    KCX_LST, xxxxxxx, KC_TAB,  xxxxxxx, xxxxxxx, 
     _______, _______, _______, KC_DEL, KX_UNDO, _______, _______, _______, _______, _______, _______, KX_WINR
   ),
 
@@ -112,7 +112,8 @@ const uint16_t PROGMEM keymaps[][ MATRIX_ROWS ][ MATRIX_COLS ] = {
   [R3] = LAYOUT(
     RESET,   xxxxxxx, xxxxxxx, xxxxxxx, xxxxxxx,                   xxxxxxx, xxxxxxx, xxxxxxx, xxxxxxx, _______,
     xxxxxxx, xxxxxxx, xxxxxxx, xxxxxxx, xxxxxxx,                   xxxxxxx, xxxxxxx, xxxxxxx, xxxxxxx, xxxxxxx,
-    xxxxxxx, xxxxxxx, xxxxxxx, xxxxxxx, xxxxxxx,                   xxxxxxx, xxxxxxx, xxxxxxx, xxxxxxx, xxxxxxx,
+    xxxxxxx, xxxxxxx, xxxxxxx, xxxxxxx, xxxxxxx,                   xxxxxxx, xxxxxxx, xxxxxxx, xxxxxxx, xxxxxxx, 
     xxxxxxx, xxxxxxx, xxxxxxx, xxxxxxx, xxxxxxx, xxxxxxx, xxxxxxx, xxxxxxx, xxxxxxx, xxxxxxx, xxxxxxx, xxxxxxx
   )
 };
+

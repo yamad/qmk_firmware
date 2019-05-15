@@ -27,7 +27,7 @@ enum custom_macros {
 };
 
   const uint16_t PROGMEM fn_actions[] = { //ACTION_LAYER_TAP_TOGGLE requires that number of taps be defined in *config.h* - default set to 5
-      [0] = ACTION_LAYER_TAP_KEY(_LOWER, KC_SPC),    //Hold for momentary Lower layer, Tap for Space,
+      [0] = ACTION_LAYER_TAP_KEY(_LOWER, KC_SPC),    //Hold for momentary Lower layer, Tap for Space, 
       [1] = ACTION_LAYER_MOMENTARY(_MOUSE)           //Hold for momentary MOUSE
 
    };
@@ -57,7 +57,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
        KC_TAB, KC_Q,   KC_W,   KC_E,   KC_R,   KC_T,   KC_Y,   KC_U,   KC_I,   KC_O,   KC_P,   KC_LBRC, KC_RBRC, KC_BSLS,   KC_DEL,  KC_END,  KC_PGDN, \
        KC_CAPS,KC_A,   KC_S,   KC_D,   KC_F,   KC_G,   KC_H,   KC_J,   KC_K,   KC_L,   KC_SCLN,KC_QUOT,          KC_ENT, \
        KC_LSFT,KC_NUBS,KC_Z,   KC_X,   KC_C,   KC_V,   KC_B,   KC_N,   KC_M,   KC_COMM,KC_DOT, KC_SLSH,          KC_RSFT,            KC_UP, \
-       KC_LCTL,KC_LGUI,KC_LALT,                SPC_LW,                                 MSE,    KC_RGUI , KC_APP,  KC_RCTL,   KC_LEFT, KC_DOWN, KC_RGHT
+       KC_LCTL,KC_LGUI,KC_LALT,                SPC_LW,                                 MSE,    KC_RGUI , KC_APP,  KC_RCTL,   KC_LEFT, KC_DOWN, KC_RGHT  
        ),
 
 [_DVORAK] = KEYMAP_TKL(\
@@ -66,7 +66,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
        KC_TAB, KC_QUOT,KC_COMM,KC_DOT, KC_P,   KC_Y,   KC_F,   KC_G,   KC_C,   KC_R,   KC_L,   KC_LBRC, KC_RBRC, KC_BSLS,   KC_DEL,  KC_END,  KC_PGDN, \
        KC_BSPC,KC_A,   KC_O,   KC_E,   KC_U,   KC_I,   KC_D,   KC_H,   KC_T,   KC_N,   KC_S,   KC_QUOT,          KC_ENT, \
        KC_LSFT,KC_NUBS,KC_SCLN,KC_Q,   KC_J,   KC_K,   KC_X,   KC_B,   KC_M,   KC_W,   KC_V,   KC_Z,             KC_RSFT,            KC_UP, \
-       KC_LCTL,KC_LGUI,KC_LALT,                SPC_LW,                                 MSE,    KC_RGUI, KC_APP,  KC_RCTL,   KC_LEFT, KC_DOWN, KC_RGHT
+       KC_LCTL,KC_LGUI,KC_LALT,                SPC_LW,                                 MSE,    KC_RGUI, KC_APP,  KC_RCTL,   KC_LEFT, KC_DOWN, KC_RGHT  
        ),
 
 [_LOWER] = KEYMAP_TKL(\
@@ -106,7 +106,7 @@ const macro_t *action_get_macro(keyrecord_t *record, uint8_t id, uint8_t opt) {
     }
     return MACRO_NONE;
 }
-
+ 
 bool process_record_user(uint16_t keycode, keyrecord_t *record) {
   switch (keycode) {
     case QWERTY:
@@ -126,7 +126,7 @@ bool process_record_user(uint16_t keycode, keyrecord_t *record) {
         set_single_persistent_default_layer(_DVORAK);
       }
       return false;
-      break;
+      break; 
   }
   return true;
 }

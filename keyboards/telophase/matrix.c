@@ -112,7 +112,7 @@ uint8_t matrix_scan(void)
             if (timeout > 10000){
                 break;
             }
-        }
+        } 
         uart_data[i] = SERIAL_UART_DATA;
     }
 

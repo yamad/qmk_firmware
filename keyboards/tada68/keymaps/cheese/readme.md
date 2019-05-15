@@ -8,11 +8,11 @@ based on the default keymap.
 * Moved the arrow/mouse controls to the caps-lock layer from the function layer.
 * Swapped the Windows key and Alt keys, I didn't have to do it in OS X.
 * Made the escape key work as a backtick when "Alt" is depressed, so I can 1) reverse
-  direction when I Alt-Tab through current applications, and Alt-Backtick through
+  direction when I Alt-Tab through current applications, and Alt-Backtick through 
   open windows.
 * Turned the backtick/tilde key into another backspace key, so I can just go all the way
   up to the corner without overshooting.
-* Adjusted the volume controles so M is "mute", the "," ( or "<") is "down", and "." (or ">")
+* Adjusted the volume controles so M is "mute", the "," ( or "<") is "down", and "." (or ">") 
   is "up".  It just makes a ton more sense, I have no idea why it would have been done any
   differently.
 * Moved PageUp/PageDown up above the delete key, and made the Home and End on the capslock

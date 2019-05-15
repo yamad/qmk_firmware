@@ -8,10 +8,10 @@ Features:
 - HJKL-Keys and Arrow-Keys can be switched, necessary for working with a terminal and vim
 - Number-Layer for Numpad-Emulation
 - Brackets-Layer for easier programming
-- Media-Layer for Mouse-Navigation
+- Media-Layer for Mouse-Navigation 
 
 Notes:
 - adnw is a layout optimised for usage with german and english language
-- PUQ is a variant of adnw: http://www.adnw.de/index.php?n=Main.OptimierungF%C3%BCrDieGeradeTastaturMitDaumen-Shift
+- PUQ is a variant of adnw: http://www.adnw.de/index.php?n=Main.OptimierungF%C3%BCrDieGeradeTastaturMitDaumen-Shift 
 - This implementation is optimised for my workflow with vim/tmux/xmonad and ergodox
 - The OS must use the de_DE layout

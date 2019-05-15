@@ -1,7 +1,7 @@
 # The Nikchi's keymap for frosty_flake
 
 ### FEATURING
--SPACE CADET
+-SPACE CADET 
 -Caps Lock is now LCTRL
 -LCTRL is Tap(LCTRL, Caps Lock)
 

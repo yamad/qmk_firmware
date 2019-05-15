@@ -62,7 +62,7 @@ bool toggleLayerRGB(void){
 
 void matrix_init_user(void){
 	rgblight_enable();
-	rgblight_mode(1);
+  	rgblight_mode(1);
 	rgblight_sethsv(0,10,255);
 }
 
@@ -122,7 +122,7 @@ bool process_record_user (uint16_t keycode, keyrecord_t *record) {
 		//set the toggle and make sure to set the colour back to white
 		lRGB = toggleLayerRGB();
 		rgblight_enable();
-		rgblight_mode(1);
+  		rgblight_mode(1);
 		rgblight_sethsv(0,255,255);
 		layer_state =0x00000000;
 

@@ -5,9 +5,9 @@ HS60 V2.0
 
 This is a standard fixed layout 60% PCB. It comes in three variants; ISO, ANSI and HHKB and support full per-key RGB.
 
-Keyboard Maintainer: [Yiancar](http://yiancar-designs.com/) and on [github](https://github.com/yiancar)
-Hardware Supported: HS60 ISO, ANSI and HHKB PCBs with STM32F303CC
-Hardware Availability: http://groupbuys.mechboards.co.uk/shop/hs60-hotswap-60-pcb/
+Keyboard Maintainer: [Yiancar](http://yiancar-designs.com/) and on [github](https://github.com/yiancar)  
+Hardware Supported: HS60 ISO, ANSI and HHKB PCBs with STM32F303CC   
+Hardware Availability: http://groupbuys.mechboards.co.uk/shop/hs60-hotswap-60-pcb/   
 
 Due to the RGB implementation, the HS60 is currently not compatible with community layouts.
 

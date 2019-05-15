@@ -31,7 +31,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #include "config.h"
 #include "timer.h"
 
-#ifdef BACKLIGHT_ENABLE
+#ifdef BACKLIGHT_ENABLE 
     #include "backlight.h"
     extern backlight_config_t backlight_config;
 #endif
@@ -127,7 +127,7 @@ void matrix_init(void)
     MCUCR |= (1<<JTD);
     MCUCR |= (1<<JTD);
 #endif
-
+  
     debug_enable = true;
     debug_matrix = true;
     debug_mouse = true;

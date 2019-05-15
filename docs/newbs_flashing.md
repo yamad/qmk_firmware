@@ -1,10 +1,10 @@
-# Flashing Your Keyboard
+# Flashing Your Keyboard 
 
-Now that you've built a custom firmware file you'll want to flash your keyboard.
+Now that you've built a custom firmware file you'll want to flash your keyboard. 
 
 ## Flashing Your Keyboard with QMK Toolbox
 
-The simplest way to flash your keyboard will be with the [QMK Toolbox](https://github.com/qmk/qmk_toolbox/releases).
+The simplest way to flash your keyboard will be with the [QMK Toolbox](https://github.com/qmk/qmk_toolbox/releases). 
 
 However, the QMK Toolbox is only available for Windows and macOS currently.  If you're using Linux (or just wish to flash the firmware from the command line), you'll have to use the [method outlined below](newbs_flashing.md#flash-your-keyboard-from-the-command-line).
 
@@ -30,7 +30,7 @@ For example, the `plank/rev5` with a `default` keymap will have this filename:
 
     planck_rev5_default.hex
 
-Once you have located your firmware file drag it into the "Local file" box in QMK Toolbox, or click "Open" and navigate to where your firmware file is stored.
+Once you have located your firmware file drag it into the "Local file" box in QMK Toolbox, or click "Open" and navigate to where your firmware file is stored. 
 
 ### Put Your Keyboard Into DFU (Bootloader) Mode
 
@@ -71,22 +71,22 @@ Click the `Flash` button in QMK Toolbox. You will see output similar to the foll
     Validating...  Success
     0x5600 bytes written into 0x7000 bytes memory (76.79%).
 >>> dfu-programmer atmega32u4 reset
-
+    
 *** DFU device disconnected
 *** Clueboard - Clueboard 66% HotSwap connected -- 0xC1ED:0x2390
 ```
 
 ## Flash your Keyboard from the Command Line
 
-First thing you'll need to know is which bootloader that your keyboard uses.  There are four main bootloaders that are used, usually. Pro-Micro and clones use CATERINA, and Teensy's use Halfkay, OLKB boards use QMK-DFU, and other atmega32u4 chips use DFU.
+First thing you'll need to know is which bootloader that your keyboard uses.  There are four main bootloaders that are used, usually. Pro-Micro and clones use CATERINA, and Teensy's use Halfkay, OLKB boards use QMK-DFU, and other atmega32u4 chips use DFU. 
 
-You can find more information about the bootloaders in the [Flashing Instructions and Bootloader Information](flashing.md) page.
+You can find more information about the bootloaders in the [Flashing Instructions and Bootloader Information](flashing.md) page. 
 
-If you know what bootloader that you're using, then when compiling the firmware, you can actually add some extra text to the `make` command to automate the flashing process.
+If you know what bootloader that you're using, then when compiling the firmware, you can actually add some extra text to the `make` command to automate the flashing process. 
 
 ### DFU
 
-For the DFU bootloader, when you're ready to compile and flash your firmware, open up your terminal window and run the built command:
+For the DFU bootloader, when you're ready to compile and flash your firmware, open up your terminal window and run the built command: 
 
     make <my_keyboard>:<my_keymap>:dfu
 
@@ -100,16 +100,16 @@ Once it finishes compiling, it should output the following:
 Linking: .build/planck_rev5_xyverz.elf                                                              [OK]
 Creating load file for flashing: .build/planck_rev5_xyverz.hex                                      [OK]
 Copying planck_rev5_xyverz.hex to qmk_firmware folder                                               [OK]
-Checking file size of planck_rev5_xyverz.hex
+Checking file size of planck_rev5_xyverz.hex                                                        
  * File size is fine - 18574/28672
  ```
 
-After it gets to this point, the build script will look for the DFU bootloader every 5 seconds.  It will repeat the following until the device is found or you cancel it.
+After it gets to this point, the build script will look for the DFU bootloader every 5 seconds.  It will repeat the following until the device is found or you cancel it. 
 
     dfu-programmer: no device present.
     Error: Bootloader not found. Trying again in 5s.
 
-Once it does this, you'll want to reset the controller.  It should then show output similiar to this:
+Once it does this, you'll want to reset the controller.  It should then show output similiar to this: 
 
 ```
 *** Attempting to flash, please don't remove device
@@ -127,13 +127,13 @@ Once it does this, you'll want to reset the controller.  It should then show out
 >>> dfu-programmer atmega32u4 reset
 ```
 
-If you have any issues with this, you may need to this:
+If you have any issues with this, you may need to this: 
 
     sudo make <my_keyboard>:<my_keymap>:dfu
 
-### Caterina
+### Caterina 
 
-For Arduino boards and their close (such as the SparkFun ProMicro), when you're ready to compile and flash your firmware, open up your terminal window and run the built command:
+For Arduino boards and their close (such as the SparkFun ProMicro), when you're ready to compile and flash your firmware, open up your terminal window and run the built command: 
 
     make <my_keyboard>:<my_keymap>:avrdude
 
@@ -141,7 +141,7 @@ For example, if your keymap is named "xyverz" and you're building a keymap for a
 
     make lets_split/rev2:xyverz:avrdude
 
-Once the firmware finishes compiling, it will output something like this:
+Once the firmware finishes compiling, it will output something like this: 
 
 ```
 Linking: .build/lets_split_rev2_xyverz.elf                                                            [OK]
@@ -151,7 +151,7 @@ Checking file size of lets_split_rev2_xyverz.hex                                
 Detecting USB port, reset your controller now..............
 ```
 
-At this point, reset the board and then the script will detect the bootloader and then flash the board.  The output should look something like this:
+At this point, reset the board and then the script will detect the bootloader and then flash the board.  The output should look something like this: 
 
 ```
 Detected controller on USB port at /dev/ttyS15
@@ -195,13 +195,13 @@ avrdude.exe: safemode: Fuses OK (E:CB, H:D8, L:FF)
 
 avrdude.exe done.  Thank you.
 ```
-If you have any issues with this, you may need to this:
+If you have any issues with this, you may need to this: 
 
     sudo make <my_keyboard>:<my_keymap>:avrdude
 
 ## HalfKay
 
-For the PJRC devices (Teensy's), when you're ready to compile and flash your firmware, open up your terminal window and run the built command:
+For the PJRC devices (Teensy's), when you're ready to compile and flash your firmware, open up your terminal window and run the built command: 
 
     make <my_keyboard>:<my_keymap>:teensy
 
@@ -209,7 +209,7 @@ For example, if your keymap is named "xyverz" and you're building a keymap for a
 
     make erdogox_ez:xyverz:teensy
 
-Once the firmware finishes compiling, it will output something like this:
+Once the firmware finishes compiling, it will output something like this: 
 
 ```
 Linking: .build/ergodox_ez_xyverz.elf                                                               [OK]
@@ -222,7 +222,7 @@ Waiting for Teensy device...
  (hint: press the reset button)
  ```
 
- At this point, reset your board.  Once you've done that, you'll see output like this:
+ At this point, reset your board.  Once you've done that, you'll see output like this: 
 
  ```
  Found HalfKay Bootloader

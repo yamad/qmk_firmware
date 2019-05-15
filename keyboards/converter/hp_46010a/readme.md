@@ -4,13 +4,13 @@
 
 A converter for the eponymous keyboard.
 
-Keyboard Maintainer: [Listofoptions](https://github.com/listofoptions)
-Hardware Supported: HP 46010A, Teensy 2.0
+Keyboard Maintainer: [Listofoptions](https://github.com/listofoptions)  
+Hardware Supported: HP 46010A, Teensy 2.0  
 
 Make example for this keyboard (after setting up your build environment):
 
     make converter/HP_46010A:default
-
+    
 See the [build environment setup](https://docs.qmk.fm/#/getting_started_build_tools) and the [make instructions](https://docs.qmk.fm/#/getting_started_make_guide) for more information. Brand new to QMK? Start with our [Complete Newbs Guide](https://docs.qmk.fm/#/newbs).
 
 to get a matrix created if your board uses a different one (i used the US layout) please see the following gists:
@@ -22,7 +22,7 @@ from the bottom of the pcb the pins are arraged as follows:
 
 
       4 5 6
-     3 2 1
+     3 2 1  
 
 
 connect a six pin modular connector of the 6p6c variaty.

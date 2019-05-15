@@ -4,8 +4,8 @@
 
 Also known as the Odyssey, the Evil 80 is a QMK-powered aluminum TKL keyboard featuring an Aviator connector cable. Sold via a Geekhack group buy in January of 2018.
 
-Keyboard Maintainer: [The QMK Community](https://github.com/qmk)
-Hardware Supported: Evil 80-Odyssey QMK version
+Keyboard Maintainer: [The QMK Community](https://github.com/qmk)  
+Hardware Supported: Evil 80-Odyssey QMK version  
 Hardware Availability: [Geekhack](https://geekhack.org/index.php?topic=93434.0)
 
 Make example for this keyboard (after setting up your build environment):

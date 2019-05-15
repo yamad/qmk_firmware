@@ -11,7 +11,7 @@
     - Red: Symbols layer
     - Blue: Numbers layer
     - "Purple" (both Red and Blue): Functions layer
-
+    
   This tri-state layer mechanism is a bit similar to Planck and Preonic's "Raise," "Lower," and "Adjust."
 
 - The base layer is QWERTY.
@@ -180,7 +180,7 @@ Lower baud UART. Useful when using an 8Mhz pro micro; corresponding changes requ
 - Move Backspace to Red+A. I shouldn't be using it much anyway.
   This means Tab and Shift might as well be separate keys again.
 - Distribute paired symbols symmetrically across boards like `\<{([ ])}>/`.
-  Opening-symbols on the right hand was a failed experiment.
+  Opening-symbols on the right hand was a failed experiment. 
 - Change default back to target a 16Mhz/5v Pro Micro.
   I damaged the 8Mhz Pro Micro I was using so now I'm back to using a 16mhz Pro Micro again.
 
@@ -211,7 +211,7 @@ Lower baud UART. Useful when using an 8Mhz pro micro; corresponding changes requ
 - Abandoned: intentionally-difficult backspace.
   "Backspace is one of the keys I most dislike on a QWERTY keyboard because it moves me away from homerow and I need to use it so often.
   Rather than make it easier to strike, I want to discourage myself from using it and train myself to type more accurately."
-
+  
     - Many other people like an easy-to-reach backspace.
     - Many other split-spacebar ergo boards place backspace at the thumbs.
     - I can still train myself to type well with it in an easy location.

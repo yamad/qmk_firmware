@@ -56,7 +56,7 @@ Outputs the last 5 commands entered
 1. help
 2. about
 3. keymap 0
-4. help
+4. help 
 5. flush-buffer
 ```
 

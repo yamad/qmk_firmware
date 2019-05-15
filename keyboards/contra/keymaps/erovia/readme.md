@@ -1,6 +1,6 @@
 # Erovia's Contra Keymap
 
-My personal Contra keymap based on the *basic* keymap.
+My personal Contra keymap based on the *basic* keymap.  
 
 **Features**
 

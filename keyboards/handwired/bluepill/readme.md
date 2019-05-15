@@ -4,7 +4,7 @@
 Keyboards using a BluePill controller (generic Chinese STM32F103C8T6) and based on the [KC64 of Xydane](https://github.com/Xydane/qmk_firmware).
 
 Keyboard Maintainer: [FPazos](https://github.com/fpazos), but I hope to leave the project in better hands.
-Hardware Supported: Bluepill STM32F103C8T6
+Hardware Supported: Bluepill STM32F103C8T6 
 Hardware Availability: Everywhere
 
 Make example for BluePill70 (after setting up your build environment):
@@ -38,7 +38,7 @@ If you want to create new layouts just add them to the keymaps folder. If you pr
 
 That's the pinout;
 
-        A5  A15   A10   A9  A8  B15  B14  B13   B12  B11  B10  B1   B0      A7      A6
+        A5  A15   A10   A9  A8  B15  B14  B13   B12  B11  B10  B1   B0      A7      A6      
     B9  ESC| F1 | F2 | F3 | F4 | F5 | F6 | F7 | F8 | F9 | F10| F11| F12| PSC| PGU| PGD
     B8  GRA| 1  | 2  | 3  | 4  | 5  | 6  | 7  | 8  | 9  | 0  | '  | ¡  |   BCKS  | DEL
     B7  TAB| Q  | W  | E  | R  | T  | Y  | U  | I  | O  | P  | `  | +  |         | HOM
@@ -52,7 +52,7 @@ ISO
 ANSI
 ![Wiring](https://i.imgur.com/dBUJCdD.jpg)
 
-It also uses:
+It also uses: 
 PC13: Caps Lock led.
 
 Backlight dual color leds, my version is for common anode that's more common, for leds with common anode just replace the palSetPad with palClearPad and viceversa.

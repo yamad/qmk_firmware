@@ -2,7 +2,7 @@
 
 ## Summary
 
- Members                        | Descriptions
+ Members                        | Descriptions                                
 --------------------------------|---------------------------------------------
 `public uint16_t `[`sysex_encoded_length`](#group__sysex__tools_1ga061e5607030412d6e62e2390d8013f0a)`(uint16_t decoded_length)`            | Compute the length of a message after it is encoded.
 `public uint16_t `[`sysex_decoded_length`](#group__sysex__tools_1ga121fc227d3acc1c0ea08c9a5c26fa3b0)`(uint16_t encoded_length)`            | Compute the length of a message after it is decoded.
@@ -36,9 +36,9 @@ The length, in bytes, of the message after it is decoded.
 Encode data so that it can be transmitted safely in a sysex message.
 
 #### Parameters
-* `encoded` The output data buffer, must be at least sysex_encoded_length(length) bytes long.
+* `encoded` The output data buffer, must be at least sysex_encoded_length(length) bytes long. 
 
-* `source` The input buffer of data to be encoded.
+* `source` The input buffer of data to be encoded. 
 
 * `length` The number of bytes from the input buffer to encode.
 
@@ -50,11 +50,12 @@ number of bytes encoded.
 Decode encoded data.
 
 #### Parameters
-* `decoded` The output data buffer, must be at least sysex_decoded_length(length) bytes long.
+* `decoded` The output data buffer, must be at least sysex_decoded_length(length) bytes long. 
 
-* `source` The input buffer of data to be decoded.
+* `source` The input buffer of data to be decoded. 
 
 * `length` The number of bytes from the input buffer to decode.
 
 #### Returns
 number of bytes decoded.
+

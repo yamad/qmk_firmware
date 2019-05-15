@@ -6,8 +6,8 @@ A compact layout with the footprint of your typical 65% board, featuring a right
 
 [Additional resources here](https://www.primekb.com/pages/programming)
 
-Keyboard Maintainer:  [Andrew Heaston](https://github.com/rooski15)
-Hardware Supported:  prime_r pcb, ATmega32U4
+Keyboard Maintainer:  [Andrew Heaston](https://github.com/rooski15)  
+Hardware Supported:  prime_r pcb, ATmega32U4  
 Hardware Availability: [Prime_KB](https://www.primekb.com/)
 
 Make example for this keyboard (after setting up your build environment):

@@ -2,7 +2,7 @@
 
 I've written a script to convert the json file from the
 [QMK Configurator](https://config.qmk.fm) to the C macros
-and a pretty form the comments.
+and a pretty form the comments. 
 
 First import the json file in this directory into the configurator,
 make any changes, export the file and then run this:

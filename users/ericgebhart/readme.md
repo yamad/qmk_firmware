@@ -2,17 +2,17 @@ Overview
 ========
 
 This is my personal userspace.  Most of my code exists here. I only have one keymap, and that
-is for an ergodox_ez.  There are a lot of layers, 7 of them are default layers. I primarily use
-dvorak and Bepo. I've been using emacs in vi mode for over 23 years. I also us Xmonad as my
+is for an ergodox_ez.  There are a lot of layers, 7 of them are default layers. I primarily use 
+dvorak and Bepo. I've been using emacs in vi mode for over 23 years. I also us Xmonad as my 
 window manager, additionally I've been using a Kinesis advantage keyboard in dvorak for over 20
-years.  All of those things tend to color the layouts I have.
+years.  All of those things tend to color the layouts I have. 
 
 The Bepo layer needs some love.  It is true to the layout at Bepo.fr, but I find it a little
 cumbersome, and I miss some of my favorite keys.
 
-There are 2 dvorak layers, one for a qwerty OS keyboard, and one for a Bepo OS keyboard.
-There is a symbol/keypad layer for bepo and qwerty. And of course there is a mouse/media layer.
-There are 2 Xmonad layers one for qwerty and one for Bepo. Layer selection happens automatically
+There are 2 dvorak layers, one for a qwerty OS keyboard, and one for a Bepo OS keyboard. 
+There is a symbol/keypad layer for bepo and qwerty. And of course there is a mouse/media layer.  
+There are 2 Xmonad layers one for qwerty and one for Bepo. Layer selection happens automatically 
 based on your current default layer.  I use 2 tap dance keys for layer selection.
 
 There are also Qwerty, Colemak, Workman and Norman layers for qwerty.
@@ -21,20 +21,20 @@ There are also Qwerty, Colemak, Workman and Norman layers for qwerty.
 Keyboard Layout Templates
 -------------------------
 
-I borrowed the idea for the keyboard defines and some of the definitions from @drashna.
+I borrowed the idea for the keyboard defines and some of the definitions from @drashna. 
 I think it is an awesome idea, It makes consistency between layout definitions so much easier.
 @drashna had this to say about it.
 
 
-This borrows from @jola5's "Not quite neo" code.  This allows me to maintain blocks of keymaps in the userspace, so that I can modify the userspace, and this is reflected in all of the keyboards that use it, at once.
+This borrows from @jola5's "Not quite neo" code.  This allows me to maintain blocks of keymaps in the userspace, so that I can modify the userspace, and this is reflected in all of the keyboards that use it, at once. 
 
-This makes adding tap/hold mods, or other special keycodes or functions to all keyboards super easy, as it's done to all of them at once.
+This makes adding tap/hold mods, or other special keycodes or functions to all keyboards super easy, as it's done to all of them at once. 
 
-The caveat here is that the keymap needs a processor/wrapper, as it doesn't like the substitutions.  However, this is as simple as just pushing it through a define. For instance:
+The caveat here is that the keymap needs a processor/wrapper, as it doesn't like the substitutions.  However, this is as simple as just pushing it through a define. For instance: 
 
 `#define LAYOUT_ergodox_wrapper(...)   LAYOUT_ergodox(__VA_ARGS__)`
 
-Once that's been done and you've switched the keymaps to use the "wrapper", it will read the substitution blocks just fine.
+Once that's been done and you've switched the keymaps to use the "wrapper", it will read the substitution blocks just fine. 
 
 Credit goes to @jola5 for first implementing this awesome idea.
 
@@ -70,7 +70,7 @@ and the overlay layers.
 
 The default layers switch according to the current OS keyboard of the current Default layer.
 Shifting the key, causes the selection to use the other OS keyboard selections. ie,
-if you are on qwerty, you get dvorak, qwerty, colemak, workman and norman. If you shift it you get
+if you are on qwerty, you get dvorak, qwerty, colemak, workman and norman. If you shift it you get 
 dvorak on bepo and bepo.  If you are not on qwerty the unshifted taps get dvorak and bepo on bepo.
 
 The other tap dance for layers is for the symbol, mouse and layers layers.  The layers layer is just a
@@ -109,7 +109,7 @@ Building  and flashing
 
 I use the teensy-loader cli  so that's all I know. There is a script here called flash_ergodox
 
-Use it like this,
+Use it like this, 
 
 ```flash-ergodox <path to your hex file>```
 
@@ -121,3 +121,4 @@ Switching the OS keyboard
 This varies from system to system.  I use Arch Linux, so I use ```setxkbmap```.
 I've included a helper script which makes it easy to switch between EN and FR Bepo,
 called switch-kbd.
+

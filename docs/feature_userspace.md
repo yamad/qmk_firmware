@@ -20,9 +20,9 @@ For example,
 
     make planck:jack
 
-Will include the `/users/jack/` folder in the path, along with `/users/jack/rules.mk`.
+Will include the `/users/jack/` folder in the path, along with `/users/jack/rules.mk`.  
 
-!> This `name` can be [overridden](#override-default-userspace), if needed.
+!> This `name` can be [overridden](#override-default-userspace), if needed.  
 
 ## `Rules.mk`
 
@@ -32,9 +32,9 @@ It's highly recommended that you use `<name>.c` as the default source file to be
 
     SRC += <name>.c
 
-Additional files may be added in the same way - it's recommended you have one named `<name>`.c/.h to start off with, though.
+Additional files may be added in the same way - it's recommended you have one named `<name>`.c/.h to start off with, though. 
 
-The `/users/<name>/rules.mk` file will be included in the build _after_ the `rules.mk` from your keymap. This allows you to have features in your userspace `rules.mk` that depend on individual QMK features that may or may not be available on a specific keyboard.
+The `/users/<name>/rules.mk` file will be included in the build _after_ the `rules.mk` from your keymap. This allows you to have features in your userspace `rules.mk` that depend on individual QMK features that may or may not be available on a specific keyboard. 
 
 For example, if you have RGB control features shared between all your keyboards that support RGB lighting, you can add support for that if the RGBLIGHT feature is enabled:
 ```make
@@ -75,7 +75,7 @@ The reason for this, is that `<name>.h` won't be added in time to add settings (
 
 Please include authorship (your name, github username, email), and optionally [a license that's GPL compatible](https://www.gnu.org/licenses/license-list.html#GPLCompatibleLicenses).
 
-You can use this as a template:
+You can use this as a template: 
 ```
 Copyright <year> <name> <email> @<github_username>
 
@@ -93,26 +93,26 @@ You should have received a copy of the GNU General Public License
 along with this program.  If not, see <http://www.gnu.org/licenses/>.
 ```
 
-You'd want to replace the year, name, email and github username with your info.
+You'd want to replace the year, name, email and github username with your info. 
 
-Additionally, this is a good place to document your code, if you wish to share it with others.
+Additionally, this is a good place to document your code, if you wish to share it with others. 
 
 # Examples
 
-For a brief example, checkout [`/users/_example/`](https://github.com/qmk/qmk_firmware/tree/master/users/drashna).
+For a brief example, checkout [`/users/_example/`](https://github.com/qmk/qmk_firmware/tree/master/users/drashna).  
 For a more complicated example, checkout [`/users/drashna/`](https://github.com/qmk/qmk_firmware/tree/master/users/drashna)'s userspace.
 
 
 ## Customized Functions
 
-QMK has a bunch of [functions](custom_quantum_functions.md) that have [`_quantum`, `_kb`, and `_user` versions](custom_quantum_functions.md#a-word-on-core-vs-keyboards-vs-keymap) that you can use.  You will pretty much always want to use the user version of these functions.  But the problem is that if you use them in your userspace, then you don't have a version that you can use in your keymap.
+QMK has a bunch of [functions](custom_quantum_functions.md) that have [`_quantum`, `_kb`, and `_user` versions](custom_quantum_functions.md#a-word-on-core-vs-keyboards-vs-keymap) that you can use.  You will pretty much always want to use the user version of these functions.  But the problem is that if you use them in your userspace, then you don't have a version that you can use in your keymap. 
 
-However, you can actually add support for keymap version, so that you can use it in both your userspace and your keymap!
+However, you can actually add support for keymap version, so that you can use it in both your userspace and your keymap! 
 
 
-For instance, lets looks at the `layer_state_set_user` function.  Lets enable the [Tri Layer State](ref_functions.md#olkb-tri-layers) functionalitly to all of our boards, and then still have your `keymap.c` still able to use this functionality.
+For instance, lets looks at the `layer_state_set_user` function.  Lets enable the [Tri Layer State](ref_functions.md#olkb-tri-layers) functionalitly to all of our boards, and then still have your `keymap.c` still able to use this functionality. 
 
-In your `<name.c>` file, you'd want to add this:
+In your `<name.c>` file, you'd want to add this: 
 ```c
 __attribute__ ((weak))
 uint32_t layer_state_set_keymap (uint32_t state) {
@@ -124,7 +124,7 @@ uint32_t layer_state_set_user (uint32_t state) {
   return layer_state_set_keymap (state);
 }
 ```
-The `__attribute__ ((weak))` part tells the compiler that this is a placeholder function that can then be replaced by a version in your `keymap.c`.  That way, you don't need to add it to your `keymap.c`, but if you do, you won't get any conflicts because the function is the same name.
+The `__attribute__ ((weak))` part tells the compiler that this is a placeholder function that can then be replaced by a version in your `keymap.c`.  That way, you don't need to add it to your `keymap.c`, but if you do, you won't get any conflicts because the function is the same name. 
 
 The `_keymap` part here doesn't matter, it just needs to be something other than `_quantum`, `_kb`, or `_user`, since those are already in use. So you could use `layer_state_set_mine`, `layer_state_set_fn`, or anything else.
 
@@ -132,7 +132,7 @@ You can see a list of this and other common functions in [`template.c`](https://
 
 ## Custom Features
 
-Since the Userspace feature can support a staggering number of boards, you may have boards that you want to enable certain functionality for, but not for others. And you can actually create "features" that you can enable or disable in your own userspace.
+Since the Userspace feature can support a staggering number of boards, you may have boards that you want to enable certain functionality for, but not for others. And you can actually create "features" that you can enable or disable in your own userspace.  
 
 For instance, if you wanted to have a bunch of macros available, but only on certain boards (to save space), you could "hide" them being a `#ifdef MACROS_ENABLED`, and then enable it per board.  To do this, add this to your rules.mk
 ```make
@@ -140,11 +140,11 @@ ifeq ($(strip $(MACROS_ENABLED)), yes)
     OPT_DEFS += -DMACROS_ENABLED
 endif
 ```
-The `OPT_DEFS` setting causes `MACROS_ENABLED` to be defined for your keyboards (note the `-D` in front of the name), and you could use `#ifdef MACROS_ENABLED` to check the status in your c/h files, and handle that code based on that.
+The `OPT_DEFS` setting causes `MACROS_ENABLED` to be defined for your keyboards (note the `-D` in front of the name), and you could use `#ifdef MACROS_ENABLED` to check the status in your c/h files, and handle that code based on that. 
 
 Then you add `MACROS_ENABLED = yes` to the `rules.mk` for you keymap to enable this feature and the code in your userspace.
 
-And in your `process_record_user` function, you'd do something like this:
+And in your `process_record_user` function, you'd do something like this: 
 ```c
 bool process_record_user(uint16_t keycode, keyrecord_t *record) {
   switch (keycode) {
@@ -168,7 +168,7 @@ bool process_record_user(uint16_t keycode, keyrecord_t *record) {
 
 ## Consolidated Macros
 
-If you wanted to consolidate macros and other functions into your userspace for all of your keymaps, you can do that.  This builds upon the [Customized Functions](#customized-functions) example above. This lets you maintain a bunch of macros that are shared between the different keyboards, and allow for keyboard specific macros, too.
+If you wanted to consolidate macros and other functions into your userspace for all of your keymaps, you can do that.  This builds upon the [Customized Functions](#customized-functions) example above. This lets you maintain a bunch of macros that are shared between the different keyboards, and allow for keyboard specific macros, too. 
 
 First, you'd want to go through all of your `keymap.c` files and replace `process_record_user` with `process_record_keymap` instead.   This way, you can still use keyboard specific codes on those boards, and use your custom "global" keycodes as well.   You'll also want to replace `SAFE_RANGE` with `NEW_SAFE_RANGE` so that you wont have any overlapping keycodes
 

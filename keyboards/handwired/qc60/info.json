@@ -1,9 +1,9 @@
 {
-  "keyboard_name": "QC60",
-  "url": "",
-  "maintainer": "coarse",
-  "width": 15,
-  "height": 5,
+  "keyboard_name": "QC60", 
+  "url": "", 
+  "maintainer": "coarse", 
+  "width": 15, 
+  "height": 5, 
   "layouts": {
     "LAYOUT_ANSI_DEFAULT": {
       "key_count": 64,

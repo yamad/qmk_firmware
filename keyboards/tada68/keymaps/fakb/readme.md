@@ -26,7 +26,7 @@ The intention is easing the use of tiling window mangers
 ## emergency mouse
 
 Without a mouse you will find yourself in a situation where all
-your tiling goodness will just not be able to click onto that
+your tiling goodness will just not be able to click onto that 
 "close ads" button.
 This keymap integrates a basic mouse pointer directly into the keyboard.
 Mouse is accessible via holding SPACE and tapping keys:

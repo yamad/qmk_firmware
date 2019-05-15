@@ -3,8 +3,8 @@ Dilly
 
 A 3x10 ortholinear keyboard using Kailh PG1350 Lower Profile Choc switches.
 
-Keyboard Maintainer: Keebio
-Hardware Supported: Dilly PCB, Arduino Pro Micro
+Keyboard Maintainer: Keebio  
+Hardware Supported: Dilly PCB, Arduino Pro Micro  
 Hardware Availability: [Keebio](https://keeb.io)
 
 Make example for this keyboard (after setting up your build environment):

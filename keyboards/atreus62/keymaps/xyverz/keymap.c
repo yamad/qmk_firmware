@@ -17,11 +17,11 @@ CHANGELOG:
  0.2 - Converted to a more Planck/Preonic keymap style file with
        persistent layers enabled. Renamed layers to reflect OLKB maps.
        Added a TODO list.
- 0.3 - Moved location of media & volume keys. Added Print Screen,
+ 0.3 - Moved location of media & volume keys. Added Print Screen, 
        Scroll Lock and Pause keys. Added a WOW gaming layer that
        changes the location of Ctrl & Alt to the thumb keys. Added
        readme.
- 0.4 - After more useage, I realized that the ESC key was in the way
+ 0.4 - After more useage, I realized that the ESC key was in the way 
        of my muscle memory (gee, thanks, Planck!) so I moved it to
        the normal Caps Lock position, and moved Caps Lock to the same
        position on the RAISE and LOWER layers. Added code to turn off

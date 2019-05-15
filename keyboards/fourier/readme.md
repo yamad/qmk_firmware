@@ -3,9 +3,9 @@ Fourier
 
 A split 40% staggered keyboard made and sold by Keebio. [More info at Keebio](https://keeb.io).
 
-Keyboard Maintainer: [Bakingpy/nooges](https://github.com/nooges)
-Hardware Supported: Pro Micro
-Hardware Availability: [Keebio](https://keeb.io/collections/frontpage/products/fourier-40-split-staggered-keyboard)
+Keyboard Maintainer: [Bakingpy/nooges](https://github.com/nooges)  
+Hardware Supported: Pro Micro  
+Hardware Availability: [Keebio](https://keeb.io/collections/frontpage/products/fourier-40-split-staggered-keyboard)  
 
 Make example for this keyboard (after setting up your build environment):
 

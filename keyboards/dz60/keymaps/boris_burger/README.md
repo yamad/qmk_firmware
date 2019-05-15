@@ -14,7 +14,7 @@ and other smaller tweaks:
 - PgDn = Fn+Down
 - Home = Fn+Left
 - End = Fn+Right
-- Tilde = Shift+Esc
+- Tilde = Shift+Esc 
 - Backtick = Fn+Esc
 - Underglow toggle and mode selection are available as Fn+Q and Fn+W
 - Reset (bootloader mode) = Fn+B
@@ -49,3 +49,4 @@ FN Layer
 |      |       |       |                                   |     |      | Home| PgDn| End |
 `-----------------------------------------------------------------------------------------'
 ```
+

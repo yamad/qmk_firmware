@@ -4,8 +4,8 @@
 
 A low-profile Cherry ML ortholinear build.
 
-Keyboard Maintainer: [ishtob](https://github.com/ishtob), [QMK](https://github.com/qmk)
-Hardware Supported: Hadron PCB rev0, rev2
+Keyboard Maintainer: [ishtob](https://github.com/ishtob), [QMK](https://github.com/qmk)  
+Hardware Supported: Hadron PCB rev0, rev2  
 
 Make example for this keyboard (after setting up your build environment):
 

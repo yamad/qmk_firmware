@@ -5,3 +5,4 @@ This layout is a modified version of the default Planck keymap with the followin
 - Hold enter for right shift (enter on-tap)
 - "Sonic Ring" startup tone
 - "Zelda Puzzle" music tone
+

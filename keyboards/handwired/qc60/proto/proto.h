@@ -26,10 +26,10 @@
 
 /* Split Backspace
  * {R07, XXX, R05, R04, R03, R02, R01, R00}
- *
+ * 
  * Split Right Shift
  * {R37, R36, R35, R34, R33, R32, R31, XXX}
- *
+ * 
  * Split Left Shift
  * {L30, L31, L32, L33, L34, L35, L36, XXX}
  *

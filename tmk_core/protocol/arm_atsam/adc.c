@@ -96,3 +96,4 @@ uint16_t adc_get(uint8_t muxpos)
 
     return ADC0->RESULT.reg;
 }
+

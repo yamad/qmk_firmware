@@ -127,7 +127,7 @@ Additionally, you may want to specify which key to use.  This is especially usef
 
 By default, these are set to 0 and 0, which is usually the "ESC" key on a majority of keyboards.
 
-And to trigger the bootloader, you hold this key down when plugging the keyboard in. Just the single key.
+And to trigger the bootloader, you hold this key down when plugging the keyboard in. Just the single key. 
 
 ## Advanced Bootmagic Lite
 

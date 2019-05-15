@@ -7,3 +7,4 @@ Mine has a split spacebar, no arrowkeys and an opaque case. Changes from the def
 * Mousekeys toggled with middle space button.
 * Escape is dual-function with control (which replaces capslock AS IT SHOULD BE).
 * Bottom left key is the "halp my kb doesn't work" key that always dumps you back to QWERTY.
+

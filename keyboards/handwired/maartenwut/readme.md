@@ -2,9 +2,9 @@
 
 Custom handwired keyboard for maartenwut.
 
-Keyboard Maintainer: [Maarten Dekekrs](https://github.com/maartenwut)
-Hardware Supported: Custom handwired
-Hardware Availability:
+Keyboard Maintainer: [Maarten Dekekrs](https://github.com/maartenwut)  
+Hardware Supported: Custom handwired  
+Hardware Availability: 
 
 Make example for this keyboard (after setting up your build environment):
 

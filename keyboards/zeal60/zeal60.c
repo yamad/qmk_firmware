@@ -237,7 +237,7 @@ bool process_record_kb(uint16_t keycode, keyrecord_t *record)
 			return false;
 			break;
 	}
-
+	
 	return process_record_user(keycode, record);
 }
 
@@ -331,3 +331,4 @@ void suspend_wakeup_init_kb(void)
 	backlight_set_suspend_state(false);
 #endif // RGB_BACKLIGHT_ENABLED
 }
+

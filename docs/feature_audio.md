@@ -59,7 +59,7 @@ PLAY_LOOP(my_song);
 
 It's advised that you wrap all audio features in `#ifdef AUDIO_ENABLE` / `#endif` to avoid causing problems when audio isn't built into the keyboard.
 
-The available keycodes for audio are:
+The available keycodes for audio are: 
 
 * `AU_ON` - Turn audio mode on
 * `AU_OFF` - Turn audio mode off
@@ -121,7 +121,7 @@ You can completely disable Music Mode as well. This is useful, if you're pressed
 
 ## Audio Click
 
-This adds a click sound each time you hit a button, to simulate click sounds from the keyboard. And the sounds are slightly different for each keypress, so it doesn't sound like a single long note, if you type rapidly.
+This adds a click sound each time you hit a button, to simulate click sounds from the keyboard. And the sounds are slightly different for each keypress, so it doesn't sound like a single long note, if you type rapidly. 
 
 * `CK_TOGG` - Toggles the status (will play sound if enabled)
 * `CK_ON` - Turns on Audio Click (plays sound)
@@ -136,7 +136,7 @@ The feature is disabled by default, to save space.  To enable it, add this to yo
     #define AUDIO_CLICKY
 
 
-You can configure the default, min and max frequencies, the stepping and built in randomness by defining these values:
+You can configure the default, min and max frequencies, the stepping and built in randomness by defining these values: 
 
 | Option | Default Value | Description |
 |--------|---------------|-------------|
@@ -144,7 +144,7 @@ You can configure the default, min and max frequencies, the stepping and built i
 | `AUDIO_CLICKY_FREQ_MIN` | 65.0f | Sets the lowest frequency (under 60f are a bit buggy). |
 | `AUDIO_CLICKY_FREQ_MAX` | 1500.0f | Sets the the highest frequency. Too high may result in coworkers attacking you. |
 | `AUDIO_CLICKY_FREQ_FACTOR` | 1.18921f| Sets the stepping of UP/DOWN key codes. |
-| `AUDIO_CLICKY_FREQ_RANDOMNESS`     |  0.05f |  Sets a factor of randomness for the clicks, Setting this to `0f` will make each click identical, and `1.0f` will make this sound much like the 90's computer screen scrolling/typing effect. |
+| `AUDIO_CLICKY_FREQ_RANDOMNESS`     |  0.05f |  Sets a factor of randomness for the clicks, Setting this to `0f` will make each click identical, and `1.0f` will make this sound much like the 90's computer screen scrolling/typing effect. | 
 
 
 

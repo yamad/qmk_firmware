@@ -14,3 +14,4 @@ This configuration lets me use my thumbs for enter and backspace.
 It turns out I need `+` a lot for programming so I moved it logically
 below `-`.  I also added a couple of web specific short cuts for
 navigating previous and next in web history on OSX Chrome.
+

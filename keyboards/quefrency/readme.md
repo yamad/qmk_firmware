@@ -3,9 +3,9 @@ Quefrency
 
 A split 60% staggered keyboard made and sold by Keebio. [More info at Keebio](https://keeb.io).
 
-Keyboard Maintainer: [Bakingpy/nooges](https://github.com/nooges)
-Hardware Supported: Pro Micro
-Hardware Availability: [Keebio](https://keeb.io/)
+Keyboard Maintainer: [Bakingpy/nooges](https://github.com/nooges)  
+Hardware Supported: Pro Micro  
+Hardware Availability: [Keebio](https://keeb.io/)  
 
 Make example for this keyboard (after setting up your build environment):
 

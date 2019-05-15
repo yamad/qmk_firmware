@@ -113,3 +113,4 @@ void backlight_set_brightness_all( uint8_t value )
 {
 	IS31FL3736_mono_set_brightness_all( value );
 }
+

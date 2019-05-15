@@ -9,7 +9,7 @@ OPT_DEFS += -DINTERRUPT_CONTROL_ENDPOINT
 BOOTLOADER = lufa-dfu
 
 # Build Options
-#   change to "no" to disable the options, or define them in the Makefile in
+#   change to "no" to disable the options, or define them in the Makefile in 
 #   the appropriate keymap folder that will get included automatically
 #
 BOOTMAGIC_ENABLE = no       # Virtual DIP switch configuration(+1000)
@@ -24,7 +24,7 @@ AUDIO_ENABLE = no           # Audio output on port C6
 UNICODE_ENABLE = no         # Unicode
 UNICODEMAP_ENABLE = yes
 BLUETOOTH_ENABLE = no       # Enable Bluetooth with the Adafruit EZ-Key HID
-RGBLIGHT_ENABLE = no        # Enable WS2812 RGB underlight.
+RGBLIGHT_ENABLE = no        # Enable WS2812 RGB underlight. 
 CUSTOM_MATRIX = yes
 
 # Do not enable SLEEP_LED_ENABLE. it uses the same timer as BACKLIGHT_ENABLE

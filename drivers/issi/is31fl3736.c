@@ -240,9 +240,9 @@ void IS31FL3736_set_led_control_register( uint8_t index, bool red, bool green, b
 void IS31FL3736_mono_set_brightness( int index, uint8_t value )
 {
     if ( index >= 0 && index < 96 ) {
-	// Index in range 0..95 -> A1..A8, B1..B8, etc.
-	// Map index 0..95 to registers 0x00..0xBE (interleaved)
-	uint8_t pwm_register = index * 2;
+    	// Index in range 0..95 -> A1..A8, B1..B8, etc.
+    	// Map index 0..95 to registers 0x00..0xBE (interleaved)
+    	uint8_t pwm_register = index * 2;
         g_pwm_buffer[0][pwm_register] = value;
         g_pwm_buffer_update_required = true;
     }
@@ -252,7 +252,7 @@ void IS31FL3736_mono_set_brightness_all( uint8_t value )
 {
     for ( int i = 0; i < 96; i++ )
     {
-	IS31FL3736_mono_set_brightness( i, value );
+    	IS31FL3736_mono_set_brightness( i, value );
     }
 }
 
@@ -303,3 +303,4 @@ void IS31FL3736_update_led_control_registers( uint8_t addr1, uint8_t addr2 )
         }
     }
 }
+

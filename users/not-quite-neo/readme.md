@@ -12,7 +12,7 @@ My use case is simple:
 Therefore, I put all reusable code in the users/not-quite-neo directory and created a custom not-quite-neo keymap for the planck and the ergodox infinity keyboard respectively.
 
 ## Pitfalls
-Mind, since neo2 is a SW driver supported layout it offers a lot of features that are hard to support in hardware (especially the fancy utf stuff with math symbols and greek letters etc.).
+Mind, since neo2 is a SW driver supported layout it offers a lot of features that are hard to support in hardware (especially the fancy utf stuff with math symbols and greek letters etc.). 
 
 Right now this implementation only incompletely supports neo2 layers 1 to 4.
 

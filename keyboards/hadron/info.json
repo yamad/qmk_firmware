@@ -1,9 +1,9 @@
 {
-  "keyboard_name": "Hadron",
-  "url": "",
-  "maintainer": "qmk",
-  "width": 15,
-  "height": 5,
+  "keyboard_name": "Hadron", 
+  "url": "", 
+  "maintainer": "qmk", 
+  "width": 15, 
+  "height": 5, 
   "layouts": {
     "LAYOUT": {
       "key_count": 72,

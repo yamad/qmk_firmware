@@ -41,3 +41,4 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #endif //MD_BOOTLOADER
 
 #endif //_ARM_ATSAM_PROTOCOL_H_
+

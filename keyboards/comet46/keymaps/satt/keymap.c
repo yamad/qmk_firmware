@@ -44,12 +44,12 @@ enum custom_keycodes {
 #define LONGPRESS_DELAY 150
 
 // Fillers to make layering more clear
-#define KC_ KC_TRNS
+#define KC_ KC_TRNS 
 #define KC_XXXX KC_NO
 
 const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 
-  [_QWERTY] = LAYOUT_kc(
+  [_QWERTY] = LAYOUT_kc(  
   //,----+----+----+----+----+----+               +----+----+----+----+----+----.
      ESC , Q  , W  , E  , R  , T  ,                 Y  , U  , I  , O  , P  ,DEL ,
   //|----+----+----+----+----+----+----+     +----+----+----+----+----+----+----|
@@ -61,7 +61,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   //                    +----+----+---/       \---+----+----+
   ),
 
-  [_LOWER] = LAYOUT_kc(
+  [_LOWER] = LAYOUT_kc(  
   //,----+----+----+----+----+----+               +----+----+----+----+----+----.
          ,EXLM, AT ,HASH,DLR ,PERC,                CIRC,AMPR,ASTR,LPRN,RPRN,    ,
   //|----+----+----+----+----+----+----+     +----+----+----+----+----+----+----|
@@ -69,11 +69,11 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   //|----+----+----+----+----+----+----|     |----+----+----+----+----+----+----|
          , F7 , F8 , F9 , F10, F11, F12,      TILD,PIPE,UNDS,PLUS,LCBR,RCBR,    ,
   //|----+----+----+----+----+----+----|     |----+----+----+----+----+----+----|
-                             ,    ,    ,          ,    ,
+                             ,    ,    ,          ,    ,    
   //                    +----+----+---/       \---+----+----+
   ),
 
-  [_RAISE] = LAYOUT_kc(
+  [_RAISE] = LAYOUT_kc(  
   //,----+----+----+----+----+----+               +----+----+----+----+----+----.
          , 1  , 2  , 3  , 4  , 5  ,                 6  , 7  , 8  , 9  , 0  ,    ,
   //|----+----+----+----+----+----+----+     +----+----+----+----+----+----+----|
@@ -81,11 +81,11 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   //|----+----+----+----+----+----+----|     |----+----+----+----+----+----+----|
          ,    ,    ,    ,    ,    ,    ,      HOME,XXXX,XXXX,XXXX,XXXX,XXXX,    ,
   //|----+----+----+----+----+----+----|     |----+----+----+----+----+----+----|
-                             ,    ,    ,          ,    ,
+                             ,    ,    ,          ,    ,    
   //                    +----+----+---/       \---+----+----+
   ),
 
-  [_PSEUDO_US] = LAYOUT_kc(
+  [_PSEUDO_US] = LAYOUT_kc(  
   //,----+----+----+----+----+----+               +----+----+----+----+----+----.
      ESC , Q  , W  , E  , R  , T  ,                 Y  , U  , I  , O  , P  ,DEL ,
   //|----+----+----+----+----+----+----+     +----+----+----+----+----+----+----|
@@ -98,7 +98,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   ),
 
 
-  [_PSEUDO_US_LOWER] = LAYOUT_kc(
+  [_PSEUDO_US_LOWER] = LAYOUT_kc(  
   //,----+----+----+----+----+----+               +----+----+----+----+----+----.
          ,EXLM,LBRC,HASH,DLR ,PERC,                EQL ,CIRC, DQT,ASTR,LPRN,    ,
   //|----+----+----+----+----+----+----+     +----+----+----+----+----+----+----|
@@ -106,11 +106,11 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   //|----+----+----+----+----+----+----|     |----+----+----+----+----+----+----|
          , F7 , F8 , F9 , F10, F11, F12,      PLUS,SYEN,SRO ,COLN,RCBR,PIPE,    ,
   //|----+----+----+----+----+----+----|     |----+----+----+----+----+----+----|
-                             ,    ,    ,          ,    ,
+                             ,    ,    ,          ,    ,    
   //                    +----+----+---/       \---+----+----+
   ),
 
-  [_PSEUDO_US_RAISE] = LAYOUT_kc(
+  [_PSEUDO_US_RAISE] = LAYOUT_kc(  
   //,----+----+----+----+----+----+               +----+----+----+----+----+----.
          , 1  , 2  , 3  , 4  , 5  ,                 6  , 7  , 8  , 9  , 0  ,    ,
   //|----+----+----+----+----+----+----+     +----+----+----+----+----+----+----|
@@ -118,11 +118,11 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   //|----+----+----+----+----+----+----|     |----+----+----+----+----+----+----|
          ,    ,    ,    ,    ,    ,    ,      HOME,XXXX,XXXX,XXXX,XXXX,XXXX,    ,
   //|----+----+----+----+----+----+----|     |----+----+----+----+----+----+----|
-                             ,    ,    ,          ,    ,
+                             ,    ,    ,          ,    ,    
   //                    +----+----+---/       \---+----+----+
   ),
 
-  [_ADJUST] = LAYOUT_kc(
+  [_ADJUST] = LAYOUT_kc(  
   //,----+----+----+----+----+----+               +----+----+----+----+----+----.
          ,    ,    ,    ,    ,    ,                    ,    ,    ,    ,    ,    ,
   //|----+----+----+----+----+----+----+     +----+----+----+----+----+----+----|
@@ -130,7 +130,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   //|----+----+----+----+----+----+----|     |----+----+----+----+----+----+----|
          ,    ,    ,    ,    ,    ,RST ,      P_US,    ,    ,    ,    ,    ,    ,
   //|----+----+----+----+----+----+----|     |----+----+----+----+----+----+----|
-                             ,    ,    ,          ,    ,
+                             ,    ,    ,          ,    ,    
   //                    +----+----+---/       \---+----+----+
   )
 
@@ -192,7 +192,7 @@ uint32_t layer_state_set_user(uint32_t state) {
     case _PSEUDO_US_LOWER:
       return update_tri_layer_state(state, _PSEUDO_US_RAISE, _PSEUDO_US_LOWER, _ADJUST);
       break;
-    case _PSEUDO_US_RAISE:
+    case _PSEUDO_US_RAISE: 
       return update_tri_layer_state(state, _PSEUDO_US_RAISE, _PSEUDO_US_LOWER, _ADJUST);
       break;
     default:

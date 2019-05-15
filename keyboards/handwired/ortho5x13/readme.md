@@ -2,9 +2,9 @@
 
 Custom handwired ortho5x13 keyboard.
 
-Keyboard Maintainer: [Danny](https://github.com/nooges)
-Hardware Supported: Custom handwired 5x13 ortho keyboard
-Hardware Availability:
+Keyboard Maintainer: [Danny](https://github.com/nooges)  
+Hardware Supported: Custom handwired 5x13 ortho keyboard  
+Hardware Availability: 
 
 Make example for this keyboard (after setting up your build environment):
 

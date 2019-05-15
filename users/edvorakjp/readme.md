@@ -62,7 +62,7 @@ This is a sample. You can swap any symbol keys and modifier keys.
     - 二重母音入力用のキー(AI, OU, EI)
     - 撥音入力用のキー(ANN, ONN, ENN, INN, UNN)
     - いずれかの子音を押下することで Additional layer が出現し、いずれかの母音を押下することで Base layer に戻ります（※1※2）
-      - ※1促音の入力に使うため、また連続で同じ指での打鍵を減らすために、
+      - ※1促音の入力に使うため、また連続で同じ指での打鍵を減らすために、  
         FGRDTNBHJ を押下した場合はy1が、それ以外の子音を押下した場合はy2が出現しません
       - ※2撥音の入力のため、nを2連打すると、Base layerに戻ります
 - Define some custom keys for typing Japanese

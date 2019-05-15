@@ -3,9 +3,9 @@ Wavelet
 
 A 4x12 ortholinear keyboard using Kailh Choc Low-Profile switches made and sold by [Keebio](https://keeb.io).
 
-Keyboard Maintainer: [Bakingpy/nooges](https://github.com/nooges)
-Hardware Supported: Pro Micro
-Hardware Availability: [Keebio](https://keeb.io)
+Keyboard Maintainer: [Bakingpy/nooges](https://github.com/nooges)  
+Hardware Supported: Pro Micro  
+Hardware Availability: [Keebio](https://keeb.io)  
 
 Make example for this keyboard (after setting up your build environment):
 

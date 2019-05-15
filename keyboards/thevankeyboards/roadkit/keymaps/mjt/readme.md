@@ -19,4 +19,4 @@ most letters...
 ## LEADER KEYS
 
 This board would probably be better with the user of leader keys instead of
-complex layers with a raise/lower setup...  Something to look into for later.
+complex layers with a raise/lower setup...  Something to look into for later. 

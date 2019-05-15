@@ -7,3 +7,4 @@ int UTIL_itoa(int value, char *dest);
 int UTIL_utoa(uint32_t value, char *dest);
 
 #endif //_USB_UTIL_H_
+

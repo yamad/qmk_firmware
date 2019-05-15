@@ -9,7 +9,7 @@ ifneq (,$(findstring planck,$(KEYBOARD)))
     BACKLIGHT_ENABLE = no
     BACKLIGHT_BREATHING = no
   endif
-
+  
   AUDIO_ENABLE = yes
 endif
 

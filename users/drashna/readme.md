@@ -20,13 +20,18 @@ My [Ergodox EZ Keymap](https://github.com/qmk/qmk_firmware/blob/master/layouts/c
 
 This borrows from @jola5's "Not quite neo" code.  This allows me to maintain blocks of keymaps in the userspace, so that I can modify the userspace, and this is reflected in all of the keyboards that use it, at once.
 
-This makes adding tap/hold mods, or other special keycodes or functions to all keyboards super easy, as it's done to all of them at once.
+This makes adding tap/hold mods, or other special keycodes or functions to all keyboards super easy, as it's done to all of them at once. 
 
 The caveat here is that the keymap needs a processor/wrapper, as it doesn't like the substitutions.  However, this is as simple as just pushing it through a define. For instance:
 
 `#define LAYOUT_ergodox_wrapper(...)   LAYOUT_ergodox(__VA_ARGS__)`
 
 Once that's been done and you've switched the keymaps to use the "wrapper", it will read the substitution blocks just fine.
+
+Credit goes to @jola5 for first implementing this awesome idea.
+
+
+## Custom Keycodes
 
 Credit goes to @jola5 for first implementing this awesome idea.
 
@@ -65,11 +70,13 @@ For critics that think this is cheating, search "diablo 3 num lock auto cast".  
 
 ## Secret Macros
 
-With help from gitter and Colinta, this adds the ability to add hidden macros from other users.
+## Secret Macros
+
+With help from gitter and Colinta, this adds the ability to add hidden macros from other users.  
 
 First, I have several files that are hidden/excluded from Git/GitHub.  These contain everything needed for the macros. To hide these files, open `.git/info/exclude` and add `secrets.c` and  `secrets.h` to that file, below the comments.
 
-And this requires `KC_SECRET_1` through `KC_SECRET_5` to be defined in your `<name>.h` file to define the keycodes for the new macros.
+And this requires `KC_SECRET_1` through `KC_SECRET_5` to be defined in your `<name>.h` file to define the keycodes for the new macros. 
 
 
 ### .git/info/exclude
@@ -176,7 +183,7 @@ Then, if you run `make keyboard:name NO_SECRETS=yes`, it will default to the tes
 
 ## Pro Micro Hacking
 
-Well, you can get the QMK DFU bootloader working on the ProMicro. But you need to change fuses.
+Well, you can get the QMK DFU bootloader working on the ProMicro. But you need to change fuses.  
 
 What worked to get into the firmware properly was:
 

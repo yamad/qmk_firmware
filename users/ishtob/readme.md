@@ -60,14 +60,14 @@ bool process_record_secrets(uint16_t keycode, keyrecord_t *record) {
       //Ops macros
       case M_EMAIL:
           SEND_STRING("privatemail@email.com");
-          return false;
+          return false;       
       case M_EMAIL2:
           SEND_STRING("workemail@work.com");
           return false;
      }
    }
   return true;
-}
+} 
 ```
 
 

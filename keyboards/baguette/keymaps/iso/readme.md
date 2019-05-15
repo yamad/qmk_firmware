@@ -7,3 +7,4 @@ Typical ISO keymap. Please note:
 - Backlight control is on the Z, X and C keys of the FN layer.
 - Reset key combination is FN + ].
 - Holding ESC and Space while plugging in the USB erases the EEPROM.
+

@@ -31,7 +31,7 @@ Here is an example for a custom *US Equal* keycode that illustrates the problem:
 
 #### Tracking the physical shift state
 
-To track the physical shift state there are two custom left and right shift keycodes `CU_LSFT` and `CU_RSFT`. These track the current physical shift state using two booleans `lshift` and `rshift`. To make things easier both custom shifts use KC_LSFT. A space cadet shift functionality is also included. The preexisting space cadet shift implementation could not be used because it doesn't reset when custom keycodes are pressed and therefore produces unwated parenthesis.
+To track the physical shift state there are two custom left and right shift keycodes `CU_LSFT` and `CU_RSFT`. These track the current physical shift state using two booleans `lshift` and `rshift`. To make things easier both custom shifts use KC_LSFT. A space cadet shift functionality is also included. The preexisting space cadet shift implementation could not be used because it doesn't reset when custom keycodes are pressed and therefore produces unwated parenthesis. 
 
 #### Custom keycode templates
 

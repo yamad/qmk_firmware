@@ -2,10 +2,10 @@
 
 ![Prime_EXL](https://i.imgur.com/3t524g8.jpg)
 
-An ergonomic 45% keyboard with a macro/numpad added to the left side.
+An ergonomic 45% keyboard with a macro/numpad added to the left side. 
 
-Keyboard Maintainer: [Holtenc](https://github.com/holtenc/)
-Hardware Supported: Prime_EXL PCB, ATMega32u4
+Keyboard Maintainer: [Holtenc](https://github.com/holtenc/)  
+Hardware Supported: Prime_EXL PCB, ATMega32u4  
 Hardware Availability: Prototype
 
 Make example for this keyboard (after setting up your build environment):

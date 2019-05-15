@@ -43,7 +43,7 @@ enum custom_keycodes {
 
   SHELL_EXPAND_OE_LOGPATTERN,
   SHELL_EXPAND_OE_TRANPATTERN,
-
+  
   // Cloud9 macros
   CLOUD9_TAB_LEFT,
   CLOUD9_TAB_RIGHT,
@@ -60,7 +60,7 @@ enum custom_keycodes {
 #define KEYSEL       2 // arrow navigation + shift (allow text selection)
 #define SHELL_NAV    3 // bash shortcuts
 #define SHELL_SCREEN 4 // linux screen shortcuts
-#define SCREEN_NAV   5 // navigate between linux screen tabs
+#define SCREEN_NAV   5 // navigate between linux screen tabs 
 #define BROWSER_CONTROL 6 // control browser and mouse
 #define COMBINED      	7 // combined numbers and symbols layer
 
@@ -319,8 +319,8 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     KC_TRNS,KC_TRNS,
 	KC_TRNS,
 	KC_TRNS,KC_TRNS,KC_TRNS),
-
-
+  
+  
     [BROWSER_CONTROL] = LAYOUT_ergodox(
 		   // left hand
            KC_TRNS, KC_TRNS,      KC_TRNS,       KC_TRNS,       KC_TRNS,      KC_TRNS, KC_TRNS,
@@ -435,19 +435,19 @@ const macro_t *action_get_macro(keyrecord_t *record, uint8_t id, uint8_t opt)
             if (record->event.pressed) {
                 return MACRO( D(LCTL), T(A), U(LCTL), T(RBRC), END);
             }
-        break;
+        break;        
 
 	case DEL_TO_HOME:
             if (record->event.pressed) {
-                return MACRO(
+                return MACRO( 
 				// delete to the beginning of the line
-				D(LSFT), T(HOME), U(LSFT),
+ 				D(LSFT), T(HOME), U(LSFT),
 				T(DELETE),
 				END);
-            }
-	    break;
+            }				
+  	    break;		
 
-
+   
       }
     return MACRO_NONE;
 };
@@ -541,21 +541,21 @@ bool process_record_user(uint16_t keycode, keyrecord_t *record) {
         case SHELL_HTCSTATUS:
             SEND_STRING("htcStatus -j ");
             return true;
-            break;
+            break;               
         case SHELL_HTCBOUNCE:
             SEND_STRING("htcBounce -j ");
             return true;
-            break;
+            break;               
 	case SHELL_EXPAND_OE_LOGPATTERN:
             SEND_STRING(SS_TAP(X_LEFT)"*CQW_HKEX"SS_TAP(X_END)"*.log"SS_LCTRL("x")SS_LSFT("8"));
-	    break;
+	    break;	
 	case SHELL_EXPAND_OE_TRANPATTERN:
             SEND_STRING(SS_TAP(X_LEFT)"*CQW_HKEX"SS_TAP(X_END)"*.tran"SS_LCTRL("x")SS_LSFT("8"));
-	    break;
+	    break;	
         case SHELL_DUMPTLOG:
             SEND_STRING(" | dumptlog - ");
             return true;
-            break;
+            break;            
 	// Cloud9 macros
 	case CLOUD9_TAB_LEFT:
             SEND_STRING(SS_LCTRL("["));

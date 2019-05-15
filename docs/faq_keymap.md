@@ -16,12 +16,12 @@ There are 3 standard keyboard layouts in use around the world- ANSI, ISO, and JI
 
 ## Some Of My Keys Are Swapped Or Not Working
 
-QMK has two features, Bootmagic and Command, which allow you to change the behavior of your keyboard on the fly. This includes, but is not limited to, swapping Ctrl/Caps, disabling Gui, swapping Alt/Gui, swapping Backspace/Backslash, disabling all keys, and other behavioral modifications.
+QMK has two features, Bootmagic and Command, which allow you to change the behavior of your keyboard on the fly. This includes, but is not limited to, swapping Ctrl/Caps, disabling Gui, swapping Alt/Gui, swapping Backspace/Backslash, disabling all keys, and other behavioral modifications. 
 
 As a quick fix try holding down `Space`+`Backspace` while you plug in your keyboard. This will reset the stored settings on your keyboard, returning those keys to normal operation. If that doesn't work look here:
 
 * [Bootmagic](feature_bootmagic.md)
-* [Command](feature_command.md)
+* [Command](feature_command.md) 
 
 ## The Menu Key Isn't Working
 

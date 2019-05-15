@@ -3,8 +3,8 @@ Chocopad
 
 A 4x4 macropad keyboard using Kailh PG1350 Lower Profile Choc switches.
 
-Keyboard Maintainer: Keebio
-Hardware Supported: Chocopad PCB, Arduino Pro Micro
+Keyboard Maintainer: Keebio  
+Hardware Supported: Chocopad PCB, Arduino Pro Micro  
 Hardware Availability: [Keebio](https://keeb.io)
 
 Make example for this keyboard (after setting up your build environment):

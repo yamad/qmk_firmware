@@ -1,6 +1,6 @@
 Tetris
 ===
-A compact 40% (12x4) ortholinear keyboard (Planck Mit layout) with per switch RGB and encoder made by Fengz.
+A compact 40% (12x4) ortholinear keyboard (Planck Mit layout) with per switch RGB and encoder made by Fengz. 
 
 ![TetrisPhoto](https://i.imgur.com/quwEY0f.jpg)
 

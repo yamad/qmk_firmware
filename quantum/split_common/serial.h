@@ -14,7 +14,7 @@
 #define SERIAL_SLAVE_BUFFER_LENGTH MATRIX_ROWS/2
 #define SERIAL_MASTER_BUFFER_LENGTH 1
 
-// Address location defines
+// Address location defines 
 #define SERIAL_BACKLIT_START   0x00
 
 // Buffers for master - slave communication

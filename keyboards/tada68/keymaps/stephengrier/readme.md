@@ -12,3 +12,4 @@ The modifications from the default keymap are:
 
 With this keymap backlight breathing mode can be enabled/disabled with Fn+x.
 This is not supported at all in the default keymap.
+

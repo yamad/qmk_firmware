@@ -4,9 +4,9 @@
 
 A hotpluggable four part keyboard which comes together with magnets and pogo pins! This is the right part.
 
-Keyboard Maintainer: [Yiancar](https://github.com/yiancar)
-Hardware Supported: Runs on an atmega32u4
-Hardware Availability: [Mechboards](https://mechboards.co.uk/)
+Keyboard Maintainer: [Yiancar](https://github.com/yiancar)  
+Hardware Supported: Runs on an atmega32u4  
+Hardware Availability: [Mechboards](https://mechboards.co.uk/)  
 
 Make example for this keyboard (after setting up your build environment):
 

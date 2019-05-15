@@ -2,11 +2,11 @@
 
 ![meme](imgur.com image replace me!)
 
-65% gasket mount keyboard.
+65% gasket mount keyboard.   
 
-Keyboard Maintainer: [MechMerlin](https://github.com/mechmerlin)
-Hardware Supported: Meme
-Hardware Availability: [Switchmod Keyboards](http://www.switchmod.net/)
+Keyboard Maintainer: [MechMerlin](https://github.com/mechmerlin)   
+Hardware Supported: Meme   
+Hardware Availability: [Switchmod Keyboards](http://www.switchmod.net/)   
 
 Make example for this keyboard (after setting up your build environment):
 

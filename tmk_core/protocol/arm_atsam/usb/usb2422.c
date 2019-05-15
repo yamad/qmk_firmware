@@ -409,3 +409,4 @@ void USB_HandleExtraDevice(void)
 }
 
 #endif //MD_BOOTLOADER
+

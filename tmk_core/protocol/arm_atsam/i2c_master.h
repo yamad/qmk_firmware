@@ -105,3 +105,4 @@ uint8_t i2c0_transmit(uint8_t address, uint8_t *data, uint16_t length, uint16_t 
 void i2c0_stop(void);
 
 #endif // _I2C_MASTER_H_
+

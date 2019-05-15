@@ -1,14 +1,14 @@
-# Symbolic ortho 4x12 layout
+# Symbolic ortho 4x12 layout 
 
 ## Features
 
-### QWERTY based
+### QWERTY based 
 
 ![QWERTY layout](https://gist.githubusercontent.com/leico/cb50ecd12eb8ad906a69678f265cd52c/raw/4597497ecd00790312f1a3928b2e2c5cf17a6ac1/QWERTY.png)
 
 * Default keymap
 * QWERTY layout
-* Hold and tap
+* Hold and tap 
     * `Shift` and `Space`
     * `Left Ctrl` and `Tab`
 * Symmetric Modifiers
@@ -67,3 +67,4 @@
 ###  suggestions or find issues
 
 [post issues for my fork](https://github.com/leico/qmk_firmware/issues)
+

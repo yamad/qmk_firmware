@@ -1,6 +1,6 @@
 # Helix 5 rows JIS layout
 
-This keymap was created with the concept that users using Japanese JIS keyboard layout can operate without difficulty. It has the following features.
+This keymap was created with the concept that users using Japanese JIS keyboard layout can operate without difficulty. It has the following features.  
 
 * We are considering to be able to input long Japanese notes without moving the layer
 * We are arranging the relation of symbols that can not fit in the Lower layer keeping the positional relationship
@@ -8,7 +8,7 @@ This keymap was created with the concept that users using Japanese JIS keyboard 
 * Ctrl, Shift, Tab, Kanji, Esc, GUI (Win), App keys are arranged keeping positional relationship
 * Lower / Raise keymap is considering easy placement so that it can be used without memorizing
 
-This keymap also includes a "NORMAL" keymap that uses Helix's split keyboard as usual, and an "EXCHANGE" key that exchanges left and right sides of Helix's split keyboard for key position optimization I am trying to switch maps. These have the following additional features.
+This keymap also includes a "NORMAL" keymap that uses Helix's split keyboard as usual, and an "EXCHANGE" key that exchanges left and right sides of Helix's split keyboard for key position optimization I am trying to switch maps. These have the following additional features.  
 
 ## NORMAL Keymap
 
@@ -23,9 +23,9 @@ This keymap also includes a "NORMAL" keymap that uses Helix's split keyboard as 
 
 ### NORMAL Keymap
 
- Adjust + ModExc key switches to the NORMAL keymap.
+ Adjust + ModExc key switches to the NORMAL keymap.  
 
-Base Layer
+Base Layer  
 
 ```
  ,-----------------------------------------.             ,-----------------------------------------.
@@ -41,7 +41,7 @@ Base Layer
  `-------------------------------------------------------------------------------------------------'
 ```
 
-Lower Layer
+Lower Layer  
 
 ```
  ,-----------------------------------------.             ,-----------------------------------------.
@@ -57,7 +57,7 @@ Lower Layer
  `-------------------------------------------------------------------------------------------------'
 ```
 
-Raise Layer
+Raise Layer  
 
 ```
  ,-----------------------------------------.             ,-----------------------------------------.
@@ -75,9 +75,9 @@ Raise Layer
 
 ### EXCHANGE Keymap
 
-Adjust + ModExc key switches to the EXCHANGE keymap.
+Adjust + ModExc key switches to the EXCHANGE keymap.  
 
-Base Layer
+Base Layer  
 
 ```
         ,-----------------------------------------.,-----------------------------------------.
@@ -93,7 +93,7 @@ Base Layer
  `------------------------------------------------'`------------------------------------------------'
 ```
 
-Lower Layer
+Lower Layer  
 
 ```
         ,-----------------------------------------.,-----------------------------------------.
@@ -109,7 +109,7 @@ Lower Layer
  `------------------------------------------------'`------------------------------------------------'
 ```
 
-Raise Layer
+Raise Layer  
 
 ```
         ,-----------------------------------------.,-----------------------------------------.

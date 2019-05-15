@@ -40,12 +40,12 @@ BASE:
  * `-----------------------------------------------------------------------------------------'
  */
  ```
-
+ 
  LAYER 1 (ALTFN):
  ---
-
+ 
  this layer is my main function layer, i changed the default HHKB function layer to suit my need and also changed the placement of the modifyer key to the left alt since i want to control the layer activation with one hand and have the other hand control the keys on that layer freely. perhaps this is due to me being left handed but it feels more natural to me this way.
-
+ 
  ```
  /* ALTFN LAYER
  *
@@ -91,23 +91,23 @@ also another benefit is that a lot of mice do not have horizontal control button
  * `---------------------------------------------------------------------------------------------------------------------'
  */
  ```
-
-
+ 
+ 
  STANDARD HHKB FN LAYER (FN):
  ---
-
+ 
  this is the default HHKB function layer (mostly)... I have left it there on the same button and everything for 2 reasons: 1. for backup incase i forget where something was or if it contains a button that i did not include in my ALTFN layer. 2. as a reference for anyone else.
-
+ 
  *this layer will probably get removed once i get comfortable with my ALTFN layer.*
-
-
-
+ 
+ 
+ 
  LIGHTS LAYER:
  ---
-
+ 
  this is the basic lights layer used to control the RBG backlight on the DZ60... i have removed the 3 backlight controls since i do not use any key LED Backlight.
-
-
+ 
+ 
  ```
  /* LIGHTS LAYER
  *
@@ -124,4 +124,5 @@ also another benefit is that a lot of mice do not have horizontal control button
  * `----------------------------------------------------------------------------------------------------------------------'
  */
  ```
-
+ 
+ 

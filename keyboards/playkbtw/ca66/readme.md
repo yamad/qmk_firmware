@@ -3,8 +3,8 @@ CA66
 
 Custom 65%
 
-Keyboard Maintainer: QMK Community
-Hardware Supported: CA66
+Keyboard Maintainer: QMK Community   
+Hardware Supported: CA66   
 Hardware Availability: [Play Keyboard](http://play-keyboard.store/)
 
 

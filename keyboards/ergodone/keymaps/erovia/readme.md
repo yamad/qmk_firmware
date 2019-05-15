@@ -1,6 +1,6 @@
 # Erovia's ErdoDone Keymap
 
-My personal ErgoDone keymap based on the *default* keymap.
+My personal ErgoDone keymap based on the *default* keymap.  
 
 **Features**
 

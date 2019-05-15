@@ -43,7 +43,7 @@ OPT_DEFS += -DINTERRUPT_CONTROL_ENDPOINT
 
 # Bootloader
 #     This definition is optional, and if your keyboard supports multiple bootloaders of
-#     different sizes, comment this out, and the correct address will be loaded
+#     different sizes, comment this out, and the correct address will be loaded 
 #     automatically (+60). See bootloader.mk for all options.
 BOOTLOADER = caterina
 
@@ -63,7 +63,7 @@ CONSOLE_ENABLE		= yes			# Console for debug(+400)
 COMMAND_ENABLE		= no  			# Commands for debug and configuration
 SLEEP_LED_ENABLE 	= no  			# Breathing sleep LED during USB suspend
 NKRO_ENABLE 		= no			# USB Nkey Rollover - not yet supported in LUFA
-EXTRAKEY_ENABLE		= yes
+EXTRAKEY_ENABLE		= yes	
 USB_HID_ENABLE 		= yes
 BACKLIGHT_ENABLE 	= no
 #BLUETOOTH 			= AdafruitBLE   # For Adafruit Feather 32U4 BLE support, uncomment this line

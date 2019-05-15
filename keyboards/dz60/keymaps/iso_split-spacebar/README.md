@@ -24,7 +24,7 @@ the key in between the two spacebars is the function key
 
 ---- Layer 1 - FL
 quite standard function layer
-arrow keys and mouse movement/buttons on the home row
+arrow keys and mouse movement/buttons on the home row 
  *,-----------------------------------------------------------.
  *|ESC|F1 |F2 |F3 |F4 |F5 |F6 |F7 |F8 |F9 |F10|F11|F12|  DEL  |
  *|-----------------------------------------------------------|
@@ -52,7 +52,7 @@ menu key (KC_APP) is used to move to the next layer
  *|-----------------------------------------------------------|
  *|    |    |    |        |    |         |    |    | RL |     |
  *`-----------------------------------------------------------'
-
+ 
 ---- Layer 3 - BL
 all the fancy lights
 and useful reset button  (top right)
@@ -66,4 +66,4 @@ and useful reset button  (top right)
  *|    |   |bd |bt |bi |bs |   |   |   |   |   |   |          |
  *|-----------------------------------------------------------|
  *|    |    |    |        |    |         |    |    | BL |     |
- *`-----------------------------------------------------------'
+ *`-----------------------------------------------------------' 

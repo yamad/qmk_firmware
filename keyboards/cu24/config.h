@@ -47,7 +47,7 @@
 
 /* COL2ROW, ROW2COL, or CUSTOM_MATRIX */
 #define DIODE_DIRECTION ROW2COL
-
+ 
 /* Backlight */
 #define BACKLIGHT_PIN B5
 #define BACKLIGHT_BREATHING

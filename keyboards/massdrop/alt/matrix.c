@@ -75,7 +75,7 @@ void matrix_init(void)
         PORT->Group[col_ports[col]].DIRSET.reg = 1 << col_pins[col]; //Output
         PORT->Group[col_ports[col]].OUTCLR.reg = 1 << col_pins[col]; //Low
     }
-
+    
     matrix_init_quantum();
 }
 

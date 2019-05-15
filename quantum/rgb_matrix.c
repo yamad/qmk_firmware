@@ -499,7 +499,7 @@ void rgb_matrix_digital_rain( const bool initialize ) {
             map_row_column_to_led(row, col, &led, &led_count);
 
             if (map[col][row] > pure_green_intensity) {
-                const uint8_t boost = (uint8_t) ((uint16_t) max_brightness_boost
+                const uint8_t boost = (uint8_t) ((uint16_t) max_brightness_boost 
                         * (map[col][row] - pure_green_intensity) / (max_intensity - pure_green_intensity));
                 rgb_matrix_set_color(led, boost, max_intensity, boost);
             }
@@ -623,7 +623,7 @@ void rgb_matrix_task(void) {
         rgb_matrix_all_off();
         rgb_matrix_indicators();
         toggle_enable_last = rgb_matrix_config.enable;
-	return;
+    	return;
     }
     // delay 1 second before driving LEDs or doing anything else
     static uint8_t startup_tick = 0;

@@ -4,8 +4,8 @@
 
 A 5x4 macropad/numpad, sold by NovelKeys.xyz. There are two versions of the PCB, the NovelPad for MX switches and the NumChoc for Kailh Choc low profile switches. Both utilize the same firmware with no changes required.
 
-Keyboard Maintainer: [Cole Markham](https://github.com/colemarkham) / [Woodkeys.click](https://woodkeys.click)
-Hardware Supported: NovelPad
+Keyboard Maintainer: [Cole Markham](https://github.com/colemarkham) / [Woodkeys.click](https://woodkeys.click)  
+Hardware Supported: NovelPad  
 Hardware Availability: [Novelkeys.xyz](https://novelkeys.xyz)
 
 Make example for this keyboard (after setting up your build environment):

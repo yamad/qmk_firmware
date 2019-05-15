@@ -59,3 +59,4 @@ static void get_visualizer_layer_and_color(visualizer_state_t* state) {
         state->layer_text = "Colemak";
     }
 }
+

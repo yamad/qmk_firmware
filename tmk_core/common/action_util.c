@@ -86,7 +86,7 @@ inline bool has_oneshot_layer_timed_out() {
 }
 #endif
 
-/** \brief Set oneshot layer
+/** \brief Set oneshot layer 
  *
  * FIXME: needs doc
  */
@@ -98,7 +98,7 @@ void set_oneshot_layer(uint8_t layer, uint8_t state)
     oneshot_layer_time = timer_read();
 #endif
 }
-/** \brief Reset oneshot layer
+/** \brief Reset oneshot layer 
  *
  * FIXME: needs doc
  */
@@ -108,7 +108,7 @@ void reset_oneshot_layer(void) {
     oneshot_layer_time = 0;
 #endif
 }
-/** \brief Clear oneshot layer
+/** \brief Clear oneshot layer 
  *
  * FIXME: needs doc
  */

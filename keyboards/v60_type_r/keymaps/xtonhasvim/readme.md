@@ -2,7 +2,7 @@ KB Paradise V60 Type R Xton Has Vim! Layout
 ======================
 
 If you don't look closely, this layout mimics the default layout fairly well. Care
-is taken to match the FN layer to the keycaps that the TypeR comes with. I wrote this layout
+is taken to match the FN layer to the keycaps that the TypeR comes with. I wrote this layout 
 for a keyboard that I'm giving my intern as a parting gift and wanted it to be as easy to learn
 as possible.
 

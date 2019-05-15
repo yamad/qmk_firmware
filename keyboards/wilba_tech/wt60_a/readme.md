@@ -4,8 +4,8 @@
 
 WT60-A is a keyboard PCB supporting 60% layout. [More info at wilba.tech](https://wilba.tech/)
 
-Keyboard Maintainer: [Wilba6582](https://github.com/Wilba6582)
-Hardware Supported: WILBA.TECH WT65-A
+Keyboard Maintainer: [Wilba6582](https://github.com/Wilba6582)  
+Hardware Supported: WILBA.TECH WT65-A  
 Hardware Availability: Custom keyboard group buys
 
 Make example for this keyboard (after setting up your build environment):

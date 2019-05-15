@@ -4,8 +4,8 @@ Luddite 60% keyboard with backlight and RGB underglow.
 
 * [The original TMK firmware](https://github.com/di0ib/tmk_keyboard/tree/master/keyboard/luddite)
 
-Keyboard Maintainer: QMK Community
-Hardware Supported: Luddite PCB
+Keyboard Maintainer: QMK Community  
+Hardware Supported: Luddite PCB  
 Hardware Availability: [Luddite project on 40% Keyboards](http://www.40percent.club/search/label/luddite)
 
 Make example for this keyboard (after setting up your build environment):

@@ -33,16 +33,16 @@ enum taps{
   ALLS
 };
 
-enum unicode_name {
+enum unicode_name { 
   EMOTIS = 1,//80, //1F60x - 1F64x
   ANIMALS, //64, //1F40x - 1F43x
   SYMBOLS,// = 45, //1F300 - 1F32C
-  FOODS,// = 87 , //1F32D -
+  FOODS,// = 87 , //1F32D - 
   ETC,// = 192, //1F44x -1F4Fx
   VEHICLES,// = 83, //1F68x - 1F6Dx
   SUPPLEMENT,// = 32, //1F91x-1F92x
   ALCHEMY,// = 116 //1F70x - 1F773
-
+  
 };
 
 enum my_macros {
@@ -102,7 +102,7 @@ const uint32_t PROGMEM unicode_map[] = {
   [EMOTIS]     = 0x1F600,
   [ANIMALS]    = 0x1F400,
   [SYMBOLS]    = 0x1F300,
-  [FOODS]      = 0x1F32D,
+  [FOODS]      = 0x1F32D, 
   [ETC]        = 0x1F440,
   [VEHICLES]   = 0x1F680,
   [SUPPLEMENT] = 0x1F910,
@@ -183,7 +183,7 @@ void cycleEmojis(qk_tap_dance_state_t *state, void *user_data) {
   }
 };
 
-void cycleAnimals(qk_tap_dance_state_t *state, void *user_data) {
+void cycleAnimals(qk_tap_dance_state_t *state, void *user_data) { 
   if(state->count == 1) {
     unicode_input_start();
     register_hex32(pgm_read_dword(&unicode_map[ANIMALS]));
@@ -225,3 +225,4 @@ void cycleEtc(qk_tap_dance_state_t *state, void *user_data) {
     unicode_input_finish();
   }
 };
+

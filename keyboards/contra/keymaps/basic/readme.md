@@ -1,6 +1,6 @@
 # A Basic Contra Layout
 
-The *default* layout currently (as of Mar 19, 2018) has a lot of components from Planck's default layout and is not very suitable for a basic Contra board. This basic layout is developed from Planck's default layout but has removed the parts that's irrelevant to a Contra board.
+The *default* layout currently (as of Mar 19, 2018) has a lot of components from Planck's default layout and is not very suitable for a basic Contra board. This basic layout is developed from Planck's default layout but has removed the parts that's irrelevant to a Contra board.  
 
 My other keyboard is a HHKB and I don't use `Tab` or `Esc` key that much and hence the unusual placements for those keys.
 

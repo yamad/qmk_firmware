@@ -25,7 +25,7 @@ ISR(TWI_vect){
     uint8_t ack = 1;
     // temporary stores the received data
     //uint8_t data;
-
+    
     switch(TW_STATUS){
         case TW_SR_SLA_ACK:
             // The device is now a slave receiver

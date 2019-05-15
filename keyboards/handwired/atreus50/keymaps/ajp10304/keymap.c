@@ -130,7 +130,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   M(0),     RESET,   QWERTY,  _______, _______, DYN_REC_START1,                    DYN_REC_START2,  _______,             _______,           _______,              _______,  KC_DEL  ,
   KC_CAPS,  _______, _______, _______, _______, DYN_MACRO_PLAY1,                   DYN_MACRO_PLAY2, KC_AUDIO_MUTE,       KC_AUDIO_VOL_UP,   KC_MEDIA_PLAY_PAUSE,  _______,  _______ ,
   TG(_MAC), _______, _______, _______, _______, DYN_REC_STOP,                      DYN_REC_STOP,    KC_MEDIA_PREV_TRACK, KC_AUDIO_VOL_DOWN, KC_MEDIA_NEXT_TRACK,  _______,  _______ ,
-  _______,  _______, _______, _______, _______, _______,         _______, _______, _______,         _______,             _______,           _______,              _______,  _______
+  _______,  _______, _______, _______, _______, _______,         _______, _______, _______,         _______,             _______,           _______,              _______,  _______ 
 ),
 
 /* Mouse

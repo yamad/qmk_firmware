@@ -166,9 +166,9 @@ void matrix_init(void)
         matrix[i] = 0;
         matrix_debouncing[i] = 0;
     }
-
+    
     matrix_init_quantum();
-
+    
 }
 
 uint8_t _matrix_scan(void)
@@ -225,20 +225,20 @@ uint8_t _matrix_scan(void)
 int i2c_transaction(void) {
     int slaveOffset = (isLeftHand) ? (ROWS_PER_HAND) : 0;
     int err = 0;
-
+    
     // write backlight info
     #ifdef BACKLIGHT_ENABLE
         if (BACKLIT_DIRTY) {
             err = i2c_master_start(SLAVE_I2C_ADDRESS + I2C_WRITE);
             if (err) goto i2c_error;
-
+            
             // Backlight location
             err = i2c_master_write(I2C_BACKLIT_START);
             if (err) goto i2c_error;
-
-            // Write backlight
+            
+            // Write backlight 
             i2c_master_write(get_backlight_level());
-
+            
             BACKLIT_DIRTY = false;
         }
     #endif
@@ -266,22 +266,22 @@ i2c_error: // the cable is disconnceted, or something else went wrong
         i2c_reset_state();
         return err;
     }
-
+    
     #ifdef RGBLIGHT_ENABLE
         if (RGB_DIRTY) {
             err = i2c_master_start(SLAVE_I2C_ADDRESS + I2C_WRITE);
             if (err) goto i2c_error;
-
+            
             // RGB Location
             err = i2c_master_write(I2C_RGB_START);
             if (err) goto i2c_error;
-
+            
             uint32_t dword = eeconfig_read_rgblight();
-
+            
             // Write RGB
             err = i2c_master_write_data(&dword, 4);
             if (err) goto i2c_error;
-
+            
             RGB_DIRTY = false;
             i2c_master_stop();
         }
@@ -302,11 +302,11 @@ int serial_transaction(void) {
     for (int i = 0; i < ROWS_PER_HAND; ++i) {
         matrix[slaveOffset+i] = serial_slave_buffer[i];
     }
-
+    
     #ifdef RGBLIGHT_ENABLE
         // Code to send RGB over serial goes here (not implemented yet)
     #endif
-
+    
     #ifdef BACKLIGHT_ENABLE
         // Write backlight level for slave to read
         serial_master_buffer[SERIAL_BACKLIT_START] = backlight_config.enable ? backlight_config.level : 0;
@@ -350,7 +350,7 @@ void matrix_slave_scan(void) {
 #if defined(USE_I2C) || defined(EH)
     for (int i = 0; i < ROWS_PER_HAND; ++i) {
         i2c_slave_buffer[I2C_KEYMAP_START+i] = matrix[offset+i];
-    }
+    }   
 #else // USE_SERIAL
     for (int i = 0; i < ROWS_PER_HAND; ++i) {
         serial_slave_buffer[i] = matrix[offset+i];

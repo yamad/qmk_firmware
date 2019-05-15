@@ -259,3 +259,4 @@ Done:
     - maybe, not responsive to host enumeration process due to power-down.
     - matrix_power_down() only when state is unattached - 11/26
         - need to observe a while
+

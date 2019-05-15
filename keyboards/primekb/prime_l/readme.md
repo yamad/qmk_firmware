@@ -4,8 +4,8 @@
 
 A compact layout with the footprint of your typical 65% board, featuring a left mini-numpad. Pre-drilled and counter sunk holes for use with optional feet for a slight tilt. Switches are oriented so that back light LEDs are on the top of the switch.
 
-Keyboard Maintainer: [MxBlue](https://github.com/MxBlu)
-Hardware Supported: Prime_L PCBs, ATMega32u4
+Keyboard Maintainer: [MxBlue](https://github.com/MxBlu)  
+Hardware Supported: Prime_L PCBs, ATMega32u4  
 Hardware Availability: [Store Link](https://www.primekb.com/collections/keyboards/products/bundle-save)
 
 Make example for this keyboard (after setting up your build environment):

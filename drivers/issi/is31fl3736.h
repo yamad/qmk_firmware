@@ -169,3 +169,4 @@ void IS31FL3736_update_led_control_registers( uint8_t addr1, uint8_t addr2 );
 #define L_6  0xBA
 #define L_7  0xBC
 #define L_8  0xBE
+

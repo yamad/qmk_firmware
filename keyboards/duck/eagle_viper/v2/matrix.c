@@ -146,7 +146,7 @@ static uint8_t read_rows(uint8_t col) {
             (PIND&(1<<5) ? (1<<4) : 0) |
             (PINB&(1<<7) ? (1<<5) : 0) |
             (col==0 ? ((PINE&(1<<2) ? 0 : (1<<2))) : 0);
-
+    
 }
 
 uint8_t read_fwkey(void)
@@ -187,7 +187,7 @@ static void unselect_cols(void) {
 }
 
 static void select_col(uint8_t col) {
-
+ 
    switch (col) {
         case 0:
             PORTC |= 0b01000000;

@@ -50,7 +50,7 @@ void IS31FL3218_write_pwm_buffer( uint8_t *pwm_buffer )
 	for ( int i=0; i<18; i++ ) {
 		g_twi_transfer_buffer[1+i] = pwm_buffer[i];
 	}
-
+	
 	i2c_transmit( ISSI_ADDRESS, g_twi_transfer_buffer, 19, ISSI_TIMEOUT);
 }
 
@@ -58,7 +58,7 @@ void IS31FL3218_init(void)
 {
 	// In case we ever want to reinitialize (?)
 	IS31FL3218_write_register( ISSI_REG_RESET, 0x00 );
-
+	
 	// Turn off software shutdown
 	IS31FL3218_write_register( ISSI_REG_SHUTDOWN, 0x01 );
 
@@ -66,12 +66,12 @@ void IS31FL3218_init(void)
 	for ( uint8_t i = 0; i < 18; i++ ) {
 		IS31FL3218_write_register( ISSI_REG_PWM+i, 0x00 );
 	}
-
+	
 	// Enable all channels
 	for ( uint8_t i = 0; i < 3; i++ ) {
 		IS31FL3218_write_register( ISSI_REG_CONTROL+i, 0b00111111 );
 	}
-
+	
 	// Load PWM registers and LED Control register data
 	IS31FL3218_write_register( ISSI_REG_UPDATE, 0x01 );
 }

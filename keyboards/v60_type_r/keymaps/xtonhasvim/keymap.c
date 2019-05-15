@@ -193,3 +193,4 @@ void suspend_wakeup_init_user(void)
   backlight_set(backlight_config.level);
   rgblight_set();
 }
+

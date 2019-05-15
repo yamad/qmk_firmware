@@ -2,8 +2,8 @@
 
 A programmable macro pad.
 
-Keyboard Maintainer: QMK Community
-Hardware Supported: Roadkit PCB
+Keyboard Maintainer: QMK Community  
+Hardware Supported: Roadkit PCB  
 Hardware Availability: https://thevankeyboards.com/collections/catalog/products/road-kit-diy?variant=603645345806
 
 Make example for this keyboard (after setting up your build environment):

@@ -128,7 +128,7 @@ OPT_DEFS += -DINTERRUPT_CONTROL_ENDPOINT
 
 ### Bootloaders
 
-The bootloader is a special section of your MCU that allows you to upgrade the code stored on the MCU. Think of it like a Rescue Partition for your keyboard.
+The bootloader is a special section of your MCU that allows you to upgrade the code stored on the MCU. Think of it like a Rescue Partition for your keyboard. 
 
 #### Teensy Bootloader Example
 

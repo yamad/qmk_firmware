@@ -80,3 +80,4 @@ The layout also includes a QWERTY layer to help with the transition.
                             |      |       |--------||--------|KP Entr| KP 0  |
                             |      |       |        ||        |       |       |
                             `-----------------------'`------------------------'
+

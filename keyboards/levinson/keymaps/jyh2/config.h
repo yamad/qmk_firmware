@@ -36,5 +36,8 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #define TAPPING_TOGGLE 3
 
 #define RGBLIGHT_ANIMATIONS
+#define RGBLED_NUM 12
+
+#define PREVENT_STUCK_MODIFIERS
 
 #endif

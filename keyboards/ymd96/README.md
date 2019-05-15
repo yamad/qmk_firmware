@@ -10,7 +10,7 @@ using Bootmapper Client to change any keyboard settings, since not all the
 USB report options are supported.  
 
 Here is the default layout, it is fairly simple with a few function keys: 
-![YMD96 Layout](https://i.imgur.com/3QnqVPn.png)
+![YMD96 Layout](https://i.imgur.com/3QnqVPn.png)  
 If you have a different layout (since there were many options during the GB), please feel free to contribute!  
 
 Keyboard maintainer: [Andrew](https://github.com/sparkyman215)  
@@ -32,17 +32,17 @@ This firmware was modified from [ps2avrGB](https://github.com/qmk/qmk_firmware/t
 ## Installing and Building
 
 Since the YMD96 uses an ATmega32a chip instead of the 32u4, you need to download [HIDBootFlash v.1.0](http://vusb.wikidot.com/project:hidbootflash) for Windows. For Linux you can use the [bootloadHID](https://www.obdev.at/products/vusb/bootloadhid.html) utility (which will require building). Arch Linux users can alternatively install this from the [AUR](https://aur.archlinux.org/packages/bootloadhid/).
-On Windows, I use [MINGw](http://www.mingw.org/) to compile the keymaps. On Linux, you can simply use the terminal.
+On Windows, I use [MINGw](http://www.mingw.org/) to compile the keymaps. On Linux, you can simply use the terminal. 
 
 Once you have those two pieces of software:
 Build the keyboard by navigating to the root folder of the QMK repo and running
 ```
-$ make ymd96:default
-```
-If you make your own layout, change the `default` word to whatever your layout is.
+$ make ymd96:default  
+```  
+If you make your own layout, change the `default` word to whatever your layout is.  
 
-To flash the compiled hex file, simply put the board in flashing mode by plugging it in while holding control.
-In `HIDBootFlash` first click `find device`, then you can specify the .hex file and flash it to the device.
+To flash the compiled hex file, simply put the board in flashing mode by plugging it in while holding control. 
+In `HIDBootFlash` first click `find device`, then you can specify the .hex file and flash it to the device. 
 For `bootloadHID`, from a terminal that is in the same folder as your firmware file, run
 ```
 $ sudo bootloadHID ymd96_default.hex
@@ -59,5 +59,5 @@ tricks have been useful when it got stuck in a weird scenario.
    done, just reflash the board with the original firmware.
 2. Sometimes USB hubs can act weird, so try connecting the board directly
    to your computer or plugging/unplugging the USB hub.
-
+   
 Lastly, if you still need help, you can add me on Discord and I'll be happy to help.

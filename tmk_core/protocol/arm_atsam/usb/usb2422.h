@@ -401,3 +401,4 @@ void USB_HandleExtraDevice(void);
 void USB_ExtraSetState(uint8_t state);
 
 #endif //_USB2422_H_
+

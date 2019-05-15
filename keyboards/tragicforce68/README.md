@@ -3,9 +3,9 @@ Tragicforce 68
 
 Magicforce 68 with [Tragicforce 68 replacement PCB](https://keeb.io/products/mf68-magicforce-68-pcb-replacement-kit) from Keebio.
 
-Keyboard Maintainer: [Keebio](https://keeb.io)
-Hardware Supported: Pro Micro
-Hardware Availability: [Keebio](https://keeb.io)
+Keyboard Maintainer: [Keebio](https://keeb.io)  
+Hardware Supported: Pro Micro  
+Hardware Availability: [Keebio](https://keeb.io) 
 
 Make example for this keyboard (after setting up your build environment):
 

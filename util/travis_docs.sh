@@ -2,7 +2,7 @@
 
 source util/travis_push.sh
 
-if [[ "$TRAVIS_COMMIT_MESSAGE" != *"[skip docs]"* ]] ; then
+if [[ "$TRAVIS_COMMIT_MESSAGE" != *"[skip docs]"* ]] ; then 
 	if git diff --name-only ${TRAVIS_COMMIT_RANGE} | grep -e '^quantum/' -e '^tmk_core/' -e '^docs/internals_.*'; then
 		echo "Generating internal docs..."
 		rm -rf doxygen

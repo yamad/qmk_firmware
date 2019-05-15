@@ -86,7 +86,7 @@
 #define MOUSEKEY_WHEEL_TIME_TO_MAX 255
 
 // only change
-#undef RGB_DI_PIN
+#undef RGB_DI_PIN 
 #define RGB_DI_PIN B2
 
 #endif

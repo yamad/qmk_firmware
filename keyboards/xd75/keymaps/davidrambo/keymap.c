@@ -64,7 +64,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   { SftLck , KC_Z,    KC_X,    KC_C,    KC_V,    KC_B,   KC_PGDN, KC_UP  , KC_ENT , KC_K,   KC_M,   KC_COMM, KC_DOT,  KC_SLSH, SftEnt  },
   { KC_DEL , KC_LGUI, KC_LCTL, KC_LALT, KC_LGUI, GBSPC,  KC_LEFT, KC_DOWN, KC_RGHT, KC_SPC, MO(2) , KC_RGUI, KC_RALT, KC_RCTL, BL_STEP },
  },
-
+    
 // Windows Layer: essentially swaps Control and GUI
 
  [_PC] = { /* WINDOWS */
@@ -97,7 +97,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   { _______, _______, _______, _______, _______, A_BSPC , _______, _______, _______, _______, _______, _______, _______, _______, _______},
  },
 
-
+ 
  [_NAV] = { /* NAVIGATION for Mac */
   { _______, _______, _______, _______, _______, _______, _______, _______, _______, _______, _______, _______, _______, _______, _______},
   { _______, _______, _______, _______, _______, _______, _______, _______, _______, C_TAB  , A_LEFT,  KC_UP,   A_RGHT , KC_DEL , _______},
@@ -139,7 +139,7 @@ qk_tap_dance_action_t tap_dance_actions[] = {
 };
 
 /* Template for future layers
- [_LAYER_NAME] = {
+ [_LAYER_NAME] = { 
   { _______, _______, _______, _______, _______, _______, _______, _______, _______, _______, _______, _______, _______, _______, _______},
   { _______, _______, _______, _______, _______, _______, _______, _______, _______, _______, _______, _______, _______, _______, _______},
   { _______, _______, _______, _______, _______, _______, _______, _______, _______, _______, _______, _______, _______, _______, _______},

@@ -42,8 +42,8 @@ Some features supported by the firmware:
 * Optional support for I2C connection between the two halves if for some
   reason you require a faster connection between the two halves. Note this
   requires an extra wire between halves and pull-up resistors on the data lines.
-  This is supported on the vitamins included.
-  The extra data line can also be used for ws2812 type LEDs.
+  This is supported on the vitamins included.  
+  The extra data line can also be used for ws2812 type LEDs.  
   If neither I2C nor RGB underglow is used, a TRS cable can be used instead of the 4wire TRRS cables.
 
 Required Hardware
@@ -62,7 +62,7 @@ Optional Hardware
 
 A speaker can be hooked-up to the footprint on the PCBs. It is already enabled in the default firmware from github.
 
-A strip of WS2812 LEDs can be hooked up too, a guide will be written on how to do that once I get mine in the mail.
+A strip of WS2812 LEDs can be hooked up too, a guide will be written on how to do that once I get mine in the mail.  
 The PCB and connectors can safely handle 1A of current, but the USB standard is only rated at 500mA. Keep that in mind when picking the amount of LEDs.
 
 
@@ -84,13 +84,13 @@ Also, the current implementation assumes a maximum of 8 columns, but it would
 not be very difficult to adapt it to support more if required.
 
 
-## Entering bootloader
+## Entering bootloader  
 If the keyboard isn't new, and has been flashed before, you need to enter bootloader.
 To enter bootloader, either use the assigned keys on the keymap, or if none have been put in the keymap, quickly short the reset to gnd twice. (Bottom pins of programming header, see image) ![Reset pins](https://i.imgur.com/LCXlv9W.png)
 
-If using the default keymap, there's a reset key-combination on each half:
-***Lower (SW23) and left-shift (SW13)*** on the left half, or
-***Raise(SW44) and Enter(SW42)***  on the right half
+If using the default keymap, there's a reset key-combination on each half:  
+***Lower (SW23) and left-shift (SW13)*** on the left half, or  
+***Raise(SW44) and Enter(SW42)***  on the right half  
 It is recommended to add such reset keys to any custom keymaps. It shouldn't be necesarry to have one on each half, but the default layout has that.
 
 The board exits bootloader mode after 8 seconds, if you haven't started flashing.
@@ -105,7 +105,7 @@ If this is the first time you're flashing the boards, you have to flash EEPROM
 2. Plug the keyboard in, if it's new, it should enter bootloader, if it's not new, see **Entering bootloader** on how to enter bootloader mode
 4. Right after entering bootloader, run `ls /dev | grep tty` again. There should be a new tty, this is the bootloader TTY, note it down. If nothing shows see **Entering bootloader** on how to enter bootloader mode
 6. For the left hand side, run  `avrdude -c avr109 -p m32u4 -P /dev/ttyS1 -U eeprom:w:"./quantum/split_common/eeprom-lefthand.eep":a`
-Replace ***/dev/ttyS1*** with the port you noted down earlier. If you're on windows using msys2, replace ***/dev/ttyS1*** with COM2, note that the number is one higher than the tty number.
+Replace ***/dev/ttyS1*** with the port you noted down earlier. If you're on windows using msys2, replace ***/dev/ttyS1*** with COM2, note that the number is one higher than the tty number.  
 Do the same For the right hand, but change the file to ***eeprom-righthand.eep***
 
 Your EEPROM should be flashed :)
@@ -113,7 +113,7 @@ Your EEPROM should be flashed :)
 In the future, you shouldn't need to flash EEPROM (it will in fact wear the eeprom memory, so don't)
 
 ## Flashing
-If you haven't flashed EEPROM before, do that first.
+If you haven't flashed EEPROM before, do that first.  
 
 To flash keymaps onto the keyboard, use:
 ```bash

@@ -22,7 +22,7 @@ The right shift is also split, with the right part serving as the del key.
 ```
 
 
-## FN Key Layer
+## FN Key Layer 
 The Function keys can be accessed when holding fn1 (right part of backspace)
 
 ```

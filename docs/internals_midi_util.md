@@ -2,7 +2,7 @@
 
 ## Summary
 
- Members                        | Descriptions
+ Members                        | Descriptions                                
 --------------------------------|---------------------------------------------
 `enum `[`midi_packet_length_t`](#group__midi__util_1gae29ff56aee2b430ffe53933b97e5e79e)            | An enumeration of the possible packet length values.
 `public bool `[`midi_is_statusbyte`](#group__midi__util_1ga12e3b42ff9cbb4b4f2bc455fc8743ee5)`(uint8_t theByte)`            | Test to see if the byte given is a status byte.
@@ -13,12 +13,12 @@
 
 #### `enum `[`midi_packet_length_t`](#group__midi__util_1gae29ff56aee2b430ffe53933b97e5e79e) {#group__midi__util_1gae29ff56aee2b430ffe53933b97e5e79e}
 
- Values                         | Descriptions
+ Values                         | Descriptions                                
 --------------------------------|---------------------------------------------
-UNDEFINED            |
-ONE            |
-TWO            |
-THREE            |
+UNDEFINED            | 
+ONE            | 
+TWO            | 
+THREE            | 
 
 An enumeration of the possible packet length values.
 
@@ -27,7 +27,7 @@ An enumeration of the possible packet length values.
 Test to see if the byte given is a status byte.
 
 #### Parameters
-* `theByte` the byte to test
+* `theByte` the byte to test 
 
 #### Returns
 true if the byte given is a midi status byte
@@ -37,7 +37,7 @@ true if the byte given is a midi status byte
 Test to see if the byte given is a realtime message.
 
 #### Parameters
-* `theByte` the byte to test
+* `theByte` the byte to test 
 
 #### Returns
 true if it is a realtime message, false otherwise
@@ -47,7 +47,8 @@ true if it is a realtime message, false otherwise
 Find the length of the packet associated with the status byte given.
 
 #### Parameters
-* `status` the status byte
+* `status` the status byte 
 
 #### Returns
 the length of the packet, will return UNDEFINED if the byte is not a status byte or if it is a sysex status byte
+

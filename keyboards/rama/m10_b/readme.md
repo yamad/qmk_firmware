@@ -4,7 +4,7 @@
 
 Mechanical Mini Pad. [More info at Massdrop](https://www.massdrop.com/buy/rama-m10-a)
 
-Keyboard Maintainer: [Wilba6582](https://github.com/Wilba6582)
+Keyboard Maintainer: [Wilba6582](https://github.com/Wilba6582)  
 Hardware Supported: RAMA M10-B PCB
 Hardware Availability: [Massdrop](https://www.massdrop.com/buy/rama-m10-a)
 

@@ -9,3 +9,4 @@ TAP_DANCE_ENABLE = yes
 # Use the "Unicode map" method
 # UNICODE_ENABLE = no
 # UNICODEMAP_ENABLE = yes
+

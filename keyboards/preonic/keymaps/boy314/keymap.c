@@ -35,7 +35,7 @@
 
 #define _______ KC_TRNS
 #define XXXXXXX KC_NO
-
+ 
 const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 
 /* Qwerty
@@ -158,7 +158,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 };
 
 bool process_record_user(uint16_t keycode, keyrecord_t *record)
-{
+{	
 	switch (keycode)
 	{
 		case QWERTY:

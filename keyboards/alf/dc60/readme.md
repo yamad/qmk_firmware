@@ -4,9 +4,9 @@
 
 A 60% PCB sold with the Alf DC60.
 
-Keyboard Maintainer: [MechMerlin](https://github.com/mechmerlin)
-Hardware Supported: DC60 PCB
-Hardware Availability: [Geekhack GB](https://geekhack.org/index.php?topic=96616.0)
+Keyboard Maintainer: [MechMerlin](https://github.com/mechmerlin)  
+Hardware Supported: DC60 PCB  
+Hardware Availability: [Geekhack GB](https://geekhack.org/index.php?topic=96616.0)   
 
 Make example for this keyboard (after setting up your build environment):
 

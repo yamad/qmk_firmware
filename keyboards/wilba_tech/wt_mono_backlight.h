@@ -30,3 +30,4 @@ void backlight_set_suspend_state(bool state);
 void backlight_update_pwm_buffers(void);
 
 void backlight_set_brightness_all( uint8_t value );
+

@@ -2,11 +2,11 @@
 
 Firmware for custom keyboard
 
-Keyboard Maintainer: [James Underwood](https://github.com/ju0)
-Hardware Supported: naKey
+Keyboard Maintainer: [James Underwood](https://github.com/ju0)  
+Hardware Supported: naKey  
 Hardware Availability: [ckeys.org](https://ckeys.org)
 
-To build this keyboard, follow the [build guide](https://ckeys.org/tutorials/nakey-numpad-build-guide/).
+To build this keyboard, follow the [build guide](https://ckeys.org/tutorials/nakey-numpad-build-guide/). 
 
 Make example for this keyboard (after setting up your build environment):
 
@@ -20,7 +20,7 @@ For the full Quantum feature list, see [the parent readme](/).
 
 ## Building
 
-Download or clone the whole firmware and navigate to the root folder. Once your dev env is setup, you'll be able to type `make ckeys/nakey:default` to generate your .hex - you can then use the Teensy Loader to program your .hex file.
+Download or clone the whole firmware and navigate to the root folder. Once your dev env is setup, you'll be able to type `make ckeys/nakey:default` to generate your .hex - you can then use the Teensy Loader to program your .hex file. 
 
 (Note: replace naKey with the name of your keyboard.)
 

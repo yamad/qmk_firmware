@@ -24,6 +24,6 @@ For use on Planck, Let's Split, and similar keyboards
 		- Symbols from the number row are in order, starting on the left pinky.
 		- Equals and underscore are in easily accessible spots, since they're commonly used in programming
 		- The ampersand is less common, so it's to the right of the equals symbol
-
+		
 - Adjust
 	- Function keys are located along the top row (reset is moved to the Colemak 'R' position)

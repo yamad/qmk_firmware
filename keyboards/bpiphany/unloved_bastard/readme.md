@@ -4,8 +4,8 @@
 
 A short description of the keyboard/project
 
-Keyboard Maintainer: [Alexander Fougner](https://github.com/fougner)
-Hardware Supported: CoolerMaster Masterkeys S PBT (Not the Pro versions with backlighting etc)
+Keyboard Maintainer: [Alexander Fougner](https://github.com/fougner)  
+Hardware Supported: CoolerMaster Masterkeys S PBT (Not the Pro versions with backlighting etc)  
 Hardware Availability: Pretty much anywhere
 
 Make example for this keyboard (after setting up your build environment):

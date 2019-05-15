@@ -125,3 +125,4 @@
 #define RGB_BACKLIGHT_CONFIG_EEPROM_ADDR 35
 // Dynamic keymap starts after backlight config (35+37)
 #define DYNAMIC_KEYMAP_EEPROM_ADDR 72
+

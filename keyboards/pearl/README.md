@@ -42,16 +42,16 @@ You can install `bootloadHID` by taking the following steps:
     $ cd ~/tmp/bootloadHIDsrc/commandline
     $ make VENDORID=0x16c0 PRODUCTID=0x05DF # vid and pid for atmega32a
     $ chmod +x bootloadHID && cp bootloadHID /usr/bin/bootloadHID
-
+    
 Running `which bootloadHID` should return `/usr/bin/bootloadHID`.
-
+    
 ### Compiling
 
 Enter the QMK root directory and compile a keymap with the following
 command:
 
     $ make pearl:<keymap>
-
+    
 where `<keymap>` is a layout directory under the `pearl` directory.
 
 QMK should compile a HEX (called `pearl_<keymap>.hex`) for you, which
@@ -74,7 +74,7 @@ You should see something similar to
     > Device size = <value>; <value> remaining
     > Uploading <value> bytes starting at 0 (0x0)
     > <value> ... <current value>
-
+    
 where `<current value>` should be slowly increasing as the HEX is being
 flashed to the board. If there is some warning about `resource busy` it
 should still work OK.

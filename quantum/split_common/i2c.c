@@ -92,19 +92,19 @@ uint8_t i2c_master_write(uint8_t data) {
 }
 
 uint8_t i2c_master_write_data(void *const TXdata, uint8_t dataLen) {
-
+    
     uint8_t *data = (uint8_t *)TXdata;
     int err = 0;
-
+    
     for (int i = 0; i < dataLen; i++) {
         err = i2c_master_write(data[i]);
-
+        
         if ( err )
             return err;
     }
-
+    
     return err;
-
+    
 }
 
 // Read one byte from the i2c slave. If ack=1 the slave is acknowledged,
@@ -152,18 +152,18 @@ ISR(TWI_vect) {
         if ( slave_buffer_pos >= SLAVE_BUFFER_SIZE ) {
           ack = 0;
           slave_buffer_pos = 0;
-        }
-
+        }  
+        
         slave_has_register_set = true;
-      } else {
+      } else {      
         i2c_slave_buffer[slave_buffer_pos] = TWDR;
-
+        
         if ( slave_buffer_pos == I2C_BACKLIT_START) {
             BACKLIT_DIRTY = true;
         } else if ( slave_buffer_pos == (I2C_RGB_START+3)) {
             RGB_DIRTY = true;
         }
-
+        
         BUFFER_POS_INC();
       }
       break;

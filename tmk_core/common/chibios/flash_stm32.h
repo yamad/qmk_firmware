@@ -10,7 +10,7 @@
  * TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER
  * DEALINGS IN THE SOFTWARE.
  *
- * This files are free to use from https://github.com/rogerclarkmelbourne/Arduino_STM32 and
+ * This files are free to use from https://github.com/rogerclarkmelbourne/Arduino_STM32 and 
  * https://github.com/leaflabs/libmaple
  *
  * Modifications for QMK and STM32F303 by Yiancar

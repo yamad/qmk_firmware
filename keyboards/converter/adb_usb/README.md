@@ -4,7 +4,7 @@ This firmware converts Apple Desktop Bus (ADB) keyboard protocol to USB so that 
 
 
 This is a port of the TMK ADB-to-USB converter to QMK. For information on QMK, please consult the following:
-https://github.com/qmk/qmk_firmware
+https://github.com/qmk/qmk_firmware  
 https://docs.qmk.fm
 
 

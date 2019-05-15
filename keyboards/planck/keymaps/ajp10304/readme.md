@@ -65,7 +65,7 @@ Activated when `Lower` and `Raise` are held together in the above `qwerty` layer
 * ????: Runs a macro for outputting a text string.  Do not use this store passwords.
 * Reset: Enter bootloader for flashing firmware to the keyboard.
 * CAPS: Toggle caps lock.
-* Macro functions: Allows recording of macros.  To start recording the macro, press either REC1 or REC2.
+* Macro functions: Allows recording of macros.  To start recording the macro, press either REC1 or REC2. 
 To finish the recording, press STOP. To replay the macro, press either PLAY1 or PLAY2.
 * MAC: Toggle MAC OS extensions to layers. This allows MLWR to be enabled with LOWER,
 MRSE with RAISE, MFNC with FUNC and MFNC2 with FUNC2 respectively.

@@ -74,3 +74,4 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   KC_LSFT,                LCTL(KC_Z),    LCTL(KC_X),   LCTL(KC_C),   LCTL(KC_V),   KC_PGDN,      LCTL(KC_N),   LCTL(KC_M),   LCTL(KC_COMM), LCTL(KC_DOT),   LCTL(KC_SLSH),                  LCTL(KC_RSFT), \
   _______, LCTL(KC_LALT), LCTL(KC_LGUI),                             LCTL(KC_SPC),                                                          LCTL(KC_RGUI),  LCTL(KC_RALT),  KC_RCTL,        MO(_FL)),
 };
+

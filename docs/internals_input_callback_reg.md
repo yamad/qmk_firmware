@@ -6,7 +6,7 @@ The functions are called when the appropriate midi message is matched on the ass
 
 ## Summary
 
- Members                        | Descriptions
+ Members                        | Descriptions                                
 --------------------------------|---------------------------------------------
 `public void `[`midi_register_cc_callback`](#group__input__callback__reg_1ga64ab672abbbe393c9c4a83110c8df718)`(`[`MidiDevice`](#struct__midi__device)` * device,midi_three_byte_func_t func)`            | Register a control change message (cc) callback.
 `public void `[`midi_register_noteon_callback`](#group__input__callback__reg_1ga3962f276c17618923f1152779552103e)`(`[`MidiDevice`](#struct__midi__device)` * device,midi_three_byte_func_t func)`            | Register a note on callback.
@@ -31,7 +31,7 @@ The functions are called when the appropriate midi message is matched on the ass
 Register a control change message (cc) callback.
 
 #### Parameters
-* `device` the device associate with
+* `device` the device associate with 
 
 * `func` the callback function to register
 
@@ -40,7 +40,7 @@ Register a control change message (cc) callback.
 Register a note on callback.
 
 #### Parameters
-* `device` the device associate with
+* `device` the device associate with 
 
 * `func` the callback function to register
 
@@ -49,7 +49,7 @@ Register a note on callback.
 Register a note off callback.
 
 #### Parameters
-* `device` the device associate with
+* `device` the device associate with 
 
 * `func` the callback function to register
 
@@ -58,7 +58,7 @@ Register a note off callback.
 Register an after touch callback.
 
 #### Parameters
-* `device` the device associate with
+* `device` the device associate with 
 
 * `func` the callback function to register
 
@@ -67,7 +67,7 @@ Register an after touch callback.
 Register a pitch bend callback.
 
 #### Parameters
-* `device` the device associate with
+* `device` the device associate with 
 
 * `func` the callback function to register
 
@@ -76,7 +76,7 @@ Register a pitch bend callback.
 Register a song position callback.
 
 #### Parameters
-* `device` the device associate with
+* `device` the device associate with 
 
 * `func` the callback function to register
 
@@ -85,7 +85,7 @@ Register a song position callback.
 Register a program change callback.
 
 #### Parameters
-* `device` the device associate with
+* `device` the device associate with 
 
 * `func` the callback function to register
 
@@ -94,7 +94,7 @@ Register a program change callback.
 Register a channel pressure callback.
 
 #### Parameters
-* `device` the device associate with
+* `device` the device associate with 
 
 * `func` the callback function to register
 
@@ -103,7 +103,7 @@ Register a channel pressure callback.
 Register a song select callback.
 
 #### Parameters
-* `device` the device associate with
+* `device` the device associate with 
 
 * `func` the callback function to register
 
@@ -112,7 +112,7 @@ Register a song select callback.
 Register a tc quarter frame callback.
 
 #### Parameters
-* `device` the device associate with
+* `device` the device associate with 
 
 * `func` the callback function to register
 
@@ -123,7 +123,7 @@ Register a realtime callback.
 The callback will be called for all of the real time message types.
 
 #### Parameters
-* `device` the device associate with
+* `device` the device associate with 
 
 * `func` the callback function to register
 
@@ -132,7 +132,7 @@ The callback will be called for all of the real time message types.
 Register a tune request callback.
 
 #### Parameters
-* `device` the device associate with
+* `device` the device associate with 
 
 * `func` the callback function to register
 
@@ -141,7 +141,7 @@ Register a tune request callback.
 Register a sysex callback.
 
 #### Parameters
-* `device` the device associate with
+* `device` the device associate with 
 
 * `func` the callback function to register
 
@@ -152,7 +152,7 @@ Register fall through callback.
 This is only called if a more specific callback is not matched and called. For instance, if you don't register a note on callback but you get a note on message the fall through callback will be called, if it is registered.
 
 #### Parameters
-* `device` the device associate with
+* `device` the device associate with 
 
 * `func` the callback function to register
 
@@ -163,6 +163,7 @@ Register a catch all callback.
 If registered, the catch all callback is called for every message that is matched, even if a more specific or the fallthrough callback is registered.
 
 #### Parameters
-* `device` the device associate with
+* `device` the device associate with 
 
 * `func` the callback function to register
+

@@ -129,3 +129,4 @@ As defined in `keymap_steno.h`.
 |`STN_RES1`||(GeminiPR only)|
 |`STN_RES2`||(GeminiPR only)|
 |`STN_PWR`||(GeminiPR only)|
+

@@ -4,8 +4,8 @@
 
 A wireless split compact keyboard.
 
-Keyboard Maintainer: [@reversebias](https://github.com/reversebias)
-Hardware Supported: Mitosis PCB
+Keyboard Maintainer: [@reversebias](https://github.com/reversebias)  
+Hardware Supported: Mitosis PCB  
 Hardware Availability: See the [Mitosis keyboard announcement and discussion](https://www.reddit.com/r/MechanicalKeyboards/comments/66588f/wireless_split_qmk_mitosis/)
 
 Make example for this keyboard (after setting up your build environment):

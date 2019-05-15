@@ -4,8 +4,8 @@
 
 A 6-key companion keyboard. [More info at RAMA WORKS](https://rama.works/m6a)
 
-Keyboard Maintainer: [Wilba6582](https://github.com/Wilba6582)
-Hardware Supported: RAMA M6-B PCB
+Keyboard Maintainer: [Wilba6582](https://github.com/Wilba6582)  
+Hardware Supported: RAMA M6-B PCB  
 Hardware Availability: [RAMA WORKS Store](https://ramaworks.store/)
 
 Make example for this keyboard (after setting up your build environment):

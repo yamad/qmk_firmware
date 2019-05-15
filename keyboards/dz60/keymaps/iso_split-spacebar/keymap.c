@@ -4,7 +4,7 @@
 // thanks to atlacat, hailbreno, itsaferbie and weeheavy...
 
 // and special thanks to  AGausmann and drashna for the layer-activated RGB underglow
-// https://www.reddit.com/r/olkb/comments/6t1vdu/update_layeractivated_rgb_underglow/
+// https://www.reddit.com/r/olkb/comments/6t1vdu/update_layeractivated_rgb_underglow/ 
 // https://github.com/AGausmann/qmk_firmware/blob/agausmann-v3.x/keyboards/nyquist/keymaps/agausmann/keymap.c
 
 #include QMK_KEYBOARD_H
@@ -14,7 +14,7 @@
 #define _______ KC_TRNS
 #define XXXXXXX KC_NO
 
-/*
+/* 
 * Each layer gets a name for readability.
 * The underscores don't mean anything - you can
 * have a layer called STUFF or any other name.
@@ -28,8 +28,8 @@
 #define NL 2     // Numpad Layer
 #define RL 3     // RGB Layer
 
-/*
-* Let's give an easier name to the RGB modes
+/* 
+* Let's give an easier name to the RGB modes 
 * and assign the ones we want to the different layer
 * these will then be used by the function below
 *
@@ -54,16 +54,16 @@
 //
 #define RGB_RL_MODE    rgblight_mode_noeeprom(22)             //rgb mode for RL layer
 #define RGB_RL_LIGHT   rgblight_sethsv_noeeprom_red()         //rgb light for RL layer
-
+      
 
 const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
-
+	
   /* Keymap BL: Base Layer (Default Layer)
    *
    * ,-----------------------------------------------------------.
-   * | ' | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 0 | - | = |   |   |
+   * | ' | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 0 | - | = |Backsp |
    * |-----------------------------------------------------------|
-   * | Tab | q | w | e | r | t | y | u | i | o | p | [ | ] |  /  |
+   * | Tab | q | w | e | r | t | y | u | i | o | p | [ | ] |enter|
    * |------------------------------------------------------     |
    * | Caps  | a | s | d | f | g | h | j | k | l | ; | ' | # |   |
    * |-----------------------------------------------------------|
@@ -145,7 +145,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
         _______,   RGB_STA,   RGB_BRE,   RGB_RAI,   RGB_SWI,   _______,   _______,   RGB_SNA,   RGB_KNI,   RGB_GRA,   RGB_XMS,   _______,   _______,   _______,
         _______,   BL_DEC,    BL_TOGG,   BL_INC,    BL_STEP,   _______,   _______,   _______,   _______,   _______,   _______,   _______,   _______,
         _______,   _______,   _______,   _______,   MO(FL),    _______,   _______,   _______,   TO(BL),    _______),
-
+        
 
 };
 
@@ -169,19 +169,19 @@ void matrix_scan_user(void) {
     switch (new_layer) {
       case BL:
           RGB_BL_MODE;
-          RGB_BL_LIGHT;
+          RGB_BL_LIGHT;        
         break;
       case FL:
           RGB_FL_MODE;
-          RGB_FL_LIGHT;
+          RGB_FL_LIGHT;  
         break;
       case NL:
-          RGB_NL_MODE;
-         // RGB_NL_LIGHT;
+          RGB_NL_MODE; 
+         // RGB_NL_LIGHT; 
         break;
       case RL:
-          RGB_RL_MODE;
-         // RGB_RL_LIGHT;
+          RGB_RL_MODE; 
+         // RGB_RL_LIGHT;        
         break;
     }
 

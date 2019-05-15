@@ -1,6 +1,6 @@
 # Nyquist Layout - rev 02
 
-Standard qwerty layout.
+Standard qwerty layout.  
 Limited emoji support and proper mouse settings.
 
 Mostly based off of my XD75 layout.

@@ -23,7 +23,7 @@ This revision includes this documentation and introduction of the individual RGB
     | Ctrl | Alt  | Left |Right |Lower | Bksp |Space |Raise |  Up  | Down |  GUI | Enter|
     `-----------------------------------------------------------------------------------'
  ```
-
+	 
 ### Colemak layer
 
 ```
@@ -37,7 +37,7 @@ This revision includes this documentation and introduction of the individual RGB
     | Ctrl | Alt  | Left |Right |Lower | Bksp |Space |Raise |  Up  | Down |  GUI | Enter|
     `-----------------------------------------------------------------------------------'
  ```
-
+	 
 ### Dvorak layer
 
 ```
@@ -51,7 +51,7 @@ This revision includes this documentation and introduction of the individual RGB
     | Ctrl | Alt  | Left |Right |Lower | Bksp |Space |Raise |  Up  | Down |  GUI | Enter|
     `-----------------------------------------------------------------------------------'
  ```
-
+	 
 ### LOWER layer
 
 ```
@@ -65,7 +65,7 @@ This revision includes this documentation and introduction of the individual RGB
     | Brite|      | Home |  End |      |  Del |  Ins |      | PgUp | PgDN |      |      |
     `-----------------------------------------------------------------------------------'
  ```
-
+	 
 ### RAISE layer
 
 ```
@@ -79,7 +79,7 @@ This revision includes this documentation and introduction of the individual RGB
     | Brite|      | Home |  End |      |  Del |  Ins |      | PgUp | PgDN |      |      |
     `-----------------------------------------------------------------------------------'
  ```
-
+	 
 ### ADJUST layer
 
 ```

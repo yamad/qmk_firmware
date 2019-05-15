@@ -2,8 +2,8 @@
 
 A 4x6x2 split ortholinear keyboard with 2u spacebars like the Levinson (similar to Let's Split). Made by [Unikeyboard](https://unikeyboard.io).
 
-Keyboard Maintainer: [IslandMan93](https://github.com/islandman93) and [xton](https://github.com/xton)
-Hardware Supported: Pro Micro
+Keyboard Maintainer: [IslandMan93](https://github.com/islandman93) and [xton](https://github.com/xton)  
+Hardware Supported: Pro Micro  
 Hardware Availability: [Diverge TM2](https://unikeyboard.io/product/diverge-tm/)
 
 Make example for this keyboard (after setting up your build environment):
@@ -14,7 +14,7 @@ See the [build environment setup](https://docs.qmk.fm/#/getting_started_build_to
 
 # Flashing the first time
 
-Disassemble the case so you have access to each Pro Micro. Flash each half with QMK Toolbox by connecting the USB cable and shorting RST and GND. After that, just use the soft reset key on your respective layout to reflash both halves.
+Disassemble the case so you have access to each Pro Micro. Flash each half with QMK Toolbox by connecting the USB cable and shorting RST and GND. After that, just use the soft reset key on your respective layout to reflash both halves. 
 
 # Reflashing Animus
 

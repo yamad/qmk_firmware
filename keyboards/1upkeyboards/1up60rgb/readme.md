@@ -2,9 +2,9 @@
 
 Firmware for custom keyboard PCB with 60% key layout.
 
-Keyboard Maintainer: [rempired](https://github.com/rempired)
-Hardware Supported: 1upkeyboards 60% RGB
-Hardware Availability: [1upkeyboards](https://www.1upkeyboards.com/shop/controllers/1up-rgb-underglow-pcb/)
+Keyboard Maintainer: [rempired](https://github.com/rempired)  
+Hardware Supported: 1upkeyboards 60% RGB  
+Hardware Availability: [1upkeyboards](https://www.1upkeyboards.com/shop/controllers/1up-rgb-underglow-pcb/)  
 
 Make example for this keyboard (after setting up your build environment):
 

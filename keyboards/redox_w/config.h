@@ -1,15 +1,15 @@
 /* Copyright 2017 Mattia Dal Ben
- *
+ * 
  * This program is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
  * the Free Software Foundation, either version 2 of the License, or
  * (at your option) any later version.
- *
+ * 
  * This program is distributed in the hope that it will be useful,
  * but WITHOUT ANY WARRANTY; without even the implied warranty of
  * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
  * GNU General Public License for more details.
- *
+ * 
  * You should have received a copy of the GNU General Public License
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
@@ -70,12 +70,12 @@
 #define SERIAL_UART_TXD_READY (UCSR1A & _BV(UDRE1))
 #define SERIAL_UART_RXD_PRESENT (UCSR1A & _BV(RXC1))
 #define SERIAL_UART_INIT() do { \
-	/* baud rate */ \
-	UBRR1L = SERIAL_UART_UBRR; \
-	/* baud rate */ \
-	UBRR1H = SERIAL_UART_UBRR >> 8; \
-	/* enable TX and RX */ \
-	UCSR1B = _BV(TXEN1) | _BV(RXEN1); \
-	/* 8-bit data */ \
-	UCSR1C = _BV(UCSZ11) | _BV(UCSZ10); \
-	} while(0)
+    	/* baud rate */ \
+    	UBRR1L = SERIAL_UART_UBRR; \
+    	/* baud rate */ \
+    	UBRR1H = SERIAL_UART_UBRR >> 8; \
+    	/* enable TX and RX */ \
+    	UCSR1B = _BV(TXEN1) | _BV(RXEN1); \
+    	/* 8-bit data */ \
+    	UCSR1C = _BV(UCSZ11) | _BV(UCSZ10); \
+  	} while(0)

@@ -4,8 +4,8 @@
 
 A small keyboard.
 
-Keyboard Maintainer: [Eucalyn](https://github.com/eucalyn/) [@eucalyn_](https://twitter.com/eucalyn_)
-Hardware Supported: BlocKey PCB, Pro Micro
+Keyboard Maintainer: [Eucalyn](https://github.com/eucalyn/) [@eucalyn_](https://twitter.com/eucalyn_)  
+Hardware Supported: BlocKey PCB, Pro Micro  
 Hardware Availability:
 
 Make example for this keyboard (after setting up your build environment):

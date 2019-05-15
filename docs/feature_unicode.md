@@ -123,7 +123,7 @@ AutoHotkey inserts the Text right of `Send, ` when this combination is pressed.
 
 ### US International
 
-If you enable the US International layout on the system, it will use punctuation to accent the characters.
+If you enable the US International layout on the system, it will use punctuation to accent the characters. 
 
 For instance, typing "`a" will result in à.
 

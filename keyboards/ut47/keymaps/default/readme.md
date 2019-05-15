@@ -8,7 +8,7 @@
 
 Use <kbd>TAB</kbd>+<kbd>Z</kbd> to cycle through brightness (8 steps)
 
-Use <kbd>TAB</kbd>+<kbd>X</kbd> to cycle through the following LED modes:
+Use <kbd>TAB</kbd>+<kbd>X</kbd> to cycle through the following LED modes: 
 
 - solid
 - breathing

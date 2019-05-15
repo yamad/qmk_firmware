@@ -4,7 +4,7 @@ These are the functions you use to send midi data through a device.
 
 ## Summary
 
- Members                        | Descriptions
+ Members                        | Descriptions                                
 --------------------------------|---------------------------------------------
 `public void `[`midi_send_cc`](#group__send__functions_1gaaf884811c92df405ca8fe1a00082f960)`(`[`MidiDevice`](#struct__midi__device)` * device,uint8_t chan,uint8_t num,uint8_t val)`            | Send a control change message (cc) via the given device.
 `public void `[`midi_send_noteon`](#group__send__functions_1ga467bcf46dbf03ec269ce565b46bc2775)`(`[`MidiDevice`](#struct__midi__device)` * device,uint8_t chan,uint8_t num,uint8_t vel)`            | Send a note on message via the given device.
@@ -35,11 +35,11 @@ These are the functions you use to send midi data through a device.
 Send a control change message (cc) via the given device.
 
 #### Parameters
-* `device` the device to use for sending
+* `device` the device to use for sending 
 
-* `chan` the channel to send on, 0-15
+* `chan` the channel to send on, 0-15 
 
-* `num` the cc num
+* `num` the cc num 
 
 * `val` the value of that cc num
 
@@ -48,11 +48,11 @@ Send a control change message (cc) via the given device.
 Send a note on message via the given device.
 
 #### Parameters
-* `device` the device to use for sending
+* `device` the device to use for sending 
 
-* `chan` the channel to send on, 0-15
+* `chan` the channel to send on, 0-15 
 
-* `num` the note number
+* `num` the note number 
 
 * `vel` the note velocity
 
@@ -61,11 +61,11 @@ Send a note on message via the given device.
 Send a note off message via the given device.
 
 #### Parameters
-* `device` the device to use for sending
+* `device` the device to use for sending 
 
-* `chan` the channel to send on, 0-15
+* `chan` the channel to send on, 0-15 
 
-* `num` the note number
+* `num` the note number 
 
 * `vel` the note velocity
 
@@ -74,11 +74,11 @@ Send a note off message via the given device.
 Send an after touch message via the given device.
 
 #### Parameters
-* `device` the device to use for sending
+* `device` the device to use for sending 
 
-* `chan` the channel to send on, 0-15
+* `chan` the channel to send on, 0-15 
 
-* `note_num` the note number
+* `note_num` the note number 
 
 * `amt` the after touch amount
 
@@ -87,9 +87,9 @@ Send an after touch message via the given device.
 Send a pitch bend message via the given device.
 
 #### Parameters
-* `device` the device to use for sending
+* `device` the device to use for sending 
 
-* `chan` the channel to send on, 0-15
+* `chan` the channel to send on, 0-15 
 
 * `amt` the bend amount range: -8192..8191, 0 means no bend
 
@@ -98,9 +98,9 @@ Send a pitch bend message via the given device.
 Send a program change message via the given device.
 
 #### Parameters
-* `device` the device to use for sending
+* `device` the device to use for sending 
 
-* `chan` the channel to send on, 0-15
+* `chan` the channel to send on, 0-15 
 
 * `num` the program to change to
 
@@ -109,9 +109,9 @@ Send a program change message via the given device.
 Send a channel pressure message via the given device.
 
 #### Parameters
-* `device` the device to use for sending
+* `device` the device to use for sending 
 
-* `chan` the channel to send on, 0-15
+* `chan` the channel to send on, 0-15 
 
 * `amt` the amount of channel pressure
 
@@ -169,7 +169,7 @@ Send a reset message via the given device.
 Send a tc quarter frame message via the given device.
 
 #### Parameters
-* `device` the device to use for sending
+* `device` the device to use for sending 
 
 * `time` the time of this quarter frame, range 0..16383
 
@@ -178,7 +178,7 @@ Send a tc quarter frame message via the given device.
 Send a song position message via the given device.
 
 #### Parameters
-* `device` the device to use for sending
+* `device` the device to use for sending 
 
 * `pos` the song position
 
@@ -187,7 +187,7 @@ Send a song position message via the given device.
 Send a song select message via the given device.
 
 #### Parameters
-* `device` the device to use for sending
+* `device` the device to use for sending 
 
 * `song` the song to select
 
@@ -205,7 +205,7 @@ Send a byte via the given device.
 This is a generic method for sending data via the given midi device. This would be useful for sending sysex data or messages that are not implemented in this API, if there are any. Please contact the author if you find some so we can add them.
 
 #### Parameters
-* `device` the device to use for sending
+* `device` the device to use for sending 
 
 * `b` the byte to send
 
@@ -216,13 +216,13 @@ Send up to 3 bytes of data.
 % 4 is applied to count so that you can use this to pass sysex through
 
 #### Parameters
-* `device` the device to use for sending
+* `device` the device to use for sending 
 
-* `count` the count of bytes to send, %4 is applied
+* `count` the count of bytes to send, %4 is applied 
 
-* `byte0` the first byte
+* `byte0` the first byte 
 
-* `byte1` the second byte, ignored if cnt % 4 != 2
+* `byte1` the second byte, ignored if cnt % 4 != 2 
 
 * `byte2` the third byte, ignored if cnt % 4 != 3
 
@@ -233,8 +233,9 @@ Send an array of formatted midi data.
 Can be used for sysex.
 
 #### Parameters
-* `device` the device to use for sending
+* `device` the device to use for sending 
 
-* `count` the count of bytes to send
+* `count` the count of bytes to send 
 
 * `array` the array of bytes
+

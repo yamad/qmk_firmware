@@ -61,7 +61,7 @@ void rgblight_set(void) {
             led[i].b = 0;
         }
     }
-
+    
     i2c_init();
     i2c_send(0xb0, (uint8_t*)led, 3 * RGBLED_NUM);
 }
@@ -75,7 +75,7 @@ void matrix_scan_kb(void) {
         i2c_send(0xb0, (uint8_t*)led, 3 * RGBLED_NUM);
         rgb_init = true;
     }
-
+    
     rgblight_task();
 #else
     void matrix_scan_kb(void) {
@@ -83,13 +83,13 @@ void matrix_scan_kb(void) {
         matrix_scan_user();
         /* Nothing else for now. */
     }
-
+    
     __attribute__((weak)) // overridable
     void matrix_init_user(void) {
-
+        
     }
-
+    
     __attribute__((weak)) // overridable
     void matrix_scan_user(void) {
-
+        
     }

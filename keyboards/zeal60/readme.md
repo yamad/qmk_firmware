@@ -5,8 +5,8 @@ Zeal60
 
 This is a 60% PCB with per-key RGB LEDs and supports ANSI, ISO, winkey/winkeyless bottom row, HHKB-layout (split right shift and backspace).
 
-Keyboard Maintainer: [Wilba](http://wilba.tech/) and on [github](https://github.com/Wilba6582)
-Hardware Supported: Zeal60 PCB Rev 0-3
+Keyboard Maintainer: [Wilba](http://wilba.tech/) and on [github](https://github.com/Wilba6582)  
+Hardware Supported: Zeal60 PCB Rev 0-3  
 Hardware Availability: https://zealpc.net/collections/group-buy-pre-orders/products/zeal60rgb
 
 Make example for this keyboard (after setting up your build environment):
@@ -19,7 +19,7 @@ See the [build environment setup](https://docs.qmk.fm/#/getting_started_build_to
 RGB Backlight Configuration
 ====
 
-A keymap (in the keymaps directory) can optionally configure which RGB backlight LEDs are used, depending on the needs of the layout, by adding a config.h file in the keymap's directory.
+A keymap (in the keymaps directory) can optionally configure which RGB backlight LEDs are used, depending on the needs of the layout, by adding a config.h file in the keymap's directory.  
 The following #define symbols will enable/disable a feature using 1 or 0.
 
     RGB_BACKLIGHT_USE_SPLIT_BACKSPACE

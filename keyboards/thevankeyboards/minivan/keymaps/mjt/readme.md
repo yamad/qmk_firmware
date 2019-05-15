@@ -10,7 +10,7 @@
 Qwerty for letters and mods.
 
 Numsym for all numbers and symbols used in typing. Follows a similar approach to
-planck but puts both on the same layer eschewing the F-keys.
+planck but puts both on the same layer eschewing the F-keys.  
 
 Fkeys layer is for the seldom used stuff like F-keys and some additional features
 such as dynamic macros, media keys, and a sleep shortcut for OS X.

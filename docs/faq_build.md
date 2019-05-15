@@ -39,11 +39,11 @@ SUBSYSTEMS=="usb", ATTRS{idVendor}=="feed", MODE:="0666"
 
 ## Unknown Device for DFU Bootloader
 
-If you're using Windows to flash your keyboard, and you are running into issues, check the Device Manager.  If you see an "Unknown Device" when the keyboard is in "bootloader mode", then you may have a driver issue.
+If you're using Windows to flash your keyboard, and you are running into issues, check the Device Manager.  If you see an "Unknown Device" when the keyboard is in "bootloader mode", then you may have a driver issue. 
 
-Re-running the installation script for MSYS2 may help (eg run `./util/qmk_install.sh` from MSYS2/WSL) or reinstalling the QMK Toolbox may fix the issue.
+Re-running the installation script for MSYS2 may help (eg run `./util/qmk_install.sh` from MSYS2/WSL) or reinstalling the QMK Toolbox may fix the issue. 
 
-If that doesn't work, then you may need to grab the [Zadig Utility](https://zadig.akeo.ie/). Download this, find the device in question, and select the `WinUS(libusb-1.0)` option, and hit "Reinstall driver". Once you've done that, try flashing your board, again.
+If that doesn't work, then you may need to grab the [Zadig Utility](https://zadig.akeo.ie/). Download this, find the device in question, and select the `WinUS(libusb-1.0)` option, and hit "Reinstall driver". Once you've done that, try flashing your board, again. 
 
 ## WINAVR is Obsolete
 It is no longer recommended and may cause some problem.
@@ -98,9 +98,9 @@ OPT_DEFS += -DBOOTLOADER_SIZE=2048
 ```
 
 ## `avr-gcc: internal compiler error: Abort trap: 6 (program cc1)` on MacOS
-This is an issue with updating on brew, causing symlinks that avr-gcc depend on getting mangled.
+This is an issue with updating on brew, causing symlinks that avr-gcc depend on getting mangled. 
 
-The solution is to remove and reinstall all affected modules.
+The solution is to remove and reinstall all affected modules. 
 
 ```
 brew rm avr-gcc

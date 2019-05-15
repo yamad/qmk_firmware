@@ -2,9 +2,9 @@
 
 3x3 Macropad.
 
-Keyboard Maintainer: [MechMerlin](https://github.com/mechmerlin)
-Hardware Supported: Treasure Macropad Type-9
-Hardware Availability: [Treasure](http://macropad.co/)
+Keyboard Maintainer: [MechMerlin](https://github.com/mechmerlin)  
+Hardware Supported: Treasure Macropad Type-9   
+Hardware Availability: [Treasure](http://macropad.co/)   
 
 Make example for this keyboard (after setting up your build environment):
 

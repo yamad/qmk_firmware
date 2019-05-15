@@ -2,8 +2,8 @@
 
 Custom [68Keys.io](https://68keys.io) DIY keyboard.
 
-Keyboard Maintainer: [sbstjn](https://sbstjn.com)
-Hardware Supported: Pro Micro
+Keyboard Maintainer: [sbstjn](https://sbstjn.com)  
+Hardware Supported: Pro Micro  
 Hardware Availability: [DIY Guide](https://68keys.io)
 
 Make example for this keyboard (after setting up your build environment):

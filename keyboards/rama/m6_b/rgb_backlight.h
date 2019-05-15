@@ -31,3 +31,4 @@ void backlight_timer_init(void);
 void backlight_timer_enable(void);
 void backlight_timer_disable(void);
 void backlight_set_suspend_state(bool state);
+

@@ -19,7 +19,7 @@
  - RGB underglow
  - 1.5kg with plate and weight
 
-Keyboard Maintainer: [MxBlue](https://github.com/mxblu)
+Keyboard Maintainer: [MxBlue](https://github.com/mxblu)  
 
 Hardware Supported: Custom PCB, ATMega32u4
 
@@ -40,7 +40,7 @@ There are 3 modes of operation:
  - FLED_OFF - Front LEDs stay off
  - FLED_RGB - Front LEDs are part of the standard RGB LED modes, only works correctly with rainbow modes (will fix on request)
  - FLED_INDI - Top front LED represents Caps Lock status, bottom LED represents current layer
-
+ 
 Colors for FLED_INDI mode are hardcoded as hue/saturation values, the caps lock color can be found in mxss_frontled.h, the layer colors are defined in keymap.c (see default/keymap.c for example).
 
 ## Custom Keycodes
@@ -48,7 +48,7 @@ Colors for FLED_INDI mode are hardcoded as hue/saturation values, the caps lock 
  - FLED_MOD - Cycle between the 3 modes (FLED_OFF -> FLED_RGB -> FLED_INDI)
  - FLED_VAI - Increase front LED brightness
  - FLED_VAD - Decrease front LED brightness
-
+ 
  # Further Notes
-
+ 
  As SAFE_RANGE is used for defining the custom keycodes seen above, please use NEW_SAFE_RANGE as the starting value for any custom keycodes in keymap.c, as per the example.

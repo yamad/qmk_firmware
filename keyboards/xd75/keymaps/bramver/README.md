@@ -1,6 +1,6 @@
 # XD75 Layout
 
-Standard qwerty layout.
+Standard qwerty layout.  
 Limited emoji support and proper mouse settings.
 
 ## Keymap

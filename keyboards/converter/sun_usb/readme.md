@@ -4,8 +4,8 @@ A converter for using non-USB Sun keyboards.
 
 Original code from the [TMK firmware](https://github.com/tmk/tmk_keyboard/tree/master/converter/sun_usb). Ported to QMK by [Yann Hodique](https://github.com/sigma).
 
-Keyboard Maintainer: [Yann Hodique](https://github.com/sigma)
-Hardware Supported: See hardware section below
+Keyboard Maintainer: [Yann Hodique](https://github.com/sigma)  
+Hardware Supported: See hardware section below  
 Hardware Availability: self-built
 
 Make example for this keyboard (after setting up your build environment):
@@ -82,7 +82,7 @@ Commands From Keyboard To System
             means no keys pressed.
     0xFE Layout Response
     0xFF Reset Response(followed by 0x04)
-
+     
 References
 
 * http://kentie.net/article/sunkbd/page2.htm

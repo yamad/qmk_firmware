@@ -33,3 +33,4 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 /* auto shift config */
 #define AUTO_SHIFT_TIMEOUT 150
+

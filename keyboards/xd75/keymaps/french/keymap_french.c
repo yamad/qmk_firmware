@@ -28,7 +28,7 @@ enum french_key {
 	FR_X,
 	FR_Y,
 	FR_W,
-	FR_AMP,
+	FR_AMP,  
 	FR_EACU,
 	FR_QUOT,		/* 0x20 */
 	FR_APOS,
@@ -70,13 +70,13 @@ enum french_key {
 	FR_INST			=0x49,
 	FR_HOME,
 	FR_PGUP,
-	FR_DEL,
-	FR_END,
-	FR_PGDN,
-	FR_RIGT,
-	FR_LEFT,		/* 0x50 */
-	FR_DOWN,
-	FR_UP,
+    	FR_DEL,
+    	FR_END,
+    	FR_PGDN,
+    	FR_RIGT,
+    	FR_LEFT,		/* 0x50 */
+    	FR_DOWN,
+    	FR_UP,
 	FR_NUML,
 	FR_SLSH,		/* KEYPAD */
 	FR_MULT,
@@ -97,17 +97,17 @@ enum french_key {
 	FR_LESS,
 	FR_EQ			=0x67 /* END KEYPAD */,
 	FR_F13,
-	FR_F14,
-	FR_F15,
-	FR_F16,
-	FR_F17,
-	FR_F18,
-	FR_F19,
-	FR_F20,
-	FR_F21,			/* 0x70 */
-	FR_F22,
-	FR_F23,
-	FR_F24,
+    	FR_F14,
+    	FR_F15,
+    	FR_F16,
+    	FR_F17,
+    	FR_F18,
+    	FR_F19,
+    	FR_F20,
+    	FR_F21,			/* 0x70 */
+    	FR_F22,
+    	FR_F23,
+    	FR_F24,
 	FR_MENU			=0x76
 };
 
@@ -116,42 +116,42 @@ enum french_control_touch{
 
 	/* Modifiers */
 	FR_LCTR			= 0xE0,
-	FR_LSFT,
-	FR_LALT,
-	FR_LCMD,
-	FR_RCTR,
-	FR_RSFT,
-	FR_ALGR,
-	FR_RCMD
+    	FR_LSFT,
+    	FR_LALT,
+    	FR_LCMD,
+    	FR_RCTR,
+    	FR_RSFT,
+    	FR_ALGR,
+    	FR_RCMD
 };
 
 
 enum french_media_key{
 	/* System Control */
-	FR_SYSTEM_POWER		= 0xA5,
-	FR_SYSTEM_SLEEP,
-	FR_SYSTEM_WAKE,
+    	FR_SYSTEM_POWER		= 0xA5,
+    	FR_SYSTEM_SLEEP,
+    	FR_SYSTEM_WAKE,
 
-	/* Media Control */
-	FR_MUTE,
-	FR_MVUP,
-	FR_MVDN,
-	FR_MNXT,
-	FR_MPRV,
-	FR_MSTP,
-	FR_MPLY,
-	FR_MEDIA_SELECT,
-	FR_MEDIA_EJECT,
-	FR_MAIL,
-	FR_CALCULATOR,
-	FR_MY_COMPUTER,
-	FR_WWW_SEARCH,
-	FR_WWW_HOME,
-	FR_WWW_BACK,
-	FR_WWW_FORWARD,
-	FR_WWW_STOP,
-	FR_WWW_REFRESH,
-	FR_WWW_FAVORITES,
-	FR_MEDIA_FAST_FORWARD,
-	FR_MEDIA_REWIND		/* 0xBC */
+    	/* Media Control */
+    	FR_MUTE,
+    	FR_MVUP,
+    	FR_MVDN,
+    	FR_MNXT,
+    	FR_MPRV,
+    	FR_MSTP,
+    	FR_MPLY,
+    	FR_MEDIA_SELECT,
+    	FR_MEDIA_EJECT,
+    	FR_MAIL,
+    	FR_CALCULATOR,
+    	FR_MY_COMPUTER,
+    	FR_WWW_SEARCH,
+    	FR_WWW_HOME,
+    	FR_WWW_BACK,
+    	FR_WWW_FORWARD,
+    	FR_WWW_STOP,
+    	FR_WWW_REFRESH,
+    	FR_WWW_FAVORITES,
+    	FR_MEDIA_FAST_FORWARD,
+    	FR_MEDIA_REWIND		/* 0xBC */
 };

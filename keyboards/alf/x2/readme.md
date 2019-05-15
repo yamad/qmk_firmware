@@ -4,8 +4,8 @@
 
 A customizable 60% keyboard.
 
-Keyboard Maintainer: QMK Community
-Hardware Supported: ALF X2 60%
+Keyboard Maintainer: QMK Community  
+Hardware Supported: ALF X2 60%  
 Hardware Availability: [zFrontier](https://en.zfrontier.com/products/group-buy-alf-x2-60)
 
 Make example for this keyboard (after setting up your build environment):

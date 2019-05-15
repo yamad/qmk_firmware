@@ -34,7 +34,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 *
 * Button 1 (stop) is Held to activate Layer 3 only while held, User then selects the keymap to change to
 */
-	LAYOUT(
+  	LAYOUT(
 		LT(3, KC_MSTP), KC_VOLU, KC_MPLY, KC_MPRV, KC_VOLD, KC_MNXT),
 
 /*

@@ -7,8 +7,8 @@ A split ergo keyboard with a few goals in mind:
 - RGB backlighting. 16 WS2812b LEDs shine through the perimeter switches. The SK6812 variant are cheap and easy to solder.
 - Price. Using Arduino Pro Micro, SK6812 LEDs, and PCB FR4 for the case, the cost of each half without switches or caps can be reduced to under $20 when purchased at volume.
 
-Keyboard Maintainer: [Legonut](https://github.com/Legonut)
-Hardware Supported: Zen rev1
+Keyboard Maintainer: [Legonut](https://github.com/Legonut)  
+Hardware Supported: Zen rev1  
 Hardware Availability: [RGBKB.net](https://www.rgbkb.net/)
 
 A build guide and more info for this keyboard can be found here: [Zen Build Guide](https://legonut.gitbooks.io/zen-keyboard/content/).

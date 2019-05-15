@@ -20,3 +20,4 @@ The following functions can provide basic control of GPIOs and are found in `qua
 ## Advance settings
 
 Each micro-controller can have multiple advance settings regarding its GPIO. This abstraction layer does not limit the use of architecture specific functions. Advance users should consult the datasheet of there desired device and include any needed libraries. For AVR the standard avr/io.h library is used and for STM32 the Chibios [PAL library](http://chibios.sourceforge.net/docs3/hal/group___p_a_l.html) is used.
+

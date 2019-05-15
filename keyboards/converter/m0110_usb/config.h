@@ -55,3 +55,5 @@ Ported to QMK by Techsock <info@techsock.com>
 #define M0110_DATA_PIN          PIND
 #define M0110_DATA_DDR          DDRD
 #define M0110_DATA_BIT          0
+
+

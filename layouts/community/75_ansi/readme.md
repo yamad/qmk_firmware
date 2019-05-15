@@ -1,10 +1,10 @@
 # 75_ansi
 
-This is the standard 75% ANSI keyboard layout.
+This is the standard 75% ANSI keyboard layout. 
 
 One may argue that having 3 1u keys to the right of spacebar
 is not desired as two 1.5u keys. However, most 75% boards that
-come out have that as the standard.
+come out have that as the standard. 
 
 ## Requirements
 
@@ -43,11 +43,11 @@ This layout needs to match the layout defined in
 
 ### 3. Defining a keymap
 
-A keymap must be defined at
+A keymap must be defined at         
 
-    qmk_firmware/layouts/community/75_ansi/yourfoldername/keymap.c
+    qmk_firmware/layouts/community/75_ansi/yourfoldername/keymap.c   
 
-This keymap must have a `LAYOUT_75_ansi` layout defined.
+This keymap must have a `LAYOUT_75_ansi` layout defined. 
 
 ```c
 const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {

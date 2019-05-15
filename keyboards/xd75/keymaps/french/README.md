@@ -13,7 +13,7 @@ Il peut être utilisé pour toute autre configuration de clavier juste en inclua
 
 La touche de fonction permet elle d'avoir accès aux différentes touches multimédias ainsi qu'au pavé numérique. Mais aussi si le clavier est équipé de led, à différents modes d'éclairage.
 
-# Compilation
+# Compilation 
 
 ```
 make xd75:french:dfu

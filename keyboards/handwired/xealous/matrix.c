@@ -152,7 +152,7 @@ void matrix_init(void)
     for (uint8_t i = 0; i < MATRIX_ROWS * MATRIX_COLS; i++) {
         debounce_counters[i] = DEBOUNCE_COUNTER_INACTIVE;
     }
-
+    
     matrix_init_quantum();
 
 }
@@ -205,7 +205,7 @@ void transfer_matrix_values(uint8_t current_time)
 uint8_t _matrix_scan(void)
 {
     uint8_t current_time = timer_read() % DEBOUNCE_COUNTER_MODULO;
-
+    
     // Set row, read cols
     for (uint8_t current_row = 0; current_row < ROWS_PER_HAND; current_row++) {
         select_row(current_row);
@@ -255,13 +255,13 @@ i2c_error: // the cable is disconnceted, or something else went wrong
 }
 
 uint8_t matrix_scan(void)
-{
+{    
 #ifdef DEBUG_MATRIX_SCAN_RATE
     matrix_check_scan_rate();
     matrix_time_between_scans();
-#endif
+#endif        
     uint8_t ret = _matrix_scan();
-
+   
     if( i2c_transaction() ) {
         // turn on the indicator led when halves are disconnected
         TXLED1;
@@ -337,7 +337,7 @@ static void init_cols(void)
     }
 }
 
-inline
+inline 
 static matrix_row_t optimized_col_reader(void) {
     //MATRIX_COL_PINS { B6, B2, B3, B1, F7, F6, F5, F4 }
     return (PINB & (1 << 6) ? 0 : (ROW_SHIFTER << 0)) |
@@ -373,3 +373,4 @@ static void unselect_rows(void)
         _SFR_IO8((pin >> 4) + 2) |=  _BV(pin & 0xF); // HI
     }
 }
+

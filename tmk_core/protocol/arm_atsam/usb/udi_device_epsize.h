@@ -29,3 +29,4 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #define CDC_EPSIZE                  16
 
 #endif //_UDI_DEVICE_EPSIZE_H_
+

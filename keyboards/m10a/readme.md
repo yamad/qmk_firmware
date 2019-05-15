@@ -2,8 +2,8 @@
 
 Firmware for custom macropad PCB
 
-Keyboard Maintainer: QMK Community
-Hardware Supported: Rama Works M10-A
+Keyboard Maintainer: QMK Community   
+Hardware Supported: Rama Works M10-A  
 Hardware Availability: [Rama Works](https://rama.works/m10-a)
 
 Make example for this keyboard (after setting up your build environment):

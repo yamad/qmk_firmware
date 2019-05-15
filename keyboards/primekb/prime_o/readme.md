@@ -4,8 +4,8 @@
 
 A 16x5 ortholinear keyboard that has many layout options, including: full grid, left- or right-side full sized numpads, and Many spacebar locations. Standard in-switch backlighting. See primekb.com for full details of possible layouts.
 
-Keyboard Maintainer: [MxBlue](https://github.com/MxBlu)
-Hardware Supported: Prime_O PCB, ATMega32u2
+Keyboard Maintainer: [MxBlue](https://github.com/MxBlu)  
+Hardware Supported: Prime_O PCB, ATMega32u2  
 Hardware Availability: GB
 
 Make example for this keyboard (after setting up your build environment):

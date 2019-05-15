@@ -1,9 +1,9 @@
 {
-    "keyboard_name": "Fourier",
-    "url": "https://keeb.io",
-    "maintainer": "nooges",
-    "width": 14,
-    "height": 4,
+    "keyboard_name": "Fourier", 
+    "url": "https://keeb.io", 
+    "maintainer": "nooges", 
+    "width": 14, 
+    "height": 4, 
     "layouts": {
         "LAYOUT": {
             "layout": [

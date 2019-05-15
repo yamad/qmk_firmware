@@ -6,8 +6,8 @@ Lily58 is 6×4+5keys column-staggered split keyboard.
 
 ![Lily58_02](https://user-images.githubusercontent.com/6285554/45337733-7b33a600-b5c4-11e8-85b0-35f1cc9bf946.png)
 
-Keyboard Maintainer: [Naoki Katahira](https://github.com/kata0510/) [Twitter:@F_YUUCHI](https://twitter.com/F_YUUCHI)
-Hardware Supported: Lily58 PCB, ProMicro
+Keyboard Maintainer: [Naoki Katahira](https://github.com/kata0510/) [Twitter:@F_YUUCHI](https://twitter.com/F_YUUCHI)  
+Hardware Supported: Lily58 PCB, ProMicro  
 Hardware Availability: [PCB & Case Data](https://github.com/kata0510/Lily58)
 
 Make example for this keyboard (after setting up your build environment):

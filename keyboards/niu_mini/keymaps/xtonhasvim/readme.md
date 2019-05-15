@@ -6,3 +6,4 @@ Based on the standard Planck layout with a few changes:
 * Dedicated movement and mouse layers.
 * Top and middle row swapped in `_RAISE` and `_LOWER` because I never use F-keys.
 * Vim layers! See `users/xtonhasvim`.
+

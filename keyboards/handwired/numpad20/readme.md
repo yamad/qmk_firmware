@@ -2,9 +2,9 @@
 
 Custom handwired 20 key numpad.
 
-Keyboard Maintainer: [Danny](https://github.com/nooges)
-Hardware Supported: Custom handwired 20 key numpad
-Hardware Availability:
+Keyboard Maintainer: [Danny](https://github.com/nooges)  
+Hardware Supported: Custom handwired 20 key numpad  
+Hardware Availability: 
 
 Make example for this keyboard (after setting up your build environment):
 

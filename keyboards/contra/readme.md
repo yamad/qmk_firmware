@@ -5,8 +5,8 @@ CONTRA
 
 A 40% keyboard by [CARTEL](https://cartel.ltd/)
 
-Keyboard Maintainer: The QMK Community
-Hardware Supported: CONTRA
+Keyboard Maintainer: The QMK Community  
+Hardware Supported: CONTRA  
 Hardware Availability: [CARTEL](https://cartel.ltd/projects/contra/)
 
 Make example for this keyboard (after setting up your build environment):
