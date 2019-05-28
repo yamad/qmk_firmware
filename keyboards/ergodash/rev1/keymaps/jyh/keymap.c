@@ -29,7 +29,7 @@ enum custom_keycodes {
 #define CTL_DEL MT(MOD_LCTL, KC_DEL)  //  Del     Left Control
 
 // Right Side
-#define GUI_BSL MT(MOD_RGUI, KC_BSLS) //  \       Meta
+#define GUSH_BS MT(MOD_RGUI | MOD_RSFT, KC_BSLS) //  \       Gui+Shift
 #define CTL_QUO MT(MOD_RCTL, KC_QUOT) //  '       Right Control
 #define SFT_EQL MT(MOD_RSFT, KC_EQL)  //  =       Right Shift
 #define SFT_UND MT(MOD_RSFT, KC_UNDS) //  _       Right Shift
@@ -46,17 +46,17 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
    * |------+------+------+------+------+------+------+--------------------+------+------+------+------+------+------+------|
    * | Esc  |   A  |   S  |   D  |   F  |   G  |  Tab |                    | Enter|   H  |   J  |   K  |   L  |   ;  |  "   |
    * |------+------+------+------+------+------+---------------------------+------+------+------+------+------+------+------|
-   * | Shift|   Z  |   X  |   C  |   V  |   B  | Space|                    | RAlt |   N  |   M  |   ,  |   .  |   /  | Shift|
+   * | Shift|   Z  |   X  |   C  |   V  |   B  | Shift|                    | Shift|   N  |   M  |   ,  |   .  |   /  | Shift|
    * |-------------+------+------+------+------+------+------+------+------+------+------+------+------+------+-------------|
-   * | Tab  |  GUI |  Alt | Lower|||||||| Bksp | LShft| Gui  |||||||| RShft| LAlt | Space|||||||| Raise| Down |  Up  | Enter|
+   * | Tab  |  Gui |  Alt | Lower|||||||| Bksp | Ctrl | Gui  |||||||| Enter| LAlt | Space|||||||| Raise| Down |  Up  | Enter|
    * ,----------------------------------------------------------------------------------------------------------------------.
    */
   [_QWERTY] = LAYOUT( \
-	GUI_GRV, KC_1,    KC_2,    KC_3,    KC_4,    KC_5,    KC_MINS,                        KC_EQL , KC_6,    KC_7,    KC_8,    KC_9,    KC_0,    GUI_BSL, \
+	GUI_GRV, KC_1,    KC_2,    KC_3,    KC_4,    KC_5,    KC_MINS,                        KC_EQL , KC_6,    KC_7,    KC_8,    KC_9,    KC_0,    GUSH_BS, \
     MEH_TAB, KC_Q,    KC_W,    KC_E,    KC_R,    KC_T,    KC_LBRC,                        KC_RBRC, KC_Y,    KC_U,    KC_I,    KC_O,    KC_P,    KC_BSLS, \
 	CTL_ESC, KC_A,    KC_S,    KC_D,    KC_F,    KC_G,    KC_TAB,                         KC_ENT , KC_H,    KC_J,    KC_K,    KC_L,    KC_SCLN, KC_QUOT, \
-    SFT_MIN, KC_Z,    KC_X,    KC_C,    KC_V,    KC_B,    KC_LCTL,                        KC_RALT, KC_N,    KC_M,    KC_COMM, KC_DOT,  KC_SLSH, SFT_EQL, \
-	CTL_TAB, KC_LGUI, KC_LALT, LOWER,            CTL_BSP, KC_LSFT,KC_LGUI,        KC_RSFT,KC_LALT, KC_SPC,           RAISE,   KC_DOWN, KC_UP,   HPR_ENT  \
+    SFT_MIN, KC_Z,    KC_X,    KC_C,    KC_V,    KC_B,    KC_LSFT,                        KC_RSFT, KC_N,    KC_M,    KC_COMM, KC_DOT,  KC_SLSH, SFT_EQL, \
+	CTL_TAB, KC_LGUI, KC_LALT, LOWER,            CTL_BSP, KC_LCTL,KC_LGUI,         KC_ENT,KC_LALT, KC_SPC,           RAISE,   KC_DOWN, KC_UP,   HPR_ENT  \
   ),
 
   /* Lower
@@ -69,7 +69,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
    * |------+------+------+------+------+------+---------------------------+------+------+------+------+------+------+------|
    * |   +  |      | Vol- | Mute | Vol+ |      |      |                    |      |      |      |      | Home | PgUp |  _   |
    * |-------------+------+------+------+------+------+------+------+------+------+------+------+------+------+-------------|
-   * | Mou2 | Mou3 | Mou1 | LOWER||||||||      |      |      ||||||||      |      | Enter||||||||      | End  | PgDn |      |
+   * | Mou2 | Mou3 | Mou1 | LOWER||||||||      |      |      ||||||||      |      |      ||||||||      | End  | PgDn |      |
    * ,----------------------------------------------------------------------------------------------------------------------.
    */
   [_LOWER] = LAYOUT(
@@ -77,7 +77,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     _______, KC_EXLM, KC_AT,   KC_HASH, KC_DLR,  KC_PERC, _______,                        _______, KC_CIRC, KC_AMPR, KC_ASTR, KC_LPRN, KC_RPRN, KC_PIPE, \
     _______, _______, KC_MPRV, KC_MPLY, KC_MNXT, _______, _______,                        _______, KC_LEFT, KC_DOWN, KC_UP,   KC_RGHT, KC_COLN, KC_DQT , \
     SFT_PLS, _______, KC_VOLD, KC_MUTE, KC_VOLU, _______, _______,                        _______, _______, _______, _______, KC_HOME, KC_PGUP, SFT_UND, \
-    KC_MS_BTN2, KC_MS_BTN3, KC_MS_BTN1, LOWER,   _______, _______,_______,        _______,_______, KC_ENT,           _______, KC_END,  KC_PGDN, _______  \
+    KC_MS_BTN2, KC_MS_BTN3, KC_MS_BTN1, LOWER,   _______, _______,_______,        _______,_______, _______,          _______, KC_END,  KC_PGDN, _______  \
   ),
 
   /* Raise
@@ -90,7 +90,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
    * |------+------+------+------+------+------+---------------------------+------+------+------+------+------+------+------|
    * |      |   {  |   }  |   (  |   )  |      |      |                    |      |   [  |   ]  |   1  |   2  |   3  |   +  |
    * |-------------+------+------+------+------+------+------+------+------+------+------+------+------+------+-------------|
-   * |      |      |      |      ||||||||      |  Del |      ||||||||      |      |      |||||||| RAISE|   .  |   0  | Enter|
+   * |      |      |      |      ||||||||      |      |      ||||||||      |      |      |||||||| RAISE|   .  |   0  | Enter|
    * ,----------------------------------------------------------------------------------------------------------------------.
    */
   [_RAISE] = LAYOUT(
@@ -98,7 +98,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     _______, KC_1,    KC_2,    KC_3,    KC_4,    KC_5,    _______,                        _______, KC_6,    KC_EQL,  KC_7,    KC_8,    KC_9,   KC_ASTR, \
     _______, KC_LEFT, KC_UP,   KC_DOWN, KC_RGHT, _______, _______,                        _______, KC_SCLN, KC_COMM, KC_4,    KC_5,    KC_6,   KC_MINS, \
     SFT_PLS, KC_LCBR, KC_RCBR, KC_LPRN, KC_RPRN, _______, _______,                        _______, KC_LBRC, KC_RBRC, KC_1,    KC_2,    KC_3,   KC_PLUS, \
-    _______, _______, _______,     _______,      CTL_DEL, _______,_______,        _______,_______, _______,      RAISE,       KC_DOT, KC_0,    KC_ENT   \
+    _______, _______, _______,     _______,      _______, _______,_______,        _______,_______, _______,      RAISE,       KC_DOT, KC_0,    KC_ENT   \
   ),
 
   /* Adjust
