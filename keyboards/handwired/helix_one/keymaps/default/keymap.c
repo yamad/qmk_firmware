@@ -26,9 +26,11 @@ enum custom_keycodes {
 #define GUI_LBC MT(MOD_LGUI, KC_LBRC) //  [       Left Gui
 #define ALT_RBC MT(MOD_LALT, KC_RBRC) //  ]       Left Alt
 
+
 // Middle / Thumbs
 #define CTL_BSP MT(MOD_LCTL, KC_BSPC)  // Bkspce  Left Control
 #define CTL_DEL MT(MOD_LCTL, KC_DEL)  //  Del     Left Control
+#define ALT_TAB MT(MOD_LALT, KC_TAB)  //  Tab     Left Alt
 
 // Right Side
 #define GUSH_BS MT(MOD_RGUI | MOD_RSFT, KC_BSLS) //  \       Gui+Shift
@@ -50,9 +52,9 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
    * |------+------+------+------+------+------|                    |------+------+------+------+------+------|
    * | Esc  |   A  |   S  |   D  |   F  |   G  |                    |   H  |   J  |   K  |   L  |   ;  |  "   |
    * |------+------+------+------+------+------+------.      ,------+------+------+------+------+------+------|
-   * |  -   |   Z  |   X  |   C  |   V  |   B  | Tab  |      | Enter|   N  |   M  |   ,  |   .  |   /  |  =   |
+   * | Shift|   Z  |   X  |   C  |   V  |   B  | Hyper|      | Super|   N  |   M  |   ,  |   .  |   /  |  =   |
    * |-------------+------+------+------+------+------|      |------+------+------+------+------+------+------|
-   * | Tab  |   [  |   ]  | Super| Lower| Bksp | Ctrl |      | Alt  | Space| Raise| Left | Down |  Up  | Right|
+   * | Ctrl |   [  |   ]  | Super| Lower| Bksp | Tab  |      | Enter| Space| Raise| Left | Down |  Up  | Right|
    * ,------------------------------------------------.      `------------------------------------------------.
    *
    * ,-----------------------------------------.                    ,-----------------------------------------.
@@ -60,16 +62,16 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
    * |------+------+------+------+------+------|                    |------+------+------+------+------+------|
    * | Ctrl |   A  |   S  |   D  |   F  |   G  |                    |   H  |   J  |   K  |   L  |   ;  |  "   |
    * |------+------+------+------+------+------+------.      ,------+------+------+------+------+------+------|
-   * | Shift|   Z  |   X  |   C  |   V  |   B  | Tab  |      | Enter|   N  |   M  |   ,  |   .  |   /  | Shift|
+   * | Shift|   Z  |   X  |   C  |   V  |   B  | Hyper|      | Super|   N  |   M  |   ,  |   .  |   /  | Shift|
    * |-------------+------+------+------+------+------|      |------+------+------+------+------+------+------|
-   * | Ctrl |  GUI | Meta | Super| Lower| Ctrl | Ctrl |      | Alt  | Space| Raise| Left | Down |  Up  | Enter|
+   * | Ctrl |  GUI | Meta | Super| Lower| Ctrl | Alt  |      | Enter| Space| Raise| Left | Down |  Up  | Right|
    * ,------------------------------------------------.      `------------------------------------------------.
    */
   [_QWERTY] = LAYOUT( \
     GUI_GRV, KC_Q,    KC_W,    KC_E,    KC_R,    KC_T,                       KC_Y,    KC_U,    KC_I,    KC_O,    KC_P,    GUSH_BS, \
     CTL_ESC, KC_A,    KC_S,    KC_D,    KC_F,    KC_G,                       KC_H,    KC_J,    KC_K,    KC_L,    KC_SCLN, KC_QUOT, \
-    SFT_MIN, KC_Z,    KC_X,    KC_C,    KC_V,    KC_B,    KC_TAB,    KC_ENT, KC_N,    KC_M,    KC_COMM, KC_DOT,  KC_SLSH, SFT_EQL, \
-    CTL_TAB, GUI_LBC, ALT_RBC, KC_MEH, LOWER,   CTL_BSP,  KC_LCTL,  KC_RALT, KC_SPC, RAISE,    KC_LEFT, KC_DOWN, KC_UP, TD(TD_RGHT_ENT) \
+    KC_LSFT, KC_Z,    KC_X,    KC_C,    KC_V,    KC_B, KC_HYPR,   KC_MEH,    KC_N,    KC_M,    KC_COMM, KC_DOT,  KC_SLSH, SFT_EQL, \
+    KC_LCTL, GUI_LBC, ALT_RBC, KC_MEH, LOWER, CTL_BSP, ALT_TAB,   KC_ENT,  KC_SPC,   RAISE,    KC_LEFT, KC_DOWN, KC_UP,   KC_RGHT  \
   ),
 
   /* Lower

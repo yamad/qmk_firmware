@@ -28,6 +28,7 @@ enum custom_keycodes {
 
 // Middle / Thumbs
 #define CTL_BSP MT(MOD_LCTL, KC_BSPC)  // Bkspce  Left Control
+#define ALT_TAB MT(MOD_LALT, KC_TAB)  //  Tab     Left Alt
 #define CTL_DEL MT(MOD_LCTL, KC_DEL)  //  Del     Left Control
 
 // Right Side
@@ -48,28 +49,28 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
    * ,----------------------------------------------------------------------------------------------------------------------.
    * |  `   |   Q  |   W  |   E  |   R  |   T  |  [   |                    |   ]  |   Y  |   U  |   I  |   O  |   P  |  \   |
    * |------+------+------+------+------+------+------+--------------------+------+------+------+------+------+------+------|
-   * | Esc  |   A  |   S  |   D  |   F  |   G  | Tab  |                    | Enter|   H  |   J  |   K  |   L  |   ;  |  "   |
+   * | Esc  |   A  |   S  |   D  |   F  |   G  | Hyper|                    | Meh  |   H  |   J  |   K  |   L  |   ;  |  "   |
    * |------+------+------+------+------+------+---------------------------+------+------+------+------+------+------+------|
-   * |  -   |   Z  |   X  |   C  |   V  |   B  | Shift|                    | Shift|   N  |   M  |   ,  |   .  |   /  |  =   |
+   * | Shift|   Z  |   X  |   C  |   V  |   B  | Shift|                    | Shift|   N  |   M  |   ,  |   .  |   /  |  =   |
    * |-------------+------+------+------+------+------+------+------+------+------+------+------+------+------+-------------|
-   * | Tab  |   [  |   ]  | Super|||||||| Lower| Bksp | Ctrl |||||||| Alt  | Space| Raise|||||||| Left | Down |  Up  | Right|
+   * | Tab  |   [  |   ]  | Super|||||||| Lower| Bksp | Tab  |||||||| Enter| Space| Raise|||||||| Left | Down |  Up  | Right|
    * ,----------------------------------------------------------------------------------------------------------------------.
    *
    * ,----------------------------------------------------------------------------------------------------------------------.
    * | Gui  |   Q  |   W  |   E  |   R  |   T  |  [   |                    |   ]  |   Y  |   U  |   I  |   O  |   P  | Gui/Shift|
    * |------+------+------+------+------+------+------+--------------------+------+------+------+------+------+------+------|
-   * | Ctrl |   A  |   S  |   D  |   F  |   G  | Tab  |                    | Enter|   H  |   J  |   K  |   L  |   ;  |  "   |
+   * | Ctrl |   A  |   S  |   D  |   F  |   G  | Hyper|                    | Meh  |   H  |   J  |   K  |   L  |   ;  |  "   |
    * |------+------+------+------+------+------+---------------------------+------+------+------+------+------+------+------|
    * | Shift|   Z  |   X  |   C  |   V  |   B  | Shift|                    | Shift|   N  |   M  |   ,  |   .  |   /  | Shift|
    * |-------------+------+------+------+------+------+------+------+------+------+------+------+------+------+-------------|
-   * | Ctrl |  GUI | Meta | Super|||||||| Lower| Ctrl | Ctrl |||||||| Alt  | Space| Raise|||||||| Left | Down |  Up  | Enter|
+   * | Ctrl |  GUI | Meta | Super|||||||| Lower| Ctrl | Alt  |||||||| Enter| Space| Raise|||||||| Left | Down |  Up  | Right|
    * ,----------------------------------------------------------------------------------------------------------------------.
    */
   [_QWERTY] = LAYOUT( \
     GUI_GRV, KC_Q,    KC_W,    KC_E,    KC_R,    KC_T,    KC_LBRC,                        KC_RBRC, KC_Y,    KC_U,    KC_I,    KC_O,    KC_P,    GUSH_BS, \
-    CTL_ESC, KC_A,    KC_S,    KC_D,    KC_F,    KC_G,    KC_TAB,                         KC_ENT,  KC_H,    KC_J,    KC_K,    KC_L,    KC_SCLN, KC_QUOT, \
-    SFT_MIN, KC_Z,    KC_X,    KC_C,    KC_V,    KC_B,    KC_LSFT,                        KC_RSFT, KC_N,    KC_M,    KC_COMM, KC_DOT,  KC_SLSH, SFT_EQL, \
-    CTL_TAB, GUI_LBC, ALT_RBC, KC_MEH,           LOWER,   CTL_BSP, KC_LCTL,       KC_RALT,KC_SPC, RAISE,             KC_LEFT, KC_DOWN, KC_UP, TD(TD_RGHT_ENT) \
+    CTL_ESC, KC_A,    KC_S,    KC_D,    KC_F,    KC_G,    KC_HYPR,                        KC_MEH,  KC_H,    KC_J,    KC_K,    KC_L,    KC_SCLN, KC_QUOT, \
+    KC_LSFT, KC_Z,    KC_X,    KC_C,    KC_V,    KC_B,    KC_LSFT,                        KC_RSFT, KC_N,    KC_M,    KC_COMM, KC_DOT,  KC_SLSH, SFT_EQL, \
+    CTL_TAB, GUI_LBC, ALT_RBC, KC_MEH,           LOWER,   CTL_BSP, ALT_TAB,       KC_ENT, KC_SPC, RAISE,             KC_LEFT, KC_DOWN, KC_UP,   KC_RGHT  \
   ),
 
   /* Lower
