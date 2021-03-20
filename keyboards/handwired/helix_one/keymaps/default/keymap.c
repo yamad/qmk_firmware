@@ -34,6 +34,7 @@ enum custom_keycodes {
 #define ALT_TAB MT(MOD_LALT, KC_TAB)  //  Tab     Left Alt
 #define HPR_MIN MT(MOD_HYPR, KC_MINS) //  -       Hyper
 #define SUP_EQL MT(MOD_MEH,  KC_EQL)  //  =       Super
+#define RCG_EQL RCAG_T(KC_EQL)        //  =       Right Control, Alt, Gui
 
 // Right Side
 #define GUSH_BS MT(MOD_RGUI | MOD_RSFT, KC_BSLS) //  \       Gui+Shift
@@ -59,7 +60,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
    * |------+------+------+------+------+------|                    |------+------+------+------+------+------|
    * | Esc  |   A  |   S  |   D  |   F  |   G  |                    |   H  |   J  |   K  |   L  |   ;  |  '   |
    * |------+------+------+------+------+------+------.      ,------+------+------+------+------+------+------|
-   * |  -   |   Z  |   X  |   C  |   V  |   B  | Shift|      | Hyper|   N  |   M  |   ,  |   .  |   /  |  =   |
+   * | Shift|   Z  |   X  |   C  |   V  |   B  |  -   |      |  =   |   N  |   M  |   ,  |   .  |   /  | Shift|
    * |-------------+------+------+------+------+------|      |------+------+------+------+------+------+------|
    * | Tab  |   [  |   ]  | Alt  | Lower| Bksp | Tab  |      | Enter| Space| Raise| Left | Down |  Up  | Right|
    * ,------------------------------------------------.      `------------------------------------------------.
@@ -69,7 +70,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
    * |------+------+------+------+------+------|                    |------+------+------+------+------+------|
    * | Ctrl |   A  |   S  |   D  |   F  |   G  |                    |   H  |   J  |   K  |   L  |   ;  |  "   |
    * |------+------+------+------+------+------+------.      ,------+------+------+------+------+------+------|
-   * | Shift|   Z  |   X  |   C  |   V  |   B  | Shift|      | Hyper|   N  |   M  |   ,  |   .  |   /  | Shift|
+   * | Shift|   Z  |   X  |   C  |   V  |   B  | Hyper|      | Super|   N  |   M  |   ,  |   .  |   /  | Shift|
    * |-------------+------+------+------+------+------|      |------+------+------+------+------+------+------|
    * | Ctrl |  GUI | Super| Alt  | Lower| Ctrl | Alt  |      | Enter| Space| Raise| Left | Down |  Up  | Right|
    * ,------------------------------------------------.      `------------------------------------------------.
@@ -77,8 +78,8 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   [_QWERTY] = LAYOUT( \
     GUI_GRV, KC_Q,    KC_W,    KC_E,    KC_R,    KC_T,                       KC_Y,    KC_U,    KC_I,    KC_O,    KC_P,    GUSH_BS, \
     CTL_ESC, KC_A,    KC_S,    KC_D,    KC_F,    KC_G,                       KC_H,    KC_J,    KC_K,    KC_L,    KC_SCLN, KC_QUOT, \
-    SFT_MIN, KC_Z,    KC_X,    KC_C,    KC_V,    KC_B,  KC_LSFT,   KC_HYPR,  KC_N,    KC_M,    KC_COMM, KC_DOT,  KC_SLSH, SFT_EQL, \
-    CTL_TAB, GUI_LBC, MEH_RBC, KC_LALT, LOWER, CTL_BSP, ALT_TAB,   KC_ENT,  KC_SPC,   RAISE,   KC_LEFT, KC_DOWN, KC_UP,   KC_RGHT  \
+    KC_LSFT, KC_Z,    KC_X,    KC_C,    KC_V,    KC_B,  HPR_MIN,   SUP_EQL,  KC_N,    KC_M,    KC_COMM, KC_DOT,  KC_SLSH, SFT_EQL, \
+    KC_LCTL, GUI_LBC, MEH_RBC, KC_LALT, LOWER, CTL_BSP, ALT_TAB,   KC_ENT,  KC_SPC,   RAISE,   KC_LEFT, KC_DOWN, KC_UP,   KC_RGHT  \
   ),
 
   /* Lower
@@ -95,7 +96,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   [_LOWER] = LAYOUT(
     _______, KC_EXLM, KC_AT,   KC_HASH, KC_DLR,  KC_PERC,                    KC_CIRC, KC_AMPR, KC_ASTR, KC_LPRN, KC_RPRN, KC_PIPE, \
     _______, KC_MINS, KC_QUOT, KC_GRV,  KC_EQL,  KC_PGUP,                    KC_LEFT, KC_DOWN, KC_UP,   KC_RGHT, _______, _______, \
-    _______, KC_UNDS, KC_DQUO, KC_TILD, KC_PLUS, KC_PGDN, KC_LCTL,  _______, KC_HOME, KC_PGDN, KC_PGUP, KC_END , _______, _______, \
+    _______, KC_UNDS, KC_DQUO, KC_TILD, KC_PLUS, KC_PGDN, _______,  _______, KC_HOME, KC_PGDN, KC_PGUP, KC_END , _______, _______, \
     MS_BTN2, MS_BTN3, MS_BTN1, _______, LOWER,   _______, _______,  _______, _______, _______, KC_LSFT, KC_LALT, KC_LCTL, _______
   ),
 
